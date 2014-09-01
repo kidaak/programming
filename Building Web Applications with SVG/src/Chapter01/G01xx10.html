@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>dailey waves</TITLE><style>
+input{background-color:#ffbb88;color:#884400;text-align:center}
+</style>
+<SCRIPT>
+//JavaScript copyright by David Dailey 2004-2006. all rights reserved<br>
+var svgns = 'http://www.w3.org/2000/svg';
+var xlinkns = 'http://www.w3.org/1999/xlink';
+function prepare(){
+	if (document.all){
+		rightedge=document.body.clientWidth
+		bottomedge=document.body.clientHeight
+	}else{
+		rightedge=window.innerWidth
+		bottomedge=window.innerHeight
+	}
+	document.getElementById("sv").width=rightedge*.5
+	document.getElementById("sv").height=bottomedge*.8
+	svgdoc = document.sv.getSVGDocument();
+	svgRoot = svgdoc.documentElement;
+	im = svgdoc.getElementById("M");
+	rebuild('r')
+	r = svgdoc.getElementById("r");
+	r.setAttribute("style","fill:url(#bg)")
+	r.setAttribute("transform","rotate(-27,160,180)")
+
+	if (running) {
+		running=false
+	}
+	else {
+		running=true
+		offset()
+	}
+	}
+
+	blu=.4
+	blu2=0
+	incr=.005
+	running=false
+	function offset(){
+		if (!running) {return}
+		onestep(incr)
+		window.setTimeout("offset()",10)
+	}
+function rebuild(T){
+	if (svgdoc.getElementById('bg')) {
+		L=svgdoc.getElementById('bg');
+		svgRoot.removeChild(L)
+	}
+	if (document.f.w1.checked) bg=svgdoc.createElementNS(svgns,"linearGradient");
+	else bg=svgdoc.createElementNS(svgns,"radialGradient");
+	bg.setAttribute("id", "bg");
+	nbands=document.f.nb.value
+	im.setAttribute("x",0-nbands/10)
+	limit=2/(nbands)
+   	svgRoot.appendChild(bg);
+	band=new Array(nbands)
+	for (i=0;i<nbands;i++){
+		band[i]=svgdoc.createElementNS(svgns,"stop");
+		band[i].setAttribute("offset",(i)/nbands)
+		if (i%2==0) band[i].setAttribute("stop-color","#f83")
+		else band[i].setAttribute("stop-color","#0a3")
+		bg.appendChild(band[i]);
+	}
+}
+
+function onestep(i){
+
+	
+	for (j=0;j<nbands;j++){
+		band[j].setAttribute ("offset", blu+(j-1)/nbands);
+	}
+	blu=blu+i
+	if ((blu>limit)){
+		if (nbands>10) { blu=0 }
+		else incr=-.005
+	}
+	else if (blu<0) incr=.005
+}
+function changeScale(Q){
+	svgdoc.getElementById("feDM").setAttribute("scale",Q)
+}
+function rotate(Q){
+	svgdoc.getElementById("r").setAttribute("transform","rotate("+Q+",160,180)")
+}
+function channel(){
+
+	if (document.f["c"+1].checked) {svgdoc.getElementById("feDM").setAttribute("yChannelSelector","R")}
+	else {svgdoc.getElementById("feDM").setAttribute("yChannelSelector","")}
+
+	if (document.f["c"+2].checked) {svgdoc.getElementById("feDM").setAttribute("xChannelSelector","R")}
+	else {svgdoc.getElementById("feDM").setAttribute("xChannelSelector","")}
+	
+}
+openfile="thesoul2.jpg"
+
+function redo(){
+	lq=document.forms[0].fupload1.value;
+	im.setAttributeNS(xlinkns,"xlink:href",lq)
+}
+function randomize(){
+	Q=5+Math.ceil(Math.random()*40)
+	document.f.ns.value=Q
+	svgdoc.getElementById("feDM").setAttribute("scale",Q)
+	Q=Math.floor(Math.random()*360)
+	document.f.rs.value=Q
+	svgdoc.getElementById("r").setAttribute("transform","rotate("+Q+",160,180)")
+	nbands=1+Math.ceil(Math.random()*40)
+	document.f.nb.value=nbands
+	if (Math.random()<.5) {T='l';document.getElementById('w1').checked=true}
+	else {T='r';document.getElementById('w2').checked=true}
+	rebuild(T)
+	if (Math.random()<.5){document.getElementById('c2').checked=true}
+	else{document.getElementById('c2').checked=false}
+	if (Math.random()<.5){document.getElementById('c1').checked=true}
+	else{document.getElementById('c1').checked=false;document.getElementById('c2').checked=true}
+	channel()
+	
+}
+</SCRIPT>
+</HEAD>
+<BODY onload="prepare()"  bgcolor="#dd8833"  topmargin="0" leftmargin="0"><form name="f">
+<DIV id=QQ><table><tr><td>
+<EMBED name="sv" id="sv" src="G01xx10.svg" width=300 height=380></EMBED>
+</td><td>
+<b>SVG ripples created dynamically.</b><br>
+ &lt;feDisplacement&gt; filter is
+used to distort a face or image of your choice<br>
+<table border=1 bordercolor="#884400">
+<tr><td align="right">frequency:</td>
+<td><input name="nb" value=45 maxlength=4 size=2 
+onclick="this.value=''" onkeyup="rebuild()"></td>
+<td rowspan=3>
+linear <input type="radio" name="W" id="w1"  onclick="rebuild('l')"><br>
+radial <input type="radio" name="W" id="w2" checked onclick="rebuild('r')">
+</td>
+<td rowspan=3 align="right">
+vertical <input type="checkbox" name="m" id="c1" checked 
+onclick="channel(1)"><br>
+horizontal <input type="checkbox" name="m" id="c2" checked onclick="channel(2)">
+</td>
+</tr>
+<tr><td align="right">scale:</td>
+<td><input style="i1" name="ns" value=34 maxlength=3 size=2 onclick="this.value=''" onkeyup="changeScale(this.value)"><br></td></tr>
+<tr><td align="right">rotate:</td>
+<td><input name="rs" value=-28 maxlength=3 size=2 onclick="this.value=''" 
+onkeyup="rotate(this.value)"><br></td></tr>
+<tr>
+<td colspan=4 align=center><input type=button value="randomize" onclick="randomize()"></td>
+</tr>
+<tr>
+<td colspan=4 align=center><input type="file" size=1 name="fupload1" onchange="redo()" value="100"><br>
+	<input name="sw1" size="14" value="thesoul2.jpg"></td>
+</tr>
+</table>
+<br>
+copyright 2004 all rights reserved
+</td>
+</tr></table>
+</DIV></form>
+</BODY></HTML>

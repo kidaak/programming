@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>
+feMerge
+</title>
+<defs>
+<filter id="twoF" x="0%" y="0%" width="100%" height="100%">
+	<feFlood flood-color="yellow" result="A"/>
+	<feColorMatrix type="matrix" in="SourceGraphic" result="B"
+	  values=
+		"1 0 0 0 0
+		 0 1 0 0 0
+		 0 0 1 0 0
+		 1 1 1 0 0
+		"/>
+	<feMerge>
+		<feMergeNode in="A"/>
+		<feMergeNode in="B"/>
+	</feMerge>
+</filter>
+</defs>
+
+<image x="35%" y="20%" xlink:href="p84.jpg" filter="url(#twoF)" 
+height="50%" width="30%"/>
+
+
+</svg>
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="chapter2-ShapesPatternsGroupsUse"
+   version="1.1"
+   width="800" height="600" 
+   viewBox="0 0 400 300" preserveAspectRatio="none"
+>
+  <defs>
+    <!-- End of Example - Include common page elements for the background grid and illustraion. -->
+    <marker id="tick" markerUnits="strokeWidth"
+			markerWidth="10" markerHeight="10" orient="auto">
+			<path d="M0 -2 L0 2" stroke='black'/>
+		</marker>
+		<marker id="endArrow" markerUnits="strokeWidth"
+			markerWidth="10" markerHeight="10" orient="auto">
+			<path d="M-10 -2 L0 0 L-10 2 z" fill='black' stroke='none'/>
+		</marker>
+    <circle id="node" r="2" stroke-width='0.6' fill='white'/>
+		<path id="arrow" d="M0 0 L-10 -2 L-10 2 z"
+			 stroke='none'/>
+		<circle id="node" r="2" stroke-width='0.6' fill='white'/>
+    <g id="coords" stroke='black'>
+			<path d="M15 0 L0 0 L0 15" fill='none' stroke-width='0.5'/>
+			<use xlink:href="#arrow" transform="translate(20 0) scale(0.5)"/>
+			<use xlink:href="#arrow" transform="translate(0 20) rotate(90) scale(0.5)"/>
+			<circle r="1" stroke-width='0.2' fill='white'/>
+		</g>
+    <pattern id="gridPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+			<path d="M10 0 L0 0 L0 10" fill='none' stroke='gray' stroke-width='0.25'/>
+		</pattern>
+  </defs>
+  <g id="layer1">
+    <!-- background grid -->    
+    <rect id="grid" width="100%" height="100%" x="0" y="0"
+       stroke='gray' stroke-width='0.25' fill='url(#gridPattern)'/>
+    <!-- grid illustrations -->
+    <use xlink:href="#coords"/>
+    <text x="3" y="9" font-size='8'>(0,0)</text>
+    
+    <!-- Begin Example -->
+    <!-- Draw the lines. -->
+      <line stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-opacity="0.4" stroke-dasharray="1, 6" stroke-dashoffset="0"
+         x1="90" y1="10" x2="10" y2="90"
+         id="patternLine1" />
+         
+      <!-- Reuse the first line, rotate it 90 degrees, and update the style attributes. -->
+      <!-- For appendix or wiki - note that currently most browsers do not support styling of Use elements using either CSS or SVG attributes -->
+      <use stroke-opacity="1"
+       transform="rotate(90, 50, 50)"
+         xlink:href="#patternLine1"
+         id="patternLine2" />
+      
+      <!-- Draw the upper-right rectangle. -->
+      <rect fill="#ada1d9" fill-opacity="1" fill-rule="nonzero" stroke="#32287d" stroke-width="10" stroke-linecap="butt" stroke-linejoin="bevel" stroke-miterlimit="4" stroke-opacity="0.4"
+         id="patternRect-upperRight"
+         width="20"
+         height="20"
+         x="90"
+         y="-10" />
+
+      <!-- Reuse the first rectangle element and rotate it 90 degrees each time. -->
+      <use transform="rotate(90, 50, 50)"
+         xlink:href="#patternRect-upperRight"
+         id="patternRect-lowerRight" />
+      <use transform="rotate(180, 50, 50)"
+         xlink:href="#patternRect-upperRight"
+         id="patternRect-lowerLeft" />
+      <use transform="rotate(270, 50, 50)"
+         xlink:href="#patternRect-upperRight"
+         id="patternRect-upperLeft" />
+
+      <!-- Group containing the eye. -->
+      <g id="eye">
+        <!-- Draw the ellipse. -->
+        <ellipse fill="#a1d9ad" fill-opacity="0.7" fill-rule="nonzero" 
+          stroke="#32287d" stroke-width="1" stroke-opacity="0.5"
+          cx="50" cy="50" rx="30" ry="20" />
+
+        <!-- Group containing the eye's iris. -->
+        <g id="iris">
+           id="path3389"
+           cx="50" cy="50" rx="20" ry="14" />         
+          <!-- Draw the circle. --> 
+          <circle fill="black" fill-opacity="1" fill-rule="nonzero" stroke="#32287d" stroke-width="1" stroke-linecap="butt" stroke-linejoin="bevel" stroke-miterlimit="4"
+             id="path3395"
+             cx="50" cy="50" r="10" />
+           
+          <!-- Reference the bitmap image (PNG) -->
+          <image id="bitmapCentralBall"
+             width="5.5%" height="5.5%"
+             x="39px" y="42px"      
+             xlink:href="iris-small.png"
+             alt="NASA Photo of Jupiter" />
+        </g>
+      </g>
+      
+      <!-- Draw the path using "relative"coordinates via lower-case path commands.  Note that we can easily switch to using the Polyline element by changing the "d" attribute to "points". -->
+      <path fill="none" stroke="black" stroke-width="1px" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1"
+         d="M 0,50 s 10,0 0,20 C 20,20 0,0 0,0"
+         id="patternPath-lowerLeft" />
+         <!-- Other interesting paths
+              MoveTo Polyline-like d="m 0,50 10,0 0,20 20,20 0,0 0,0 20,0 0,10"
+              Quadratic d="M 0,50 Q 10,0 0,20 S 20,20 0,0"
+              Smooth Quadratic d="M 0,50 S 10,0 0,20 Q 20,20 0,0"
+              Cubic d="M 0,50 C 10,0 0,20 20,20 S 0,0 0,0"
+              Smooth Quadratic & Cubic d="M 0,50 s 10,0 0,20 C 20,20 0,0 0,0"
+              -->
+      
+      <!-- Reuse the first path, rotate it 90 more degrees for each of the four corners. -->
+      <use
+       transform="rotate(90, 50, 50)"
+         xlink:href="#patternPath-lowerLeft"
+         id="patternPath-upperLeft" />
+      <use
+       transform="rotate(180, 50, 50)"
+         xlink:href="#patternPath-lowerLeft"
+         id="patternPath-upperRight" />
+      <use
+       transform="rotate(270, 50, 50)"
+         xlink:href="#patternPath-lowerLeft"
+         id="patternPath-lowerRight" />
+  </g>
+</svg>

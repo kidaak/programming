@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+	onload="startup(evt)"
+
+>
+<script>
+<![CDATA[
+var xmlns="http://www.w3.org/2000/svg"
+var Doc;
+var O;
+var G1
+var BB
+var Boo=true
+function T(Boo){
+	if (Boo)O.pauseAnimations()
+	else O.unpauseAnimations()
+	return !Boo
+}
+
+function startup(evt){
+	O=evt.target
+	Doc=O.ownerDocument	
+	G1=Doc.getElementById("gradient1")
+	var S=Doc.getElementById("screen")
+	BB=S.getBBox
+	SVGRoot = Doc.documentElement;
+	O.setAttribute("onmouseup","Boo=T(Boo);")
+	O.setAttribute("onmousemove","refocus(evt);")
+	//O.pauseAnimations()
+}
+function refocus(evt){
+	x=evt.clientX
+	y=evt.clientY
+	G1.setAttribute("cx",x/BB.width)
+	G1.setAttribute("cy",y/BB.height)
+}
+function drawlines(u,t){
+	B=O.getBBox()
+	var w=B.width
+	var h=B.height
+	for (i=0;i<=w/t;i++){
+		L=Doc.createElementNS(xmlns,"line")
+		L.setAttribute("x1",i*t)
+		L.setAttribute("x2",i*t)
+		L.setAttribute("y1",0)
+		L.setAttribute("y2",8)
+		L.setAttribute("stroke","black")
+		L.setAttribute("stroke-width","1")
+		O.appendChild(L)
+		if (i%10==0){
+			L=Doc.createElementNS(xmlns,"line")
+			L.setAttribute("x1",i*t)
+			L.setAttribute("x2",i*t)
+			L.setAttribute("y1",0)
+			L.setAttribute("y2",h)
+			L.setAttribute("stroke","grey")
+			L.setAttribute("stroke-width",".5")
+			O.appendChild(L)
+		}
+	}
+	for (i=0;i<=h/t;i++){
+		L=Doc.createElementNS(xmlns,"line")
+		L.setAttribute("x1",0)
+		L.setAttribute("x2",8)
+		L.setAttribute("y1",i*t)
+		L.setAttribute("y2",i*t)
+		L.setAttribute("stroke","black")
+		L.setAttribute("stroke-width","1")
+		O.appendChild(L)
+		if (i%10==0){
+			L=Doc.createElementNS(xmlns,"line")
+			L.setAttribute("x1",0)
+			L.setAttribute("x2",w)
+			L.setAttribute("y1",i*t)
+			L.setAttribute("y2",i*t)
+			L.setAttribute("stroke","grey")
+			L.setAttribute("stroke-width",".5")
+			O.appendChild(L)
+		}
+	}
+
+	
+
+}
+function coolabel(x,y,ox,oy,l){
+	if (l==null) label=x+","+y
+	else label=l
+	E=Doc.createElementNS(xmlns,"circle")
+	E.setAttribute("cx",x)
+	E.setAttribute("cy",y)
+	E.setAttribute("r",5)
+	E.setAttribute("stroke","grey")
+	E.setAttribute("stroke-width","3")
+	E.setAttribute("opacity",".4")
+	E.setAttribute("fill","white")
+	O.appendChild(E)
+	L=Doc.createElementNS(xmlns,"line")
+	L.setAttribute("x1",x)
+	L.setAttribute("x2",x+ox)
+	L.setAttribute("y1",y)
+	L.setAttribute("y2",y+oy)
+	L.setAttribute("stroke","grey")
+	L.setAttribute("stroke-width","2")
+	O.appendChild(L)
+	T=Doc.createElementNS(xmlns,"text")
+	T.setAttribute("x",x+ox-label.length*2)
+	if (oy>0)
+	T.setAttribute("y",y+oy+12)
+	else
+	T.setAttribute("y",y+oy-4)
+	T.setAttribute("font-size",12)
+	if (l==null) T.setAttribute("fill","grey")
+	else T.setAttribute("fill","black")
+	msg=Doc.createTextNode(label)
+	T.appendChild(msg)
+	O.appendChild(T)
+	
+}
+
+//]]>
+</script>
+
+<rect id="screen" x="0" y="0" height="100%" width="100%"/>
+<defs><clipPath id="CP">
+   <use xlink:href="#M"/>
+</clipPath>
+
+
+<radialGradient id="gradient1" cx="50%" cy="50%" r="10%" fx="30%" fy="25%" spreadMethod="reflect" >
+	<stop  offset="0" stop-color="black" />
+	<stop  offset="0.6" stop-color="white" stop-opacity=".5"/>
+
+<animate attributeName="fx" dur="5s" values=".5;.65;.15;.5"  repeatCount="indefinite"/>
+<animate attributeName="fy" dur="7s" values=".5;.65;.15;.5"  repeatCount="indefinite"/>
+
+<animate attributeName="r" dur="3s" values=".1;.2;.1"  repeatCount="indefinite"/>
+
+ </radialGradient>
+
+<filter id="d" >
+	<feImage xlink:href="#r" result="grad" />
+	<feDisplacementMap scale="40" id="feDM"
+	 yChannelSelector="R"
+	 xChannelSelector="R"
+	in="SourceGraphic" in2="grad"/>
+</filter> </defs>
+<ellipse id="r" cx="50%" cy="50%" rx="35%" ry="35%" 
+style="fill:url(#gradient1)"/>
+<image filter='url(#d)' clip-path="#CP" id="M" xlink:href='../p17.jpg'  x="22%" y="22%"  width="50%" height="50%"  />
+
+
+
+</svg>

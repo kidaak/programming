@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+	onload="startup(evt)"
+>
+<script>
+<![CDATA[
+
+xmlns="http://www.w3.org/2000/svg"
+var Doc;
+var O;
+var Col=new Array("red","cyan","green","yellow")
+var P=new Array()
+function startup(evt){
+	O=evt.target
+	Doc=O.ownerDocument
+	O.setAttribute("onclick","ClickPoint(evt)")
+	//drawlines(100,10)
+	//for (i in Col) P[Col[i]]=printNode(Doc.getElementById(Col[i])).split("\"")[1]
+	coolabel(70,140,-15,5)
+	coolabel(150,0 ,30,5)
+	coolabel(200,100,15,-20)
+	coolabel(40,100,-15,-20)
+	coolabel(100,0,-40,5)
+	coolabel(170,140,15,5)
+}
+
+function drawlines(u,t){
+	B=O.getBBox()
+	var w=B.width
+	var h=B.height
+	for (i=0;i<=w/t;i++){
+		L=Doc.createElementNS(xmlns,"line")
+		L.setAttribute("x1",i*t)
+		L.setAttribute("x2",i*t)
+		L.setAttribute("y1",0)
+		L.setAttribute("y2",8)
+		L.setAttribute("stroke","blue")
+		L.setAttribute("stroke-width","1")
+		O.appendChild(L)
+		if (i%10==0){
+			L=Doc.createElementNS(xmlns,"line")
+			L.setAttribute("x1",i*t)
+			L.setAttribute("x2",i*t)
+			L.setAttribute("y1",0)
+			L.setAttribute("y2",h)
+			L.setAttribute("stroke","#8cf")
+			L.setAttribute("stroke-width","1")
+			O.appendChild(L)
+		}
+	}
+	for (i=0;i<=h/t;i++){
+		L=Doc.createElementNS(xmlns,"line")
+		L.setAttribute("x1",0)
+		L.setAttribute("x2",8)
+		L.setAttribute("y1",i*t)
+		L.setAttribute("y2",i*t)
+		L.setAttribute("stroke","blue")
+		L.setAttribute("stroke-width","1")
+		O.appendChild(L)
+		if (i%10==0){
+			L=Doc.createElementNS(xmlns,"line")
+			L.setAttribute("x1",0)
+			L.setAttribute("x2",w)
+			L.setAttribute("y1",i*t)
+			L.setAttribute("y2",i*t)
+			L.setAttribute("stroke","#8cf")
+			L.setAttribute("stroke-width","1")
+			O.appendChild(L)
+		}
+	}
+
+	
+
+}
+function coolabel(x,y,ox,oy,l){
+	if (l==null) label=x+","+y
+	else label=l
+	E=Doc.createElementNS(xmlns,"circle")
+	E.setAttribute("cx",x)
+	E.setAttribute("cy",y)
+	E.setAttribute("r",5)
+	E.setAttribute("stroke","green")
+	E.setAttribute("stroke-width","3")
+	E.setAttribute("opacity",".4")
+	E.setAttribute("fill","yellow")
+	O.appendChild(E)
+	L=Doc.createElementNS(xmlns,"line")
+	L.setAttribute("x1",x)
+	L.setAttribute("x2",x+ox)
+	L.setAttribute("y1",y)
+	L.setAttribute("y2",y+oy)
+	L.setAttribute("stroke","red")
+	L.setAttribute("stroke-width","2")
+	O.appendChild(L)
+	T=Doc.createElementNS(xmlns,"text")
+	T.setAttribute("x",x+ox-label.length*2)
+	if (oy>0)
+	T.setAttribute("y",y+oy+12)
+	else
+	T.setAttribute("y",y+oy-4)
+	T.setAttribute("font-size",12)
+	if (l==null) T.setAttribute("fill","blue")
+	else T.setAttribute("fill","blue")
+	msg=Doc.createTextNode(label)
+	T.appendChild(msg)
+	O.appendChild(T)
+	
+}
+function ClickPoint(evt){
+	coolabel(evt.clientX,evt.clientY,15,15)
+}
+//]]>
+</script>
+<rect id="BB" x="0" y="0" height="100%" width="100%" fill="white"/>
+
+
+<path d="M 70 140 L 150,0 200,100 L 40,100 100,0 L 170,140 70 140" 
+fill-rule="evenodd"/>
+<path d="M 70 140 Q 150,0 200,100 Q 40,100 100,0 Q 170,140 70 140" 
+fill="red" fill-rule="evenodd"/>
+</svg>
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+<title>SVG Grapher</title>
+<script type="text/javascript">
+//<![CDATA[
+window.onbeforeunload = function(evt){return "Remember to save before quitting.";}
+function wopen(s,mode){
+	if(!s){
+		var W=window.open("CreatedSites/"+pages[0].attributes.getNamedItem('id').nodeValue+""+pages[0].attributes.getNamedItem('label').nodeValue+".html", "", config="height=650,width=675, toolbar=no, menubar=no, scrollbars=no, resizable=yes,location=no, directories=no, status=no");
+	}
+	else if(s == "uploadPage.html"){
+		var W=window.open(s,"",config="height=200,width=300, toolbar=no, menubar=no, scrollbars=yes, resizable=no,location=no, directories=no, status=no");
+	}
+	else if(s == "basicTutorialA.html"){
+		var W=window.open(s,"",config="height=600,width=875, toolbar=no, menubar=no, scrollbars=yes, resizable=no,location=no, directories=no, status=no");
+	}
+	else if (mode=="read") {
+		var W=window.open("","",config="height=550,width=675, toolbar=no, menubar=no, scrollbars=no, resizable=yes,location=no, directories=no, status=no");
+		var MSG=W.document.createTextNode(s)
+		var headingin = W.document.createElement('h2')
+		headingin.appendChild(MSG) 
+		var br=W.document.createElement("br");
+		W.document.body.appendChild(headingin);
+		W.document.body.appendChild(br);
+		var T=textSet(W,25)
+		var hr=W.document.createElement("hr");
+		W.document.body.appendChild(hr);
+		var B=W.document.createElement("input");
+		B.setAttribute("type","button")
+		W.document.body.appendChild(B);
+		B.value="Click To Import When Ready"
+		B.onclick=function (){sendit(W)}
+	}
+	else if (mode=="echo") {
+		var W=window.open("","",config="height=550,width=675, toolbar=no, menubar=no, scrollbars=no, resizable=yes,location=no, directories=no, status=no");
+		var headingout = W.document.createElement('h2');
+		var headtext = W.document.createTextNode('Navigational Gravitation Results');
+		headingout.appendChild(headtext);
+		W.document.body.appendChild(headingout);
+		var T=textSet(W,35);
+		T.value=s;
+	}
+	else if(s.match(/graph\d*.php/)){
+		var W=window.open("LocalGraphs/"+s,"",config="height=1,width=1, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, directories=no, status=no");
+	}
+	else if (mode!="echo"){
+		var W=window.open("","",config="height=650,width=675, toolbar=no, menubar=no, scrollbars=no, resizable=yes,location=no, directories=no, status=no");
+		var headingout = W.document.createElement('h2');
+		var headtext = W.document.createTextNode('Copy and Save XML');
+		headingout.appendChild(headtext);
+		W.document.body.appendChild(headingout);
+		var T=textSet(W,35);
+		T.value=s;
+	}
+ 
+	return W;
+}
+
+
+function sendit(W){
+	var stuff=W.document.getElementById('ourText')
+	// W.alert(stuff.value) 
+ 	SVGRegister(stuff.value) 
+ 	W.close()
+}
+
+function textSet(W,rows){
+	var F=W.document.createElement("form");
+	F.setAttribute('id','form1')
+	var H=W.document.createElement("textarea");
+	H.setAttribute('rows',rows);
+	H.setAttribute('cols','80');
+	H.setAttribute('id','ourText')
+	F.appendChild(H)
+	W.document.body.appendChild(F);
+	return H
+}
+
+function sendServ(s){
+        if(window.XMLHttpRequest){
+                http_r = new XMLHttpRequest();
+        }
+        else{
+                alert("could not make connection")
+        }
+        http_r.open("POST","makeSite.php",true);
+        http_r.onreadystatechange = rep;
+        http_r.setRequestHeader("Content-type","Application/x-www-form-urlencoded");
+        http_r.setRequestHeader("Content-length",s.length);
+        http_r.setRequestHeader("Connection","close");
+        http_r.send(s);
+
+        function rep(){
+                if(http_r.readyState == 4){
+                        //console.log(http_r.responseText);
+						if(http_r.responseText=="Error Occured"){
+							err=true;
+							alert(http_r.responseText);
+						}
+                }
+        }
+}
+
+function xmlParse(xstring){
+	try{
+		xl=new ActiveXObject("Microsoft.XMLDOM");
+        xl.async="false";
+        xl.loadXML(xstring);
+		return xl;		
+		
+	}
+	catch(e){
+		var theParser = new DOMParser;
+		xl = theParser.parseFromString(xstring,"text/xml");
+		return xl;
+	}
+}
+
+function delay(){
+//window.location = "CreatedSites/"+pages[0].attributes.getNamedItem('label').nodeValue+".html"
+	if(!err){
+		//var W=window.open("CreatedSites/"+pages[0].attributes.getNamedItem('id').nodeValue+""+pages[0].attributes.getNamedItem('label').nodeValue+".html", "", config="height=650,width=675, toolbar=no, menubar=no, scrollbars=no, resizable=yes,location=no, directories=no, status=no");
+		var W=wopen();
+	}
+}
+
+function makeSite2(){
+	err=false;
+	var structure = SVGRegister2("nowindow");	
+	var sp = xmlParse(structure)
+	//alert(sp)
+	pages = sp.getElementsByTagName('node')
+	idToName = new Object();
+	
+	for(var i=0;i<pages.length;i++){
+		idToName[pages[i].attributes.getNamedItem('id').nodeValue] = pages[i].attributes.getNamedItem('label').nodeValue
+	}
+	for(var i=0;i<pages.length;i++){
+		var s = "<html><head><title>"+pages[i].attributes.getNamedItem('label').nodeValue+"</title></head>"
+		s += "<body style='background-color:"+pages[i].attributes.getNamedItem('color').nodeValue+"'>"
+		s += "<h1>Current Position: "+pages[i].attributes.getNamedItem('label').nodeValue+"</h1>"
+
+		for(var j = 0;j<pages[i].getElementsByTagName('edge').length;j++){
+			s += "<br /><a href='"+pages[i].getElementsByTagName('edge')[j].attributes.getNamedItem('to').nodeValue+""+idToName[pages[i].getElementsByTagName('edge')[j].attributes.getNamedItem('to').nodeValue]+".html'>"+idToName[pages[i].getElementsByTagName('edge')[j].attributes.getNamedItem('to').nodeValue]+"</a>"
+		}
+		s +="</body></html>"
+		finalMarkup= "filename="+pages[i].attributes.getNamedItem('id').nodeValue+""+pages[i].attributes.getNamedItem('label').nodeValue+".html&page="+s	
+		sendServ(finalMarkup)
+	}
+	var delayNextPage = setTimeout('delay()',3000);
+}
+//]]>
+</script>
+<style type="text/css">
+html, body, div { height: 100%; }
+</style>
+</head>
+<body style="margin: 0 0 0 0; overflow: hidden;">
+<div>
+<object id="E" type="image/svg+xml" data="G01xx14.svg" width="100%" height="100%">
+	<param name="src" value="Grapher.svg">
+</object>
+</div>
+ 
+</body>
+</html>

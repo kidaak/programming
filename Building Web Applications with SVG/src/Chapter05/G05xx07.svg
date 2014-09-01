@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+	onload="startup(evt)"
+
+>
+<script>
+<![CDATA[
+var xmlns="http://www.w3.org/2000/svg"
+var Doc;
+var O;
+var Boo=false
+function T(Boo){
+	if (Boo)O.pauseAnimations()
+	else O.unpauseAnimations()
+	return !Boo
+}
+
+function startup(evt){
+	O=evt.target
+	Doc=O.ownerDocument
+	SVGRoot = Doc.documentElement;
+	O.setAttribute("onclick","Boo=T(Boo);")
+	//O.setAttribute("onmousemove","refocus(evt);")
+	O.pauseAnimations()
+}
+function refocus(evt){
+	x=evt.clientX
+	y=evt.clientY
+	//alert(x)
+	G=Doc.getElementById("gradient1")
+	//alert(G.getAttribute("fx"))
+	G.setAttribute("fx",x)
+	G.setAttribute("cx",x-(y-x)/2)
+	G.setAttribute("fy",y)
+}
+
+//]]>
+</script>
+<rect x="0" y="0" height="100%" width="100%" fill="black"/>
+
+<defs>
+<filter id="B" x="0%" y="0%" width="100%" height="100%">
+	<feGaussianBlur id="fGB" stdDeviation="25"/>
+</filter>
+<filter id="A">
+	<feGaussianBlur id="fGB" stdDeviation="25"/>
+</filter>
+</defs>
+<rect x="10%" y="10%" width="16%" height="25%" 
+fill="white" filter="url(#B)"/>
+<rect x="42%" y="10%" width="16%" height="25%" 
+fill="white" filter="url(#A)"/>
+<rect x="26%" y="10%" width="16%" height="25%" 
+fill="white" />
+
+</svg>

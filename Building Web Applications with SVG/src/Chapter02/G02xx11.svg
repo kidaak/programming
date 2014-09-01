@@ -1,0 +1,24 @@
+<svg xmlns='http://www.w3.org/2000/svg' 
+     xmlns:xlink='http://www.w3.org/1999/xlink' 
+  width="100%" height="100%" 
+  onload="startup(evt)"
+>
+<script xlink:href="script/path-ML-02.js" type="application/ecmascript"/>
+<defs>
+  <pattern id="gridPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+    <path d="M10,0 H0 V10" fill="none" stroke="gray" stroke-width="0.25"/>
+  </pattern>
+  <circle id="dot" cx="0" cy="0" r="2" stroke="black" stroke-width="1" fill="white"/>
+  <circle id="dot2" cx="0" cy="0" r="2" stroke="black" stroke-width="1" fill="lightGray"/>
+  <circle id="dot3" cx="0" cy="0" r="2" stroke="black" stroke-width="1" stroke-dasharray="1 1" fill="white"/>
+</defs>
+<!-- background grid -->
+<rect id="grid" width="100%" height="100%" stroke="gray" stroke-width="0.25" fill="url(#gridPattern)" /> 
+
+<!-- example -->
+<path d="M 70,290 L 150,150 200,250 40,250 100,150 170,290"/>
+<path d="M 70,290 L 150,150 200,250 40,250 100,150 170,290" 
+  fill-rule="evenodd" transform="translate(250,0)"/>
+
+</svg>
+

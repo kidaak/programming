@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<script>
+<![CDATA[
+function Here(evt){
+	var R=evt.target
+	var T=document.getElementById("Text")
+	if (evt.type=="mouseover"){
+		R.setAttribute("fill", "green")
+		T.textContent="please"
+		T.setAttribute("font-size","20")
+	}
+	else if (evt.type=="mouseout"){
+		R.setAttribute("fill", "blue")
+		T.textContent="Click"
+		T.setAttribute("font-size","26")
+	}
+}
+]]></script>
+<text id="Text" x="67" y="100" font-size="26" fill="black">Click</text>
+<rect onmouseover="Here(evt)" onmouseout="Here(evt)" x="55" y="76" height="30" width="80" stroke="black" stroke-width="2" fill="blue" fill-opacity=".5" rx="10"/>
+
+</svg>

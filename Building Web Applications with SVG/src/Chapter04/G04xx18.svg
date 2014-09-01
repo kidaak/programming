@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<svg xmlns = "http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="100" height="150" fill="lightgray"/>
+  <foreignObject x="10" y="10" width="100" height="150">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+  <b>Hello World</b><br />
+<div style="position:absolute;width:100">Here is a small paragraph requiring some word wrap</div>
+    </body>
+  </foreignObject>
+  
+  <circle cx="200" cy="200" r="100" fill="cyan" stoke="black"/>
+  <foreignObject x="120" y="120" width="180" height="180" >
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <div>
+<textarea cols="18" rows="12">Here is some text wrapped into a textarea</textarea>
+      </div>
+    </body>
+  </foreignObject>
+  
+  <foreignObject x="400" y="10" width="600" height="450" transform="rotate(10,600,130)">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+<iframe src="http://srufaculty.sru.edu/david.dailey/svg/" width="600" height="450"/>
+    </body>
+  </foreignObject>
+</svg>

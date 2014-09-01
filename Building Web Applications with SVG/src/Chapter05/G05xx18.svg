@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+>
+<title>
+Animating various aspects of an feComponentTransfer
+</title>
+
+<filter id="J"> 
+<feGaussianBlur stdDeviation="5" > 
+		<animate attributeName="stdDeviation" 
+values="1;4;14;10;1" dur="3s" repeatCount="indefinite" />
+</feGaussianBlur>
+<feComponentTransfer> 
+<feFuncR type="discrete" tableValues="0 .5 1"/> 
+  <feFuncG type="linear" slope="0" intercept=".25">
+	<animate attributeName="slope" values="0; -2; 2; 0" dur="4s" 
+repeatCount="indefinite" />
+		<animate attributeName="intercept" values=".25;1;0;.25" 
+dur="3s" repeatCount="indefinite" />
+	</feFuncG>
+	<feFuncB type="linear" slope="0" intercept=".25">
+	<animate attributeName="slope" values="0; -2; 2; 0" dur="7s" 
+repeatCount="indefinite" />
+		<animate attributeName="intercept" values=".25;1;0;.25" 
+dur="9s" repeatCount="indefinite" />
+	</feFuncB>
+</feComponentTransfer>
+    <feColorMatrix type="matrix" 
+values="	1   0  0 0 0   
+					0   1  0 0 0 
+					0   0  1 0 0   
+				 -1  -2 -2 1 2"
+	>
+    </feColorMatrix>
+
+
+
+</filter>
+
+<rect  x="0%" y="41%" height="18%" width="100%" fill="green"/> 
+<rect  x="0%" y="47%" height="6%" width="100%" fill="black"/> 
+
+<image filter="url(#J)" x="35%" y="25%" height="50%" width="30%" 
+xlink:href="p84.jpg" preserveAspectRatio="none"/> 
+<text x="30%" y="85%" font-size="17" font-family="arial" 
+fill="black">animating feComponentTransfer with Blur and 
+ColorMatrix</text>
+
+
+
+</svg>
+

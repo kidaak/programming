@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+>
+<title>
+Blurring vertically and horizontally
+</title>
+
+<filter id="H">
+
+<feGaussianBlur stdDeviation="16, 0" >
+</feGaussianBlur>
+</filter>
+<filter id="V">
+<feGaussianBlur stdDeviation="0, 16" >
+</feGaussianBlur>
+</filter>
+
+<pattern id="OvalPattern" patternUnits="userSpaceOnUse" width="100" 
+height="68" >
+<g id="ovals4" transform="scale(4)" >
+	 <rect x="0" y="0" width="25" height="17" stroke="black" 
+fill="none" stroke-width="1" />
+	<ellipse cx="19"  cy="10" rx="5" ry="3" fill="#835"/>
+	<ellipse  cx="11"  cy="5" rx="5" ry="3" fill="#358"/>
+	<ellipse  cx="6" cy="12" rx="5" ry="3" fill="#583"/>
+	<g><desc>Notice how four ovals are needed to draw one on the 
+edge of the pattern space</desc>
+	<ellipse  cx="0" cy="1" rx="5" ry="3" fill="#853"/>
+	<ellipse  cx="25" cy="1" rx="5" ry="3" fill="#853"/>
+	<ellipse  cx="0" cy="18" rx="5" ry="3" fill="#853"/>
+	<ellipse  cx="25" cy="18" rx="5" ry="3" fill="#853"/>
+	</g>
+</g>
+</pattern>
+<pattern id="Q"  patternUnits="userSpaceOnUse" width="100" 
+height="68">
+<use  xlink:href="#ovals4" />
+</pattern>
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+cx="50%" cy="30%" rx="20%" ry="20%"/>
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#H)"
+cx="30%" cy="65%" rx="20%" ry="20%"/>
+
+<ellipse fill="url(#Q)" stroke="black" stroke-width="2" filter="url(#V)"
+cx="70%" cy="65%" rx="20%" ry="20%"/>
+<text x="20%" y="20%" font-size="22" font-family="arial" 
+fill="black">original</text>
+
+<text x="8%" y="87%" font-size="22" font-family="arial" 
+fill="black">Blurred horizontally</text>
+
+<text x="80%" y="85%" font-size="22" font-family="arial" 
+fill="black">Blurred vertically</text>
+
+</svg>
+

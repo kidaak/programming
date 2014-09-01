@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+>
+<script>
+<![CDATA[
+
+//]]>
+</script>
+<rect x="0" y="0" height="100%" width="100%" fill="black"/>
+
+<filter id="roll">
+	<feComposite in="SourceGraphic" in2="BackgroundImage" id="OP"
+	operator="arithmetic" k1="0" k2="1" k3="-1" k4="1"/>
+</filter>
+<filter id="arithmetic">
+	<feComposite  in2="BackgroundImage" 
+	operator="arithmetic" k1="0" k2="1" k3="-1" k4="1"/>
+</filter>
+<filter id="over">
+	<feComposite in2="BackgroundImage" in="SourceGraphic" 
+operator="over" />
+</filter>
+<filter id="in">
+	<feComposite in2="BackgroundImage" in="SourceGraphic" 
+operator="in" />
+</filter>
+<filter id="out">
+	<feComposite in2="BackgroundImage" in="SourceGraphic" 
+operator="out" />
+</filter>
+<filter id="atop">
+	<feComposite in2="BackgroundImage" in="SourceGraphic" 
+operator="atop" />
+</filter>
+<filter id="xor">
+	<feComposite in2="BackgroundImage" in="SourceGraphic" 
+operator="xor" />
+</filter>
+<g enable-background="new">
+<rect x="0" y="10%" height="4%" width="100%" fill="magenta" 
+opacity=".5"/>
+<rect x="0" y="14%" height="4%" width="100%" fill="yellow"/>
+<rect x="0" y="18%" height="4%" width="100%" fill="cyan" opacity=".5"/>
+
+
+<image x="5%" y="5%" xlink:href="p84.jpg" filter="url(#arithmetic)" 
+height="23%" width="13%" preserveAspectRatio="none"/>
+<image x="20%" y="5%" xlink:href="p84.jpg" filter="url(#over)" 
+height="23%" width="13%" preserveAspectRatio="none"/>
+<image x="35%" y="5%" xlink:href="p84.jpg" filter="url(#in)" 
+height="23%" width="13%" preserveAspectRatio="none"/>
+<image x="50%" y="5%" xlink:href="p84.jpg" filter="url(#out)" 
+height="23%" width="13%" preserveAspectRatio="none"/>
+<image x="65%" y="5%" xlink:href="p84.jpg" filter="url(#atop)" 
+height="23%" width="13%" preserveAspectRatio="none"/>
+<image x="80%" y="5%" xlink:href="p84.jpg" filter="url(#xor)" 
+height="23%" width="13%" preserveAspectRatio="none"/>
+<text x="5%" y="31%" font-size="15" fill="yellow" >arithmetic</text>
+<text x="20%" y="31%" font-size="15" fill="yellow" >over</text>
+<text x="35%" y="31%" font-size="15" fill="yellow" >in </text>
+<text x="50%" y="31%" font-size="15" fill="yellow" >out</text>
+<text x="65%" y="31%" font-size="15" fill="yellow" >atop</text>
+<text x="80%" y="31%" font-size="15" fill="yellow" >xor</text>
+</g>
+</svg>
+
+

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>
+feFlood and feOffset
+</title>
+<defs>
+
+<filter id="f1" > 
+<feFlood x="10%" y="10%" width="80%" height="80%"   flood-color="green" 
+flood-opacity=".5"/>
+</filter>
+
+
+<filter id="f2"> 
+<feFlood x="10%" y="10%" width="80%" height="80%"   flood-color="green" 
+flood-opacity=".5" result="A"/>
+<feOffset dx="40" dy="25"/>
+</filter>
+
+</defs>
+
+		<rect x="15%" y="15%" width="20%" height="30%" 
+fill="none" stroke-width="2" stroke="blue"/>
+<rect x="15%" y="15%" width="20%" height="30%" filter="url(#f1)" />
+    
+		
+		<rect x="60%" y="15%" width="20%" height="30%" 
+fill="red" stroke-width="2" stroke="blue"/>
+<rect x="60%" y="15%" width="20%" height="30%" filter="url(#f1)"/>
+
+		
+		<rect x="15%" y="55%" width="20%" height="30%" 
+fill="none" stroke-width="2" stroke="blue"/>
+<rect x="15%" y="55%" width="20%" height="30%" filter="url(#f2)"/>
+
+		
+		<rect x="60%" y="55%" width="20%" height="30%" 
+fill="red" stroke-width="2" stroke="blue"/>
+<rect x="60%" y="55%" width="20%" height="30%" filter="url(#f2)"/>
+
+		
+</svg>
+

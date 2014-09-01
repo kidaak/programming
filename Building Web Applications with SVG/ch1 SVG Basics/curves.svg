@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+	<path fill="blue" opacity="0.5" d="M 0,200 C 50,200 100,100 150,200 C 200,300 250,200 300,200"/>
+	<path fill="brown" opacity="0.5" d="M 0,200 C 50,200 100,300 150,200 C 200,100 250,200 300,200" />
+</svg>

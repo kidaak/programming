@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<title>feTurbulence into feDisplacement</title>
+<filter id="D" >
+	<feTurbulence baseFrequency=".01" numOctaves="2" result="turb" 
+type="turbulence"
+	seed="200">
+	<animate attributeName="seed" dur="64s" values="238;206"  
+repeatCount="indefinite"/>
+	</feTurbulence>
+	<feDisplacementMap in="SourceGraphic" in2="turb" scale="16" 
+xChannelSelector="R" yChannelSelector="B">
+	<animate attributeName="scale" dur="2s" values="5;35;5"  
+repeatCount="indefinite"/>
+	</feDisplacementMap>
+</filter>
+<rect x="0" y="0" height="100%" width="100%" fill="#203" />
+<g filter="url(#D)">
+<image x="30%" y="15%" xlink:href="p80.jpg" width="28%" height="30%" />
+<image x="50%" y="15%" xlink:href="p80.jpg" width="28%" height="30%"/>
+<image x="50%" y="50%" xlink:href="p80.jpg" width="28%" height="30%" />
+<image x="30%" y="50%" xlink:href="p80.jpg" width="28%" height="30%"/>
+</g>
+
+
+</svg>

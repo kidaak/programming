@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+>
+<title>
+feDiffuseLighting
+</title>
+<filter id="distantLightA" filterUnits="objectBoundingBox" x="0" y="0" 
+width="1" height="1">
+        <feDiffuseLighting in="SourceGraphic" diffuseConstant="1" 
+surfaceScale="10" lighting-color="yellow">
+          <feDistantLight azimuth="0" elevation="0"/>
+        </feDiffuseLighting>
+      </filter>
+      <filter id="distantLightB" filterUnits="objectBoundingBox" x="0" 
+y="0" width="1" height="1">
+
+        <feDiffuseLighting in="SourceGraphic" diffuseConstant="1" 
+surfaceScale="10" lighting-color="white">
+          <feDistantLight azimuth="45" elevation="0"/>
+        </feDiffuseLighting>
+      </filter>
+      <filter id="distantLightC" filterUnits="objectBoundingBox" x="0" 
+y="0" width="1" height="1">
+        <feDiffuseLighting in="SourceGraphic" diffuseConstant="1" 
+surfaceScale="10" lighting-color="white">
+          <feDistantLight azimuth="0" elevation="45">
+						  <animate 
+attributeName="azimuth" values="50;0;120;50" dur="5" 
+repeatCount="indefinite" />
+						 <animate 
+attributeName="elevation" values="20;0;60;20" dur="3" 
+repeatCount="indefinite" />
+					</feDistantLight>
+        </feDiffuseLighting>
+      </filter>
+<text x="15%" y="38%" font-size="17" font-family="arial" 
+fill="black">DistantLight lo azimuth, elevation</text>
+<text x="40%" y="38%" font-size="17" font-family="arial" 
+fill="black">DistantLight mid azimuth, lo elevation</text>
+<text x="70%" y="38%" font-size="17" font-family="arial" 
+fill="black">DistantLight animated</text>
+
+
+      <filter id="pointLightA" filterUnits="objectBoundingBox" x="0" 
+y="0" width="1" height="1">
+        <feDiffuseLighting in="SourceGraphic" diffuseConstant="1" 
+surfaceScale="10" lighting-color="yellow">
+          <fePointLight x="100" y="10" z="10"/>
+        </feDiffuseLighting>
+      </filter>
+      <filter id="pointLightB" filterUnits="objectBoundingBox" x="0" 
+y="0" width="1" height="1">
+        <feDiffuseLighting in="SourceGraphic" diffuseConstant="1" 
+surfaceScale="10" lighting-color="white">
+          <fePointLight x="40" y="50" z="10"/>
+        </feDiffuseLighting>
+      </filter>
+
+      <filter id="pointLightC" filterUnits="objectBoundingBox" x="0" 
+y="0" width="1" height="1">
+        <feDiffuseLighting in="SourceGraphic" diffuseConstant="1" 
+surfaceScale="10" lighting-color="white">
+          <fePointLight x="130" y="50" z="10">
+				     <animate attributeName="z" 
+values="50;0;50" dur="5" repeatCount="indefinite" />
+						 <animate 
+attributeName="x" values="100;0;200;100" dur="3" 
+repeatCount="indefinite" />
+						 <animate 
+attributeName="y" values="0;120;0" dur="7" repeatCount="indefinite" />
+					</fePointLight>
+        </feDiffuseLighting>
+      </filter>
+<text x="20%" y="63%" font-size="17" font-family="arial" 
+fill="black">Pointlight upper center</text>
+<text x="45%" y="63%" font-size="17" font-family="arial" 
+fill="black">Pointlight middle left</text>
+<text x="70%" y="63%" font-size="17" font-family="arial" 
+fill="black">Pointlight animated</text>
+
+      <filter id="spotLightA" filterUnits="objectBoundingBox" x="0" 
+y="0" width="1" height="1">
+        <feDiffuseLighting in="SourceGraphic" diffuseConstant="1" 
+surfaceScale="10" lighting-color="yellow">
+          <feSpotLight x="25" y="0" z="35" pointsAtX="25" pointsAtY="30" 
+pointsAtZ="0" specularExponent="0"/>
+        </feDiffuseLighting>
+      </filter>
+      <filter id="spotLightB" filterUnits="objectBoundingBox" x="0" 
+y="0" width="1" height="1">
+        <feDiffuseLighting in="SourceGraphic" diffuseConstant="1" 
+surfaceScale="10" lighting-color="white">
+          <feSpotLight x="25" y="30" z="35" pointsAtX="55" pointsAtY="0" 
+pointsAtZ="0" specularExponent="0"/>
+        </feDiffuseLighting>
+      </filter>
+      <filter id="spotLightC" filterUnits="objectBoundingBox" x="0" 
+y="0" width="1" height="1">
+			   <feSpecularLighting  specularConstant = "1.2" 
+specularExponent = "8" lighting-color = "red">
+            <animate attributeName="specularExponent" values="1;10;1" 
+dur="1" repeatCount="indefinite" />
+		
+					 <fePointLight x="130" y="50" 
+z="10">
+				    
+						 <animate 
+attributeName="x" values="100;0;200;100" dur="3" 
+repeatCount="indefinite" />
+						 <animate 
+attributeName="y" values="0;120;0" dur="7" repeatCount="indefinite" />
+					</fePointLight>
+        </feSpecularLighting>
+				
+         
+       
+      </filter>
+<text x="20%" y="90%" font-size="17" font-family="arial" 
+fill="black">Spotlight upper left</text>
+<text x="45%" y="90%" font-size="17" font-family="arial" 
+fill="black">Spotlight upper center</text>
+<text x="70%" y="90%" font-size="17" font-family="arial" 
+fill="black">Specular PointLight</text>
+
+
+
+
+<pattern id="OvalPattern" patternUnits="userSpaceOnUse" width="25" 
+height="17" >
+<g id="ovals4" transform="scale(1)" >
+	 <rect x="0" y="0" width="25" height="17" stroke="black" 
+fill="none" stroke-width="1" />
+	<ellipse cx="19"  cy="10" rx="5" ry="3" fill="#835"/>
+	<ellipse  cx="11"  cy="5" rx="5" ry="3" fill="#358"/>
+	<ellipse  cx="6" cy="12" rx="5" ry="3" fill="#583"/>
+	<g><desc>Notice how four ovals are needed to draw one on the 
+edge of the pattern space</desc>
+	<ellipse  cx="0" cy="1" rx="5" ry="3" fill="#853"/>
+	<ellipse  cx="25" cy="1" rx="5" ry="3" fill="#853"/>
+	<ellipse  cx="0" cy="18" rx="5" ry="3" fill="#853"/>
+	<ellipse  cx="25" cy="18" rx="5" ry="3" fill="#853"/>
+	</g>
+</g>
+</pattern>
+
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#distantLightA)"
+cx="25%" cy="25%" rx="10%" ry="10%"/>
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#distantLightB)"
+cx="50%" cy="25%" rx="10%" ry="10%"/>
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#distantLightC)"
+cx="75%" cy="25%" rx="10%" ry="10%"/>
+
+
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#pointLightA)"
+cx="25%" cy="50%" rx="10%" ry="10%"/>
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#pointLightB)"
+cx="50%" cy="50%" rx="10%" ry="10%"/>
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#pointLightC)"
+cx="75%" cy="50%" rx="10%" ry="10%"/>
+
+
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#spotLightA)"
+cx="25%" cy="75%" rx="10%" ry="10%"/>
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#spotLightB)"
+cx="50%" cy="75%" rx="10%" ry="10%"/>
+<ellipse fill="url(#OvalPattern)" stroke="black" stroke-width="2" 
+filter="url(#spotLightC)"
+cx="75%" cy="75%" rx="10%" ry="10%"/>
+
+
+
+
+</svg>
+

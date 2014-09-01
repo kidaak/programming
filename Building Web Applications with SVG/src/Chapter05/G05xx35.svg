@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>
+clouds : a window thereinto
+</title>
+<defs>
+
+<filter id="R" x="0%" y="0%" height="100%" width="100%">
+
+ <feTurbulence baseFrequency=".01, .025" numOctaves="2" >
+  </feTurbulence >
+ <feComponentTransfer>	
+  <feFuncA type='linear' intercept="1" slope='0' /> 
+	<feFuncR type='linear' intercept="-.5" slope='3' /> 
+	<feFuncG type='linear' intercept="-.5" slope='2.5' /> 
+	<feFuncB type='linear' intercept="-.5" slope='1' /> 
+</feComponentTransfer>
+ <feColorMatrix type="saturate" values=".1" />
+ <feColorMatrix type="matrix" result="one"
+values="	1.4   0  0 0  0   
+				 .6  .5  0 0  0 
+					0   0  1 0  0   
+				  1   1  1 1 -1"
+	>
+ </feColorMatrix>
+</filter>
+
+<filter id="Q" x="0%" y="0%" height="100%" width="100%">
+
+ 
+ 
+ <feTurbulence baseFrequency=".006, .010" numOctaves="3" >
+  </feTurbulence >
+ <feComponentTransfer>	
+  <feFuncA type='linear' intercept="1" slope='0' /> 
+	<feFuncR type='linear' intercept="-.5" slope='2.5' /> 
+	<feFuncG type='linear' intercept="-.5" slope='2.5' /> 
+	<feFuncB type='linear' intercept="-.5" slope='2.5' /> 
+</feComponentTransfer>
+ <feColorMatrix type="saturate" values="0" />
+ <feColorMatrix type="matrix" result="two"
+values="	1  0  0 0 0   
+					0  1  0 0 0 
+					0  0  1 0 0   
+				  1  1  1 1 -.8"
+	>
+ </feColorMatrix>
+
+</filter>
+</defs>
+<rect x="0%" y="0%"  height="100%" width="100%"  fill="#013" />
+<rect x="30%" y="30%"  height="40%" width="40%" fill="#6cf"/>
+<g filter="url(#R)">
+	<animateTransform attributeName="transform" type="translate" 
+values="0 0;-300 -10000;0 -20000" dur="900" repeatCount="indefinite" 
+additive="sum"/>
+
+<rect x="30%" y="30%"  height="40%" width="40%" >
+			<animateTransform attributeName="transform" 
+type="translate" values="0 0;300 10000;0 20000" dur="900" 
+repeatCount="indefinite"/>
+</rect>
+</g>
+
+<g filter="url(#Q)">
+	<animateTransform attributeName="transform" type="translate" 
+values="0 0;-300 -10000;0 -20000" dur="400" repeatCount="indefinite" 
+additive="sum"/>
+
+<rect x="30%" y="30%"  height="40%" width="40%" >
+			<animateTransform attributeName="transform" 
+type="translate" values="0 0;300 10000;0 20000" dur="400" 
+repeatCount="indefinite"/>
+</rect>
+
+</g>
+</svg>
+

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink" >
+<title>example using the text tag</title>
+<text x="20px" y="55px" font-family="Verdana" font-size="43pt">Hello World!</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>
+feTurbulence : a window thereinto
+</title>
+<defs>
+<pattern id="P" patternUnits="userSpaceOnUse" width="60" height="60" >
+<rect x="0" y="0"  height="60" width="60" fill="#402" />
+<g fill="#013">
+<rect x="0" y="5"  height="1" width="60" />
+<rect x="5" y="0"  height="60" width="1" />
+</g>
+</pattern>
+
+
+
+<filter id="Q" x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".01" numOctaves="1" />
+
+ <feComponentTransfer>	
+  <feFuncA type='linear' intercept="1" slope='0' /> 
+</feComponentTransfer>
+
+</filter>
+</defs>
+<rect x="0%" y="0%"  height="100%" width="100%" fill="url(#P)" />
+<rect x="15%" y="15%"  height="70%" width="70%" filter="url(#Q)">
+
+</rect>
+
+
+</svg>
+

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+<title>
+feTurbulence simple and complex
+</title>
+<filter id="CH"  x="0" y="0" height="100%" width="100%">
+
+<feComponentTransfer>	
+  <feFuncA type='linear' intercept="1" slope='0' /> 
+	<feFuncR type='linear' intercept="-.5" slope='2.5' /> 
+	<feFuncG type='linear' intercept="-.5" slope='2.5' /> 
+	<feFuncB type='linear' intercept="-.5" slope='2.5' /> 
+</feComponentTransfer>
+<feColorMatrix type="saturate" values="0" />
+</filter>
+<rect x="0%" y="50%"  height="2" width="100%" fill="black"/>
+<rect x="50%" y="0%"  height="100%" width="2" fill="black"/>
+<rect x="70%" y="0%"  height="100%" width="2" fill="black"/>
+<rect x="30%" y="0%"  height="100%" width="2" fill="black"/>
+<g filter="url(#CH)">
+
+
+<filter id="T1" x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".02" numOctaves="2" />
+</filter>
+<rect x="10%" y="20%"  height="30%" width="20%" filter="url(#T1)"/>
+
+
+<filter id="T2"  x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".02" numOctaves="2" />
+</filter>
+<rect x="30%" y="20%" height="30%" width="20%" filter="url(#T2)"/>
+
+<filter id="T3"  x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".02" numOctaves="2" />
+</filter>
+<rect x="50%" y="20%" height="30%" width="20%" filter="url(#T3)"/>
+
+<filter id="T4"  x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".02" numOctaves="2" />
+</filter>
+<rect x="70%" y="20%" height="30%" width="20%" filter="url(#T4)"/>
+
+<filter id="T5" x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".02" numOctaves="2"  seed="5" />
+</filter>
+<rect x="10%" y="50%"  height="30%" width="20%" filter="url(#T5)"/>
+
+<filter id="T6"  x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".02" numOctaves="2"  seed="6" />
+</filter>
+<rect x="30%" y="50%" height="30%" width="20%" filter="url(#T6)"/>
+
+<filter id="T7"  x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".02" numOctaves="2"  seed="7" />
+</filter>
+<rect x="50%" y="50%" height="30%" width="20%" filter="url(#T7)"/>
+
+<filter id="T8"  x="0" y="0" height="100%" width="100%">
+ <feTurbulence baseFrequency=".02" numOctaves="2"   seed="8" />
+</filter>
+<rect x="70%" y="50%" height="30%" width="20%" filter="url(#T8)"/>
+
+</g>
+</svg>
+

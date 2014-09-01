@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+>
+
+
+<ellipse id="E" cx="90" cy="90" rx="30" ry="40" fill="#448">
+	<animate attributeName="rx" dur="5s" values="20;90;20" repeatCount="indefinite"/>
+	<animate attributeName="ry" dur="5s" values="30;60;30" repeatCount="indefinite"/>
+</ellipse>
+
+
+</svg>

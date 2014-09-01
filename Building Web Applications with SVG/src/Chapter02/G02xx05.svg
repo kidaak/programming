@@ -1,0 +1,37 @@
+<svg xmlns='http://www.w3.org/2000/svg' 
+     xmlns:xlink='http://www.w3.org/1999/xlink' 
+  width="100%" height="100%" 
+  onload="startup(evt)"
+>
+<script xlink:href="script/ellipse.js" type="application/ecmascript"/>
+<defs>
+  <pattern id="gridPattern" width="10" height="10" patternUnits="userSpaceOnUse">
+    <path d="M10,0 H0 V10" fill="none" stroke="gray" stroke-width="0.25"/>
+  </pattern>
+  <marker id="tick" viewBox="-10 -5 10 10" markerUnits="strokeWidth"
+          markerWidth="10" markerHeight="10" orient="auto">
+    <path d="M0,-2 V2" stroke="black"/>
+  </marker>
+  <marker id="endArrow" viewBox="-10 -5 10 10" markerUnits="strokeWidth"
+          markerWidth="10" markerHeight="10" orient="auto">
+    <path d="M-10,-2 L0,0 -10,2 z" fill="black" stroke="none"/>
+  </marker>
+  <marker id="startDimArrow" viewBox="0 -5 10 10" markerUnits="strokeWidth"
+          markerWidth="10" markerHeight="10" orient="auto">
+    <path d="M0,0 L10,-2 10,2 z M0,-5 L0,5" stroke="black" />
+  </marker>
+  <marker id="endDimArrow" viewBox="-10 -5 10 10" markerUnits="strokeWidth"
+          markerWidth="10" markerHeight="10" orient="auto">
+    <path d="M-10,-2 L0,0 -10,2 z M0,-5 L0,5" stroke="black" />
+  </marker>
+</defs>
+<!-- background grid -->
+<rect id="grid" width="100%" height="100%" stroke="gray" stroke-width="0.25" fill="url(#gridPattern)" /> 
+<!-- example -->
+<ellipse cx="150" cy="120" rx="100" ry="70" 
+  stroke="darkseagreen" stroke-width="8" fill="lightgray" fill-opacity="0.7" />
+<!-- grid decoratation -->
+<line x1="150" y1="120" x2="150" y2="50" marker-end="url(#endArrow)" stroke="black" />
+<line x1="150" y1="120" x2="250" y2="120" marker-end="url(#endArrow)" stroke="black" />
+</svg>
+ 

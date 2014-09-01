@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	
+	onload="startup(evt)"
+	viewBox="200 200 500 500"
+>
+<script>
+<![CDATA[
+var xmlns="http://www.w3.org/2000/svg"
+var Doc;
+var O;
+
+
+function startup(evt){
+	
+	
+	Doc=document
+
+	SVGRoot=Doc.documentElement;
+	O=SVGRoot
+	coolabel(520,380,-15,30,"mask using rect with gradient fill")
+	coolabel(220,365,5,15,"start point of <text>")
+	coolabel(300,300,15,-15,"start point of <mask>")
+	coolabel(300+400,300+100,-40,25,"end pt=(x+w,y+h)")
+
+}
+
+function drawlines(u,t){
+	B=O.getBBox()
+	var w=B.width
+	var h=B.height
+	for (i=0;i<=w/t;i++){
+		L=Doc.createElementNS(xmlns,"line")
+		L.setAttribute("x1",i*t)
+		L.setAttribute("x2",i*t)
+		L.setAttribute("y1",0)
+		L.setAttribute("y2",8)
+		L.setAttribute("stroke","blue")
+		L.setAttribute("stroke-width","1")
+		O.appendChild(L)
+		if (i%10==0){
+			L=Doc.createElementNS(xmlns,"line")
+			L.setAttribute("x1",i*t)
+			L.setAttribute("x2",i*t)
+			L.setAttribute("y1",0)
+			L.setAttribute("y2",h)
+			L.setAttribute("stroke","#08a")
+			L.setAttribute("stroke-width","2")
+			O.appendChild(L)
+		}
+	}
+	for (i=0;i<=h/t;i++){
+		L=Doc.createElementNS(xmlns,"line")
+		L.setAttribute("x1",0)
+		L.setAttribute("x2",8)
+		L.setAttribute("y1",i*t)
+		L.setAttribute("y2",i*t)
+		L.setAttribute("stroke","blue")
+		L.setAttribute("stroke-width","1")
+		O.appendChild(L)
+		if (i%10==0){
+			L=Doc.createElementNS(xmlns,"line")
+			L.setAttribute("x1",0)
+			L.setAttribute("x2",w)
+			L.setAttribute("y1",i*t)
+			L.setAttribute("y2",i*t)
+			L.setAttribute("stroke","#08a")
+			L.setAttribute("stroke-width","2")
+			O.appendChild(L)
+		}
+	}
+
+	
+
+}
+function coolabel(x,y,ox,oy,l){
+	if (l==null) label=x+","+y
+	else label=l
+	E=Doc.createElementNS(xmlns,"circle")
+	E.setAttribute("cx",x)
+	E.setAttribute("cy",y)
+	E.setAttribute("r",5)
+	E.setAttribute("stroke","black")
+	E.setAttribute("stroke-width","1")
+	E.setAttribute("opacity",".4")
+	E.setAttribute("fill","grey")
+	O.appendChild(E)
+	L=Doc.createElementNS(xmlns,"line")
+	L.setAttribute("x1",x)
+	L.setAttribute("x2",x+ox)
+	L.setAttribute("y1",y)
+	L.setAttribute("y2",y+oy)
+	L.setAttribute("stroke","black")
+	L.setAttribute("stroke-width","2")
+	O.appendChild(L)
+	T=Doc.createElementNS(xmlns,"text")
+	T.setAttribute("x",x+ox-label.length*2)
+	if (oy>0)
+	T.setAttribute("y",y+oy+12)
+	else
+	T.setAttribute("y",y+oy-4)
+	T.setAttribute("font-size",14)
+	if (l==null) T.setAttribute("fill","blue")
+	else T.setAttribute("fill","black")
+	msg=Doc.createTextNode(label)
+	T.appendChild(msg)
+	O.appendChild(T)
+	
+}
+//]]>
+</script>
+
+<rect x="300" y="300" width="400" height="100" fill="none" stroke="black"/>
+<line x1="220" y1="365" x2="700" y2="365" stroke="grey"/>
+<linearGradient id="gradient1" >
+	<stop offset="0.0" stop-color="black"/>
+	<stop offset="1" stop-color="white"/>
+</linearGradient>
+<mask id="Ma">
+	<rect x="300" y="300" width="400" height="100" fill="url(#gradient1)"/>
+</mask>
+
+<text x="220" y="365" font-family="impact" font-size="52" mask="url(#Ma)" fill="black">
+Some Masked Text: it outsprawls its mask</text>
+
+</svg>

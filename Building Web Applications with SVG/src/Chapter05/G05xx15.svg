@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+>
+<title>
+Animating the hueRotate of a reused pattern
+</title>
+
+
+<filter id="F">
+  <feComponentTransfer>	
+    <feFuncR type="table" tableValues="1 0 0"/>	
+   <feFuncB type="table" tableValues="0"/>	
+	 <feFuncA type="table" tableValues=".75"/>	
+  </feComponentTransfer>
+</filter>
+<filter id="G"> 
+<feComponentTransfer> 
+<feFuncR type="discrete" tableValues="0 .5 1"/> 
+<feFuncG type="discrete" tableValues="0 1"/> 
+<feFuncB type="discrete" tableValues="0"/> 
+</feComponentTransfer>
+</filter>
+<filter id="H"> 
+<feGaussianBlur stdDeviation="3" /> 
+<feComponentTransfer> 
+<feFuncR type="discrete" tableValues="0 .5 1 1"/> 
+<feFuncG type="discrete" tableValues="0 .5 1"/> 
+<feFuncB type="discrete" tableValues="0"/> 
+</feComponentTransfer>
+</filter>
+<filter id="I"> 
+<feGaussianBlur stdDeviation="10" /> 
+<feComponentTransfer> 
+<feFuncR type="discrete" tableValues="0 .5 1"/> 
+<feFuncG type="discrete" tableValues="0 1 1 1"/> 
+</feComponentTransfer>
+</filter>
+<filter id="J"> 
+<feGaussianBlur stdDeviation="10" /> 
+<feComponentTransfer> 
+<feFuncR type="discrete" tableValues="0 .5 1"/> 
+<feFuncG type="discrete" tableValues="0 1 1 1"/> 
+</feComponentTransfer>
+    <feColorMatrix type="matrix" 
+values="	1  0  0 0 0   
+					0  1  0 0 0 
+					0  0  1 0 0   
+				 -2  -2 1 1 2"
+	>
+    </feColorMatrix>
+
+
+
+</filter>
+<rect  x="0%" y="13%" height="10%" width="100%" fill="blue"/> 
+<rect  x="0%" y="16%" height="4%" width="100%" fill="black"/> 
+<image x="5%" y="2%" height="35%" width="25%" xlink:href="p84.jpg" 
+preserveAspectRatio="none"/> 
+<image filter="url(#G)" x="35%" y="2%" height="35%" width="25%" 
+xlink:href="p84.jpg" preserveAspectRatio="none"/> 
+<image filter="url(#H)" x="65%" y="2%" height="35%" width="25%" 
+xlink:href="p84.jpg" preserveAspectRatio="none"/> 
+<text x="15%" y="40%" font-size="17" font-family="arial" 
+fill="black">original</text>
+<text x="35%" y="40%" font-size="17" font-family="arial" 
+fill="black">posterize R,G; blank B</text>
+<text x="65%" y="40%" font-size="17" font-family="arial" 
+fill="black">blur then posterize, blank B</text>
+<g transform="translate(0,300)">
+<rect  x="0%" y="13%" height="10%" width="100%" fill="green"/> 
+<rect  x="0%" y="16%" height="4%" width="100%" fill="black"/> 
+<image filter="url(#F)" x="5%" y="2%" height="35%" width="25%" 
+xlink:href="p84.jpg" preserveAspectRatio="none"/> 
+<image filter="url(#I)" x="35%" y="2%" height="35%" width="25%" 
+xlink:href="p84.jpg" preserveAspectRatio="none"/> 
+<image filter="url(#J)" x="65%" y="2%" height="35%" width="25%" 
+xlink:href="p84.jpg" preserveAspectRatio="none"/> 
+<text x="10%" y="45%" font-size="17" font-family="arial" 
+fill="black">flip R; blank B; reduce A</text>
+<text x="40%" y="45%" font-size="17" font-family="arial" 
+fill="black">blur then posterize R,G</text>
+<text x="70%" y="45%" font-size="17" font-family="arial" 
+fill="black">blur / posterize / feColorMatrix</text>
+
+</g>
+</svg>
+

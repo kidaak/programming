@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>D3 Example 1 ~ HTML Table</title>
+<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+<style type="text/css" media="screen">
+   table {
+      border: solid 1px #ccc;
+   }
+</style>
+</head>
+<body>
+<h1>Generating HTML with D3</h1>
+<div id="vis" style="width:100%;height:100%;"></div>
+
+<script type="text/javascript">
+// Code goes here, just before the end of the HTML body tag.
+
+// The data is stored in an associative array, as per D3's requirement.
+var data = [[11, 22, 33, 44, 55, 66, 77, 88, 99, 'aa', 'bb', 'cc', 'dd', 'ee', 'ff']];
+var t = d3.select("#vis")
+   .append("table")
+      .selectAll("tr")
+      .data(data);
+
+t.enter().append("tr")
+  .selectAll("td")
+      .data(function(d) { return d; })
+  .enter().append("td")
+      //    .attr("style", function(d) { return "background-color:#cc" + d + "33"; })
+      // Values can be numeric
+      .style("padding", 4 )
+      // Values can be strings
+      .style("background-color", function(d) { return "#cc" + d + "33"; })
+      .text(function(d) { return d; });
+
+</script>
+
+</body>
+</html>
+
