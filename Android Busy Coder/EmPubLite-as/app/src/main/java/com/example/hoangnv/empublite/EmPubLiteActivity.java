@@ -3,16 +3,30 @@ package com.example.hoangnv.empublite;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
-public class EmPubLiteActivity extends Activity {
+public class EmPubLiteActivity extends FragmentActivity {
+    private ViewPager pager;
+    private PagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        pager = (ViewPager)findViewById(R.id.pager);
+        adapter = new ContentsAdapter(this);
+        pager.setAdapter(adapter);
+        pager.setVisibility(View.VISIBLE);
+
+        findViewById(R.id.progressBar1).setVisibility(View.GONE);
+
         getActionBar().setHomeButtonEnabled(true);
     }
 
