@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<language-addon>
+    <addon-name>simplelabel</addon-name>
+    <language-name>xul/html</language-name>
+  
+    <component>
+        <component-name>simplelabel</component-name>
+        <component-class>com.example.SimpleLabel</component-class>
+        <widget-class>com.example.SimpleLabel</widget-class>
+        <mold>
+            <mold-name>default</mold-name>
+            <mold-uri>mold/simple-label.js</mold-uri>
+            <css-uri>css/simple-label.css.dsp</css-uri>
+        </mold>
+    </component>
+</language-addon>

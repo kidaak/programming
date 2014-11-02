@@ -1,9 +1,8 @@
 package com.example.hoangnv.empublite;
 
-import android.app.Fragment;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,7 @@ import android.webkit.WebView;
 /**
  * Created by hoangnv on 10/9/2014.
  */
-public class WebViewFragment extends Fragment{
+public class WebViewFragment extends Fragment {
     private WebView mWebView;
     private boolean mIsWebViewAvailable;
 
