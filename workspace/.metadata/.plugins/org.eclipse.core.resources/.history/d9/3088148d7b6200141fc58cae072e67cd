@@ -1,0 +1,5 @@
+package custom.zk.components;
+
+public class SimpleLabel {
+
+}

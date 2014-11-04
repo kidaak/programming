@@ -5,4 +5,5 @@
 <!-- the framework will load zul package first automatically -->
 <package name="custom.zk.components" language="xul/html" depends="zul">
     <widget name="Errmsg"/>
+    <widget name="SimpleLabel"/>
 </package>

@@ -48,4 +48,14 @@
 			<css-uri>css/errmsg.css.dsp</css-uri>
 		</mold>
 	</component>
+	<component>
+		<component-name>simplelabel</component-name>
+		<component-class>custom.zk.components.SimpleLabel</component-class>
+		<widget-class>custom.zk.components.SimpleLabel</widget-class>
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/simplelabel.js</mold-uri>
+			<css-uri>css/simplelabel.css.dsp</css-uri>
+		</mold>
+	</component>
 </language-addon>

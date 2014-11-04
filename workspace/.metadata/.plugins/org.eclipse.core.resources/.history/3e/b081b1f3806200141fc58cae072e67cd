@@ -1,0 +1,33 @@
+package custom.zk.components;
+
+import java.util.Map;
+
+import org.zkoss.zk.au.AuRequest;
+import org.zkoss.zk.au.AuRequests;
+import org.zkoss.zk.ui.Component;
+
+public class ClearEvent {
+	private boolean _cleared;
+
+	public ClearEvent(String cmd, Component comp, boolean cleared) {
+
+	}
+
+	public static final ClearEvent getClearEvent(AuRequest request) {
+		final Component comp = request.getComponent();
+		final Map data = request.getData();
+
+		boolean cleared = AuRequests.getBoolean(data, "cleared");
+		return new ClearEvent(request.getCommand(), comp, cleared);
+	}
+
+	public boolean is_cleared() {
+		return _cleared;
+	}
+
+	public void set_cleared(boolean _cleared) {
+		this._cleared = _cleared;
+	}
+	
+	
+}

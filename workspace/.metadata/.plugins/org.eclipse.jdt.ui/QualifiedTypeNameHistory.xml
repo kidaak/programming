@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="jdk.internal.org.objectweb.asm.tree.analysis.Value"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.au.AuRequest"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.au.AuRequests"/>
+<fullyQualifiedTypeName name="custom.zk.components.ClearEvent"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Event"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.impl.XulElement"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.HtmlBasedComponent"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Events"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>

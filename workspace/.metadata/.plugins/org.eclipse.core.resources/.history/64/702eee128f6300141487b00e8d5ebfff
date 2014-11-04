@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 align="center">Beer Selection Page</h1>
+	<form method="POST" action="SelectBeer.do">
+		Select beer characteristics<br>
+		Color:
+		<select name="color" size="1">
+		</select>
+	</form>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window>
+		<simplelabel value="Hello, this is my custom component" />
+	</window>
+</zk>
