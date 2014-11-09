@@ -1,6 +1,0 @@
-/**
- * 
- */
-function out(out) {
-	out.push('<span', this.domAttrs_(), '>', this.getValue(), '</span>');
-}

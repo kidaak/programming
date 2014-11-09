@@ -7,8 +7,15 @@
 <fullyQualifiedTypeName name="custom.zk.components.ClearEvent"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Event"/>
-<fullyQualifiedTypeName name="org.zkoss.zul.impl.XulElement"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.HtmlBasedComponent"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Events"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="com.example.model.BeerExpert"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.impl.XulElement"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="custom.zk.components.quicknote.model.ChosenModel"/>
 </qualifiedTypeNameHistroy>

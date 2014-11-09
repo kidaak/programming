@@ -1,6 +1,0 @@
-custom.zk.components.SimpleLabel = zk.$extends(zk.Widget, {
-	_value : '',
-	getValue: function() {
-		return this._value;
-	}
-});

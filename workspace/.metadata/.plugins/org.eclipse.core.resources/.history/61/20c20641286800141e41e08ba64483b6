@@ -1,0 +1,14 @@
+package custom.zk.components.quicknote.model;
+
+import java.util.List;
+
+public class ChosenModel {
+
+	private List model;
+
+	public List getModel() {
+		return model;
+	}
+	
+	
+}

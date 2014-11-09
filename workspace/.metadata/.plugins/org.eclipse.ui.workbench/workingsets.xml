@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1415398779136_1" label="ZK_Practice" name="ZK_Practice">
+<item elementID="=Component_Development" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1414899743878_0" label="Window Working Set" name="Aggregate for window 1414899743877"/>
+<mruList name="ZK_Practice"/>
 </workingSetManager>

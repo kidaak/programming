@@ -1,0 +1,13 @@
+package custom.zk.components.quicknote;
+
+public class RenderableTextNote extends EnhancedMask {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
+	 * data model that contains information of text note blocks
+	 */
+	private TextNoteModel _model;
+}

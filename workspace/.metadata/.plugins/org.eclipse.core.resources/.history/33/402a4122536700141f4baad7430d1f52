@@ -1,0 +1,12 @@
+package custom.zk.components.quicknote;
+
+public class RenderableTextNote extends EnhancedMask {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
+}

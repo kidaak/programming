@@ -1,7 +1,0 @@
-package components;
-
-import org.zkoss.zul.impl.XulElement;
-
-public class Errmsg extends XulElement {
-
-}

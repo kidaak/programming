@@ -2,16 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="this" key="selection"/>
+		<item value="NoteBlocks" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="noteBlocks"/>
+			<item value="addNoteBlock"/>
+			<item value="_createNoteBlock"/>
+			<item value="set"/>
+			<item value="updateNoteBlock"/>
+			<item value="updateNoteBlocks"/>
+			<item value="zk.xml"/>
 			<item value="this"/>
-			<item value="_cleared"/>
-			<item value="_value"/>
-			<item value="TestProject"/>
 		</list>
 		<list key="replacehistory">
 		</list>

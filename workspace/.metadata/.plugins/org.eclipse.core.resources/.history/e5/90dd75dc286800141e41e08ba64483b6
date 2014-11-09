@@ -1,0 +1,21 @@
+package custom.zk.components.quicknote.model;
+
+import java.util.List;
+
+@SuppressWarnings({ "unchecked", "rawtypes" })
+public class ChosenModel {
+
+	private List<String> model;
+
+	public void add(String data) {
+		model.add(data);
+	}
+	
+	public void add(int index, String data) {
+		model.add(index, data);
+	}
+	
+	public List getModel() {
+		return model;
+	}
+}

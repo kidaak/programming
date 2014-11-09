@@ -58,4 +58,118 @@
 			<css-uri>css/simplelabel.css.dsp</css-uri>
 		</mold>
 	</component>
+	<!-- the first, basic mask component -->
+	<component>
+		<component-name>mask</component-name>
+		<component-class>custom.zk.components.quicknote.Mask</component-class>
+		<widget-class>custom.zk.components.quicknote.Mask</widget-class>
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/mask.js</mold-uri>
+			<css-uri>css/mask.css.dsp</css-uri>
+		</mold>
+	</component>
+
+	<component>
+		<component-name>enhancedmask</component-name>
+		<component-class>custom.zk.components.quicknote.EnhancedMask
+		</component-class>
+		<widget-class>custom.zk.components.quicknote.EnhancedMask
+		</widget-class>
+		<mold>
+			<mold-name>default</mold-name>
+			<mold-uri>mold/enhancedMask.js</mold-uri>
+			<css-uri>css/enhancedMask.css.dsp</css-uri>
+		</mold>
+	</component>
+	<component>
+		<component-name>simpletextnote</component-name>
+		<extends>enhancedmask</extends>
+		<widget-class>custom.zk.components.quicknote.SimpleTextNote
+		</widget-class>
+		<mold>
+			<mold-name>default</mold-name>
+			<css-uri>css/simpleTextNote.css.dsp</css-uri>
+		</mold>
+	</component>
+	<component>
+		<component-name>renderabletextnote</component-name>
+		<extends>simpletextnote</extends>
+		<component-class>custom.zk.components.quicknote.RenderableTextNote
+		</component-class>
+		<widget-class>custom.zk.components.quicknote.RenderableTextNote
+		</widget-class>
+	</component>
+
+	<!-- 5th, selectabletextnote component extends renderabletextnote, update 
+		zclass, handle click event of textareas and fire event to server to update 
+		the selected note block index one new thing, the 'annotation' block that 
+		define how an attribute (selectedTextNoteIndex here) works with ZKBIND as 
+		you can see opacity and maskColor are not defined here since they only require 
+		the 'load' direction the 'load' direction is supported by default so you 
+		just need to provide setter (in component) and getter (in VM) properly refer 
+		to: Document: http://books.zkoss.org/wiki/ZK_Developer's_Reference/MVVM/Advanced/Binding_Annotation_for_a_Custom_Component 
+		Code: https://github.com/zkoss/zk/blob/master/zkbind/src/archive/metainfo/zk/lang-addon.xml -->
+	<component>
+		<component-name>selectabletextnote</component-name>
+		<extends>renderabletextnote</extends>
+		<component-class>custom.zk.components.quicknote.SelectableTextNote
+		</component-class>
+		<widget-class>custom.zk.components.quicknote.SelectableTextNote
+		</widget-class>
+		<mold>
+			<mold-name>default</mold-name>
+			<css-uri>css/selectableTextNote.css.dsp</css-uri>
+		</mold>
+		<annotation>
+			<!-- ZKBIND is the zkbind system annotation -->
+			<annotation-name>ZKBIND</annotation-name>
+			<!-- property name -->
+			<property-name>selectedTextNoteIndex</property-name>
+			<attribute>
+				<!-- ACCESS is the access direction: can be "both", "save", "load"; default 
+					to "load" if not found -->
+				<attribute-name>ACCESS</attribute-name>
+				<attribute-value>both</attribute-value>
+			</attribute>
+			<attribute>
+				<!-- SAVE_EVENT is the save trigger event; meaningful only when ACCESS 
+					is "both" or "save" -->
+				<attribute-name>SAVE_EVENT</attribute-name>
+				<attribute-value>onTextNoteBlockSelect</attribute-value>
+			</attribute>
+			<attribute>
+				<!-- LOAD_TYPE is the type of attribute for loading -->
+				<attribute-name>LOAD_TYPE</attribute-name>
+				<attribute-value>java.lang.Integer</attribute-value>
+			</attribute>
+		</annotation>
+	</component>
+	<!-- 6th, recordabletextnote component extends selectabletextnote and fire 
+		event to server to update server side data -->
+	<component>
+		<component-name>recordabletextnote</component-name>
+		<extends>selectabletextnote</extends>
+		<component-class>custom.zk.components.quicknote.RecordableTextNote
+		</component-class>
+		<widget-class>custom.zk.components.quicknote.RecordableTextNote
+		</widget-class>
+		<annotation>
+			<annotation-name>ZKBIND</annotation-name>
+			<property-name>selectedTextNoteData</property-name>
+			<attribute>
+				<attribute-name>ACCESS</attribute-name>
+				<attribute-value>save</attribute-value>
+			</attribute>
+			<attribute>
+				<attribute-name>SAVE_EVENT</attribute-name>
+				<attribute-value>onSelectedTextNoteBlockChanged</attribute-value>
+			</attribute>
+			<attribute>
+				<attribute-name>LOAD_TYPE</attribute-name>
+				<attribute-value>custom.zk.components.quicknote.Data.TextNoteData
+				</attribute-value>
+			</attribute>
+		</annotation>
+	</component>
 </language-addon>

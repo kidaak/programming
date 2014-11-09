@@ -1,0 +1,11 @@
+<zk>
+	<hlayout>
+		<enhancedmask width="500px" id="emask" opacity="20"
+			maskColor="#00FF00">
+			<button label="ZK Website" />
+			<iframe width="100%" height="1000px"
+				src="http://www.zkoss.org/">
+			</iframe>
+		</enhancedmask>
+	</hlayout>
+</zk>

@@ -1,0 +1,12 @@
+package custom.zk.components;
+
+import org.zkoss.zul.impl.XulElement;
+
+public class Chosen extends XulElement{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -3798154178308293595L;
+
+}

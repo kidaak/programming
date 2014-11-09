@@ -1,0 +1,5 @@
+package custom.zk.components.quicknote.data;
+
+public class TextNoteData {
+
+}
