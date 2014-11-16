@@ -1,0 +1,15 @@
+<?page title="Datebox" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:w="client">
+	<window title="Datebox" border="normal"
+		apply="controller.DateboxController">
+		<datebox id="dbFormat1" format="dd/MM/yyyy" lenient="false"
+			constraint="no empty" onCreate="self.value = new java.util.Date()">
+<!-- 			<attribute w:name="showError_"> -->
+<!-- 				function (msg) {  -->
+<!-- 					console.log(msg); -->
+<!-- 					jq(this.$n('real')).removeClass(this.getZclass() + '-text-invalid'); return;  -->
+<!-- 				} -->
+<!-- 			</attribute> -->
+		</datebox>
+	</window>
+</zk>

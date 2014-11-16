@@ -1,0 +1,13 @@
+package controller;
+
+import org.zkoss.zk.ui.Component;
+import org.zkoss.zk.ui.select.SelectorComposer;
+
+public class DateboxController extends SelectorComposer<Component> {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4902911740117673597L;
+
+}

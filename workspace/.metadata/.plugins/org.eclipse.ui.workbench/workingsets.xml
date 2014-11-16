@@ -2,7 +2,16 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1415398779136_1" label="ZK_Practice" name="ZK_Practice">
 <item elementID="=Component_Development" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ZK_Test" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ChosenboxTest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1416105510419_3" label="Servlet_JSP" name="Servlet_JSP">
+<item elementID="=Beer" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1414899743878_0" label="Window Working Set" name="Aggregate for window 1414899743877"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1416115714926_6" label="Multiple Working Sets" name="Aggregate:Servlet_JSP:ZK_Practice:">
+<workingSet IMemento.internal.id="Servlet_JSP"/>
+<workingSet IMemento.internal.id="ZK_Practice"/>
+</workingSet>
 <mruList name="ZK_Practice"/>
 </workingSetManager>

@@ -1,0 +1,30 @@
+2014-11-12 02:56:23,448 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zcommon/6.0.0.FL.20120102/zcommon-6.0.0.FL.20120102.pom
+2014-11-12 02:56:24,226 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/zk/ee-eval/org/zkoss/common/zcommon/6.0.0.FL.20120102/zcommon-6.0.0.FL.20120102.pom
+2014-11-12 02:56:24,748 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/zkoss/common/zcommon/6.0.0.FL.20120102/zcommon-6.0.0.FL.20120102.pom
+2014-11-12 02:56:24,752 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zcommon:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 02:56:25,277 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zweb/6.0.0.FL.20120102/zweb-6.0.0.FL.20120102.pom
+2014-11-12 02:56:26,023 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/zk/ee-eval/org/zkoss/common/zweb/6.0.0.FL.20120102/zweb-6.0.0.FL.20120102.pom
+2014-11-12 02:56:26,491 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/zkoss/common/zweb/6.0.0.FL.20120102/zweb-6.0.0.FL.20120102.pom
+2014-11-12 02:56:26,494 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zweb:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 02:56:27,025 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zul/6.0.0.FL.20120102/zul-6.0.0.FL.20120102.pom
+2014-11-12 02:56:27,830 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/zk/ee-eval/org/zkoss/zk/zul/6.0.0.FL.20120102/zul-6.0.0.FL.20120102.pom
+2014-11-12 02:56:28,305 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/zkoss/zk/zul/6.0.0.FL.20120102/zul-6.0.0.FL.20120102.pom
+2014-11-12 02:56:28,308 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.zk:zul:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 02:56:28,812 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zcommon/6.0.0.FL.20120102/zcommon-6.0.0.FL.20120102.jar
+2014-11-12 02:56:29,290 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zweb/6.0.0.FL.20120102/zweb-6.0.0.FL.20120102.jar
+2014-11-12 02:56:29,763 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zul/6.0.0.FL.20120102/zul-6.0.0.FL.20120102.jar
+2014-11-12 02:56:30,553 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/zk/ee-eval/org/zkoss/common/zcommon/6.0.0.FL.20120102/zcommon-6.0.0.FL.20120102.jar
+2014-11-12 02:56:31,273 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/zk/ee-eval/org/zkoss/common/zweb/6.0.0.FL.20120102/zweb-6.0.0.FL.20120102.jar
+2014-11-12 02:56:31,982 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/zk/ee-eval/org/zkoss/zk/zul/6.0.0.FL.20120102/zul-6.0.0.FL.20120102.jar
+2014-11-12 02:56:32,454 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/zkoss/common/zcommon/6.0.0.FL.20120102/zcommon-6.0.0.FL.20120102.jar
+2014-11-12 02:56:32,903 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/zkoss/common/zweb/6.0.0.FL.20120102/zweb-6.0.0.FL.20120102.jar
+2014-11-12 02:56:33,353 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/zkoss/zk/zul/6.0.0.FL.20120102/zul-6.0.0.FL.20120102.jar
+2014-11-12 02:56:33,546 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zcommon:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 02:56:33,551 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zweb:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 02:56:33,556 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.zk:zul:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 03:41:01,075 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zcommon:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 03:41:01,082 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zweb:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 03:41:01,086 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.zk:zul:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 03:41:01,115 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zcommon:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 03:41:01,126 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zweb:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-11-12 03:41:01,133 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.zk:zul:jar:6.0.0.FL.20120102 is missing, no dependency information available

@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.au.AuRequests"/>
 <fullyQualifiedTypeName name="custom.zk.components.ClearEvent"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Event"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.HtmlBasedComponent"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Events"/>
@@ -16,6 +15,18 @@
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.impl.XulElement"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="custom.zk.components.quicknote.model.ChosenModel"/>
+<fullyQualifiedTypeName name="custom.zk.components.Chosenbox"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.event.SelectEvent"/>
+<fullyQualifiedTypeName name="org.zkoss.addon.chosenbox.Chosenbox"/>
+<fullyQualifiedTypeName name="org.zkoss.custom.components.Chosenbox"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.ListModelList"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Wire"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.Datebox"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.SimpleDateConstraint"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.CustomConstraint"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
 </qualifiedTypeNameHistroy>

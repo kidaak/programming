@@ -1,0 +1,34 @@
+package controller;
+
+import java.text.SimpleDateFormat;
+
+import org.zkoss.zk.ui.Component;
+import org.zkoss.zk.ui.WrongValueException;
+import org.zkoss.zul.CustomConstraint;
+import org.zkoss.zul.SimpleDateConstraint;
+
+public class DateboxCustomConstraint extends SimpleDateConstraint implements CustomConstraint{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 853829644720854258L;
+	
+	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
+	public DateboxCustomConstraint(int flags) {
+		super(flags);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void validate(Component comp, Object value)
+			throws WrongValueException {
+		
+	}
+
+	@Override
+	public void showCustomError(Component comp, WrongValueException ex) {
+		
+	}
+
+}

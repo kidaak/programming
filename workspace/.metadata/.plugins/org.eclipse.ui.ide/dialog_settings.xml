@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="CleanDialogSettings">
 		<item value="500" key="DIALOG_WIDTH"/>
-		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
 		<item value="377" key="DIALOG_HEIGHT"/>
 		<item value="710" key="DIALOG_X_ORIGIN"/>
 		<item value="269" key="DIALOG_Y_ORIGIN"/>
@@ -13,6 +13,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
 			<item value="C:\Users\hoangnv\Documents\Github\programming\workspace"/>
+			<item value="C:\Users\hoangnv\Documents\Github\chosenbox"/>
 			<item value="C:\Users\hoangnv\Documents\Github\ZK_Practice"/>
 			<item value="C:\Users\hoangnv\Downloads\Compressed\ZK_DEMO-effects-upload_effect"/>
 			<item value="C:\Users\hoangnv\Documents\Github\programming\workspace\Component Development"/>
@@ -22,9 +23,10 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.zkoss.eclipse.zks.project.zk_project" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.zkoss.eclipse.wizards"/>
 		</list>
 	</section>
 </section>

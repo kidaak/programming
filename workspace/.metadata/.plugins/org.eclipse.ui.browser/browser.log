@@ -1,0 +1,13 @@
+
+Nov 13, 2014 03:57:51.41 NEW SESSION
+Nov 13, 2014 03:57:51.41 1415825871422	GMPInstallManager.simpleCheckAndInstall	INFO	Last check was: 111214 seconds ago, minimum seconds: 86400
+Nov 13, 2014 03:57:51.41 1415825871422	GMPInstallManager._getURL	INFO	Using url: https://aus4.mozilla.org/update/3/GMP/%VERSION%/%BUILD_ID%/%BUILD_TARGET%/%LOCALE%/%CHANNEL%/%OS_VERSION%/%DISTRIBUTION%/%DISTRIBUTION_VERSION%/update.xml
+Nov 13, 2014 03:57:51.41 1415825871425	GMPInstallManager._getURL	INFO	Using url (with replacement): https://aus4.mozilla.org/update/3/GMP/33.1/20141106120505/WINNT_x86-msvc/en-US/release/Windows_NT%206.1.1.0%20(x64)/default/default/update.xml
+Nov 13, 2014 03:57:51.41 1415825871427	GMPInstallManager.checkForAddons	INFO	sending request to: https://aus4.mozilla.org/update/3/GMP/33.1/20141106120505/WINNT_x86-msvc/en-US/release/Windows_NT%206.1.1.0%20(x64)/default/default/update.xml
+Nov 13, 2014 03:57:52.21 1415825872213	GMPInstallManager.onLoadXML	INFO	request completed downloading document
+Nov 13, 2014 03:57:52.21 1415825872215	GMPInstallManager.onLoadXML	INFO	allowNonBuiltIn: false
+Nov 13, 2014 03:57:52.22 1415825872235	GMPInstallManager.simpleCheckAndInstall	INFO	Found 1 addons advertised.
+Nov 13, 2014 03:57:52.22 1415825872235	GMPInstallManager.simpleCheckAndInstall	INFO	Found addon: gmp-gmpopenh264 (isValid: true, isInstalled: true, isOpenH264: true, hashFunction: sha512, hashValue: e12ae17e53649353665adfd6bafe7da2ae8f16e460e567fda99b1a221d5ddda9f1ba054876f1e1deb654ffcf1ee0f9cdae1f84bbaf02e163778fafaef6fd62c8, size: 269943)
+Nov 13, 2014 03:57:52.22 1415825872236	GMPInstallManager.simpleCheckAndInstall	INFO	No new addons to install, returning
+Nov 13, 2014 04:06:52.13 1415826412123	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Nov 13, 2014 04:56:25.50 [5836] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310

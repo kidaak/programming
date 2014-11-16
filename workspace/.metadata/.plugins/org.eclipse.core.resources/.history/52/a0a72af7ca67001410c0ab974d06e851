@@ -1,7 +1,0 @@
-package custom.zk.components.quicknote.event;
-
-import org.zkoss.zk.ui.event.Event;
-
-public class TextNoteBlockUpdateEvent extends Event {
-
-}

@@ -1,0 +1,5 @@
+<?page title="Auto Generated index.zul"?>
+<zk>
+	<label value="You are using: ${desktop.webApp.version}" />
+	<a href="datebox.zul">Datebox</a>
+</zk>

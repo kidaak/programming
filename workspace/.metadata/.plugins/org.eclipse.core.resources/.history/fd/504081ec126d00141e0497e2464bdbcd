@@ -1,0 +1,7 @@
+<?page title="Auto Generated index.zul"?>
+<zk xmlns:h="http://www.zkoss.org/2005/zk/native"
+	xmlns="http://www.zkoss.org/2005/zul">
+	<label value="You are using: ${desktop.webApp.version}" />
+	<separator></separator>
+	<a href="datebox.zul">Datebox</a>
+</zk>

@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\hoangnv\Documents\Github\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\hoangnv\Documents\Github\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\Component_Development" path="/Component_Development" reloadable="true" source="org.eclipse.jst.jee.server:Component_Development"/></Host>
+      <Context docBase="C:\Users\hoangnv\Documents\Github\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\hoangnv\Documents\Github\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ChosenboxTest" path="/ChosenboxTest" reloadable="true" source="org.eclipse.jst.jee.server:ChosenboxTest"/><Context docBase="C:\Users\hoangnv\Documents\Github\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ZK_Test" path="/ZK_Test" reloadable="true" source="org.eclipse.jst.jee.server:ZK_Test"/></Host>
     </Engine>
   </Service>
 </Server>
