@@ -30,12 +30,13 @@
 <fullyQualifiedTypeName name="org.zkoss.zul.A"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Events"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Event"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Listen"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.Datebox"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Wire"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.Spinner"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.time.DayOfWeek"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Wire"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.Intbox"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Listen"/>
 </qualifiedTypeNameHistroy>

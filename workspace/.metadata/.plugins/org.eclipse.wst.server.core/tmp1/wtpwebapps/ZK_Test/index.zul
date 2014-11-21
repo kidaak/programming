@@ -9,4 +9,6 @@
 	<h:br></h:br>
 	<a href="treeitemrender.zul">Treeitemrenderer</a>
 	<h:br></h:br>
+	<a href="intbox.zul">Intbox</a>
+	<h:br></h:br>
 </window>

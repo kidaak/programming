@@ -1,0 +1,9 @@
+<?page title="Test intbox constraint" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Test intbox constraint" border="normal"
+		apply="controller.IntboxComposer">
+		<intbox id="intbox"
+			constraint="no negative, no zero: Bạn phải nhập số lớn hơn 0">
+		</intbox>
+	</window>
+</zk>
