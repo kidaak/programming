@@ -1,0 +1,74 @@
+<zk xmlns:c="client">
+	<div>
+		<zscript><![CDATA[
+	String dir = "/widgets/effects/upload_effect";
+]]></zscript>
+		<style src="${dir}/Customize.css" />
+		<panel width="550px" framable="true">
+			<caption label="ZK Mail Sender">
+				<button label="Discard" />
+				<button label="Draft" />
+				<button label="Send" onClick='alert("Send!")' />
+			</caption>
+			<toolbar hflex="1">
+				<vlayout hflex="1" spacing="6px">
+					<hlayout hflex="1">
+						<label sclass="name" value="To : " />
+						<textbox value="info@zkoss.org" hflex="1" />
+					</hlayout>
+					<hlayout hflex="1">
+						<label sclass="name" value="CC : " />
+						<textbox value="myDearBoss@yourCompany.com"
+							hflex="1" />
+					</hlayout>
+					<hlayout hflex="1">
+						<label sclass="name" value="Subject : " />
+						<textbox value="Kindly View The Attachment"
+							hflex="1" />
+						<button width="85px" id="attachBtn"
+							sclass="attachBtn"
+							src="/img/Centigrade-Widget-Icons/PaperClip-16x16.png"
+							upload="zk.UPMSample1,true,maxsize=10240" label="Attach"
+							onUpload="addItem()" />
+					</hlayout>
+					<vlayout id="flist" hflex="1" sclass="fileList" />
+				</vlayout>
+			</toolbar>
+			<panelchildren>
+				<div sclass="input-area">
+					<textbox multiline="true" rows="10" width="100%">
+						<attribute name="value">
+							<![CDATA[ Hi, I am writing to confirm you
+							about the budget of annual meeting. Please
+							view the detail as attachment below.
+
+							BR]]>
+						</attribute>
+					</textbox>
+				</div>
+			</panelchildren>
+			<toolbar sclass="footer">
+				<div id="footer"></div>
+			</toolbar>
+		</panel>
+	</div>
+	<zscript><![CDATA[
+	void addItem() {
+		org.zkoss.util.media.Media media = event.getMedia();
+		Hlayout hl = new Hlayout();
+		hl.setSpacing("6px");
+		hl.setClass("newFile");
+		hl.appendChild(new Label(media.getName()));
+		A rm = new A("remove");
+		rm.addEventListener(Events.ON_CLICK,
+				new org.zkoss.zk.ui.event.EventListener() {
+					public void onEvent(Event event) throws Exception {
+						hl.detach();
+					}
+				});
+		hl.appendChild(rm);
+		flist.appendChild(hl);
+	}
+]]></zscript>
+	<script type="text/javascript" src="${dir}/UPMSamples.js" />
+</zk>

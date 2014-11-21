@@ -5,9 +5,7 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.au.AuRequests"/>
 <fullyQualifiedTypeName name="custom.zk.components.ClearEvent"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Event"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.HtmlBasedComponent"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Events"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="com.example.model.BeerExpert"/>
 <fullyQualifiedTypeName name="java.lang.Iterable"/>
@@ -22,11 +20,22 @@
 <fullyQualifiedTypeName name="org.zkoss.custom.components.Chosenbox"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.ListModelList"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Wire"/>
-<fullyQualifiedTypeName name="org.zkoss.zul.Datebox"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.SimpleDateConstraint"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.CustomConstraint"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.event.UploadEvent"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.Hlayout"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.Vlayout"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.Label"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.A"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Events"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Event"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Listen"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.Datebox"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Wire"/>
+<fullyQualifiedTypeName name="org.zkoss.zul.Spinner"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.time.DayOfWeek"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

@@ -6,4 +6,7 @@
 	<label value="You are using: ${desktop.webApp.version}" />
 	<h:br></h:br>
 	<a href="datebox.zul">Datebox</a>
+	<h:br></h:br>
+	<a href="treeitemrender.zul">Treeitemrenderer</a>
+	<h:br></h:br>
 </window>

@@ -34,3 +34,7 @@
 1416146571298	Move package
 1416146584582	Move package
 1416146588723	Delete element
+1416258239478	Delete element
+1416261124747	Rename type 'TreeController'
+1416496733360	Rename local variable 'retailDays'
+1416520280455	Rename local variable 'numberOfDays'

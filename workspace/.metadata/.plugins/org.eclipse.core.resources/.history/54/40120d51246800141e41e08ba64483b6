@@ -1,7 +1,0 @@
-package custom.zk.components;
-
-import org.zkoss.zul.impl.XulElement;
-
-public class Chosen extends XulElement{
-
-}

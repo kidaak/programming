@@ -1,0 +1,53 @@
+<zk xmlns:c="client">
+	<script type="text/javascript"><![CDATA[
+	function testUpload(viewer) {
+		for (var i = 0 ; i < 5; i ++ ) {
+			(function() {
+				var fakeLoader = { id: 'tmp' + new Date().getTime() + i},
+						muv = viewer == 1 ?
+						new zk.UPMSample1(fakeLoader, "TempFile" + parseInt((Math.random() + 1)*10) ):
+						new zk.UPMSample2(fakeLoader, "TempFile" + parseInt((Math.random() + 1)*10) ),
+					fsize = 12345678*Math.random() + 1;
+				muv.pct = 0;
+				var pgs = setInterval(function() {
+					muv.pct += parseInt(Math.random()*19);
+					
+					if (muv.pct >= 100) {
+						clearInterval(pgs);
+						muv.pct = 100;
+					}
+					muv.update(muv.pct, fsize);
+					if (muv.pct == 100)
+						muv.destroy();
+				}, 678);
+			})();
+		}
+	}
+	]]></script>
+	<groupbox sclass="z-demo-config" closable="false">
+		<caption label="Display Upload Progress Monitor" />
+		<hlayout>
+			Sample 1 :
+			<button label="Show" c:onClick='testUpload(1)' />
+		</hlayout>
+		<hlayout>
+			Sample 2 :
+			<button label="Show" c:onClick='testUpload(2)' />
+		</hlayout>
+	</groupbox>
+	<separator height="15px"/>
+	<groupbox sclass="z-demo-config" closable="false">
+		<caption label="Apply to File Uploader" />
+		<radiogroup id="selectViewer">
+			<attribute name="onCheck"><![CDATA[
+				attachBtn.setUpload(self.getSelectedItem().getValue());
+			]]></attribute>
+			<vlayout>
+				<radio label="Default Style" value="true,maxsize=10240" checked="true" />
+				<radio label="Sample 1" value="zk.UPMSample1,maxsize=10240" />
+				<radio label="Sample 2" value="zk.UPMSample2,maxsize=10240" />
+				<label style="font-weight:bold" value='Upload files by "Attach" button' />
+			</vlayout>
+		</radiogroup>
+	</groupbox>
+</zk>

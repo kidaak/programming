@@ -1,0 +1,13 @@
+<?page title="Tree" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style>
+		.h-inline-block { display: inline-block; _display: inline; }
+	</style>
+	<window title="Tree" border="normal">
+		<tree id="tree" width="300px">
+			<treecols>
+				<treecol label="My Contact List" />
+			</treecols>
+		</tree>
+	</window>
+</zk>
