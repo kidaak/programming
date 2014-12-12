@@ -1,9 +1,13 @@
 <?page title="Test intbox constraint" contentType="text/html;charset=UTF-8"?>
-<zk>
+<zk xmlns:w="client">
 	<window title="Test intbox constraint" border="normal"
-		apply="controller.IntboxComposer">
+		apply="composer.IntboxComposer">
 		<intbox id="intbox"
-			constraint="/^((?!%).)*$/, no negative, no zero: Bạn phải nhập số lớn hơn 0">
+			constraint="no zero: Bạn phải nhập số lớn hơn 0">
+			<attribute w:name="doKeyPress_">
+				function(evt){ if (!this._shallIgnore(evt,
+				"1234567890")) this.$doKeyPress_(evt); }
+			</attribute>
 		</intbox>
 	</window>
 </zk>

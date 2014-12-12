@@ -1,0 +1,10 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<zscript>
+	String link = "/file/test.pdf";
+</zscript>
+	<window title="new page title" border="normal" apply="composer.">
+		<button onClick="a.setHref(link);" />
+		<a id="a" target="_blink">Download file</a>
+	</window>
+</zk>

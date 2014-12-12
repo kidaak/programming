@@ -1,7 +1,0 @@
-package controller;
-
-import org.zkoss.zul.SimpleDateConstraint;
-
-public class DateboxCustomConstraint extends SimpleDateConstraint{
-
-}

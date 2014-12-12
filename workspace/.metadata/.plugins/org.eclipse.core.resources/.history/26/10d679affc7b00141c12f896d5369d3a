@@ -1,0 +1,9 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:w="client">
+	<window title="new page title" border="normal">
+		<a id="a" target="_blink" href="/file/test.pdf">
+			Download file
+		</a>
+		<button href="/file/test.pdf">Button</button>
+	</window>
+</zk>

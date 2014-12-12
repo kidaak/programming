@@ -1,0 +1,12 @@
+package com.example.web;
+
+import javax.servlet.http.HttpServlet;
+
+public class CheckCookie extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -382799969742662066L;
+
+}

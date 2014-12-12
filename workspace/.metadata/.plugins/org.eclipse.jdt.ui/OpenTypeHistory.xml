@@ -3,5 +3,9 @@
 <typeInfo handle="=Component_Development/src&lt;custom.zk.components.quicknote{EnhancedMask.java[EnhancedMask" modifiers="1" timestamp="1415393567602"/>
 <typeInfo handle="=Component_Development/C:\/Users\/hoangnv\/Documents\/Github\/programming\/workspace\/Component_Development\/WebContent\/WEB-INF\/lib\/zk.jar&lt;org.zkoss.zk.ui.event(Event.class[Event" modifiers="33" timestamp="1414906324455"/>
 <typeInfo handle="=Upload_Effect/C:\/Users\/hoangnv\/Downloads\/Compressed\/ZK_DEMO-effects-upload_effect\/ZK-Project\/WebContent\/WEB-INF\/lib\/zk.jar&lt;org.zkoss.zk.ui.select(SelectorComposer.class[SelectorComposer" modifiers="33" timestamp="1414906324455"/>
+<typeInfo handle="=Beer/C:\/Program Files\/apache-tomcat-8.0.15\/lib\/servlet-api.jar&lt;javax.servlet(ServletContextListener.class[ServletContextListener" modifiers="1537" timestamp="1414985184000"/>
+<typeInfo handle="=Beer/C:\/Program Files\/apache-tomcat-8.0.15\/lib\/servlet-api.jar&lt;javax.servlet(ServletConfig.class[ServletConfig" modifiers="1537" timestamp="1414985184000"/>
 <typeInfo handle="=ZK_Test/C:\/Users\/hoangnv\/Documents\/Github\/programming\/workspace\/ZK_Test\/WebContent\/WEB-INF\/lib\/zk.jar&lt;org.zkoss.zk.ui.select(SelectorComposer.class[SelectorComposer" modifiers="33" timestamp="1414906324455"/>
+<typeInfo handle="=Beer/C:\/Program Files\/apache-tomcat-8.0.15\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpServlet.class[HttpServlet" modifiers="1057" timestamp="1414985184000"/>
+<typeInfo handle="=Beer/C:\/Program Files\/apache-tomcat-8.0.15\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpSessionListener.class[HttpSessionListener" modifiers="1537" timestamp="1414985184000"/>
 </typeInfoHistroy>

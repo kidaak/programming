@@ -28,3 +28,375 @@
 2014-11-12 03:41:01,115 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zcommon:jar:6.0.0.FL.20120102 is missing, no dependency information available
 2014-11-12 03:41:01,126 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.common:zweb:jar:6.0.0.FL.20120102 is missing, no dependency information available
 2014-11-12 03:41:01,133 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.zk:zul:jar:6.0.0.FL.20120102 is missing, no dependency information available
+2014-12-10 04:32:24,311 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/maven-metadata.xml
+2014-12-10 04:32:24,782 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/maven-metadata.xml
+2014-12-10 04:32:25,003 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2014-12-10 04:32:25,412 [ModalContext] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/1.1/maven-archetype-quickstart-1.1.jar
+2014-12-10 04:32:48,505 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml
+2014-12-10 04:32:49,979 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2/maven-assembly-plugin-2.2.jar
+2014-12-10 04:32:50,382 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2/maven-assembly-plugin-2.2.jar
+2014-12-10 04:32:52,452 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2/maven-assembly-plugin-2.2.jar
+2014-12-10 04:32:53,297 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/mortbay/jetty/maven-jetty-plugin/6.1.10/maven-jetty-plugin-6.1.10.jar
+2014-12-10 04:32:53,555 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/mortbay/jetty/maven-jetty-plugin/6.1.10/maven-jetty-plugin-6.1.10.jar
+2014-12-10 04:32:53,990 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/mortbay/jetty/maven-jetty-plugin/6.1.10/maven-jetty-plugin-6.1.10.jar
+2014-12-10 04:32:55,678 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:32:56,954 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkplus/7.0.3/zkplus-7.0.3.pom
+2014-12-10 04:32:57,779 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkplus/7.0.3/zkplus-7.0.3.pom
+2014-12-10 04:32:58,118 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zhtml/7.0.3/zhtml-7.0.3.pom
+2014-12-10 04:32:59,905 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zhtml/7.0.3/zhtml-7.0.3.pom
+2014-12-10 04:33:00,277 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.pom
+2014-12-10 04:33:00,789 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/eval/commons-io/commons-io/1.3.1/commons-io-1.3.1.pom
+2014-12-10 04:33:01,003 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.pom
+2014-12-10 04:33:01,418 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.pom
+2014-12-10 04:33:02,079 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkplus/7.0.3/zkplus-7.0.3.jar
+2014-12-10 04:33:05,491 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkplus/7.0.3/zkplus-7.0.3.jar
+2014-12-10 04:33:05,758 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zhtml/7.0.3/zhtml-7.0.3.jar
+2014-12-10 04:33:06,885 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zhtml/7.0.3/zhtml-7.0.3.jar
+2014-12-10 04:33:07,144 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar
+2014-12-10 04:33:07,910 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/eval/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar
+2014-12-10 04:33:08,114 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar
+2014-12-10 04:33:08,795 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-io/commons-io/1.3.1/commons-io-1.3.1.jar
+2014-12-10 04:33:09,834 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2/maven-assembly-plugin-2.2.pom
+2014-12-10 04:33:10,047 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2/maven-assembly-plugin-2.2.pom
+2014-12-10 04:33:10,463 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2/maven-assembly-plugin-2.2.pom
+2014-12-10 04:33:12,896 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /zkoss/src/main/java
+2014-12-10 04:33:12,901 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /zkoss/src/test/java
+2014-12-10 04:33:12,902 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:33:15,046 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 26 sec
+2014-12-10 04:33:15,881 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/mortbay/jetty/maven-jetty-plugin/6.1.10/maven-jetty-plugin-6.1.10.pom
+2014-12-10 04:33:16,084 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/mortbay/jetty/maven-jetty-plugin/6.1.10/maven-jetty-plugin-6.1.10.pom
+2014-12-10 04:33:16,481 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/mortbay/jetty/maven-jetty-plugin/6.1.10/maven-jetty-plugin-6.1.10.pom
+2014-12-10 04:33:17,049 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/mortbay/jetty/project/6.1.10/project-6.1.10.pom
+2014-12-10 04:33:17,258 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.10/project-6.1.10.pom
+2014-12-10 04:33:17,672 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/mortbay/jetty/project/6.1.10/project-6.1.10.pom
+2014-12-10 04:33:19,403 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:33:20,093 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:33:20,095 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:33:20,098 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:33:20,099 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:33:23,929 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:33:23,931 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:33:23,933 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:33:23,934 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:34:16,659 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss
+2014-12-10 04:34:16,659 [Worker-11] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2014-12-10 04:37:04,185 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:37:04,189 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:37:04,191 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:37:04,192 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:39:12,418 [Worker-10] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:558) ~[org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:567) ~[org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:511) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:466) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:336) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:289) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:166) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:142) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:96) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.0.v20140424-0053.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: in comment after two dashes (--) next character must be > not   (position: END_TAG seen ...<plugins> -->\r\n<!-- \t\t\t<!-- ... @82:14) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.2.1.jar:3.2.1]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.2.1.jar:3.2.1]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:556) ~[org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment after two dashes (--) next character must be > not   (position: END_TAG seen ...<plugins> -->\r\n<!-- \t\t\t<!-- ... @82:14) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseComment(MXParser.java:2386) ~[plexus-utils-3.0.17.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1215) ~[plexus-utils-3.0.17.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1131) ~[plexus-utils-3.0.17.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1116) ~[plexus-utils-3.0.17.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2030) ~[maven-model-3.2.1.jar:3.2.1]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3807) ~[maven-model-3.2.1.jar:3.2.1]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:557) ~[maven-model-3.2.1.jar:3.2.1]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.2.1.jar:3.2.1]
+	... 26 common frames omitted
+2014-12-10 04:39:13,809 [Worker-11] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:558) ~[org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:567) ~[org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:511) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:466) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:336) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:289) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:154) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod$1.call(MavenBuilder.java:89) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:166) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:142) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:96) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:200) [org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.200.v20130402-1505.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.9.1.v20140825-1431.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.0.v20140424-0053.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: in comment after two dashes (--) next character must be > not   (position: END_TAG seen ...<plugins> -->\r\n<!-- \t\t\t<!-- ... @82:14) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.2.1.jar:3.2.1]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.2.1.jar:3.2.1]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:556) ~[org.eclipse.m2e.core_1.5.0.20140606-0033.jar:na]
+	... 24 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment after two dashes (--) next character must be > not   (position: END_TAG seen ...<plugins> -->\r\n<!-- \t\t\t<!-- ... @82:14) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseComment(MXParser.java:2386) ~[plexus-utils-3.0.17.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1215) ~[plexus-utils-3.0.17.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1131) ~[plexus-utils-3.0.17.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1116) ~[plexus-utils-3.0.17.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2030) ~[maven-model-3.2.1.jar:3.2.1]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:3807) ~[maven-model-3.2.1.jar:3.2.1]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:557) ~[maven-model-3.2.1.jar:3.2.1]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.2.1.jar:3.2.1]
+	... 26 common frames omitted
+2014-12-10 04:39:32,207 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.jar
+2014-12-10 04:39:32,696 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.jar
+2014-12-10 04:39:33,639 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.jar
+2014-12-10 04:39:34,273 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.jar
+2014-12-10 04:39:34,503 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.jar
+2014-12-10 04:39:35,585 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.jar
+2014-12-10 04:39:36,267 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.pom
+2014-12-10 04:39:36,489 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.pom
+2014-12-10 04:39:36,929 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.5.1/maven-compiler-plugin-2.5.1.pom
+2014-12-10 04:39:37,944 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.pom
+2014-12-10 04:39:38,173 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.pom
+2014-12-10 04:39:38,678 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.pom
+2014-12-10 04:39:39,253 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-compiler/1.9.1/plexus-compiler-1.9.1.pom
+2014-12-10 04:39:39,488 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.9.1/plexus-compiler-1.9.1.pom
+2014-12-10 04:39:39,943 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/1.9.1/plexus-compiler-1.9.1.pom
+2014-12-10 04:39:40,461 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom
+2014-12-10 04:39:40,689 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom
+2014-12-10 04:39:41,137 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.20/plexus-components-1.1.20.pom
+2014-12-10 04:39:41,714 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.pom
+2014-12-10 04:39:41,946 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.pom
+2014-12-10 04:39:42,422 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.pom
+2014-12-10 04:39:42,960 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.pom
+2014-12-10 04:39:43,191 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.pom
+2014-12-10 04:39:43,640 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.pom
+2014-12-10 04:39:44,195 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-compilers/1.9.1/plexus-compilers-1.9.1.pom
+2014-12-10 04:39:44,424 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/1.9.1/plexus-compilers-1.9.1.pom
+2014-12-10 04:39:44,876 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/1.9.1/plexus-compilers-1.9.1.pom
+2014-12-10 04:39:45,500 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.jar
+2014-12-10 04:39:45,995 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.jar
+2014-12-10 04:39:46,514 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.jar
+2014-12-10 04:39:46,754 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.jar
+2014-12-10 04:39:47,242 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.9.1/plexus-compiler-api-1.9.1.jar
+2014-12-10 04:39:47,458 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.jar
+2014-12-10 04:39:47,902 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.9.1/plexus-compiler-manager-1.9.1.jar
+2014-12-10 04:39:48,113 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.jar
+2014-12-10 04:39:48,598 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.9.1/plexus-compiler-javac-1.9.1.jar
+2014-12-10 04:39:49,006 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:39:49,710 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.pom
+2014-12-10 04:39:49,932 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.pom
+2014-12-10 04:39:50,377 [Worker-10] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/2.2/maven-war-plugin-2.2.pom
+2014-12-10 04:39:51,793 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:39:51,794 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:39:51,796 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:39:51,797 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:39:51,798 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 04:39:51,799 [Worker-10] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 04:39:51,808 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:39:53,084 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:39:53,088 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:39:53,090 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:39:53,107 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:40:03,654 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss
+2014-12-10 04:40:03,654 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2014-12-10 04:40:10,163 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:40:10,165 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:40:10,166 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:40:10,167 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:42:17,643 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:42:17,644 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:42:17,646 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:42:17,647 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:47:35,419 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:47:35,421 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:47:35,423 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:47:35,425 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:50:50,052 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:50:50,876 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:50:50,877 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:50:50,879 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:50:50,880 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:50:50,881 [Worker-20] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 04:50:50,881 [Worker-20] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 04:50:50,901 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:50:52,352 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:50:53,082 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:50:53,083 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:50:53,085 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:50:53,086 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:50:53,086 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 04:50:53,087 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 04:50:53,091 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:51:24,657 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:51:25,197 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:51:25,198 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:51:25,200 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:51:25,201 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:51:25,202 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 04:51:25,202 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 04:51:25,207 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:51:46,620 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:51:47,087 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:51:47,089 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:51:47,090 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:51:47,091 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:51:47,091 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 04:51:47,091 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 04:51:47,095 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:08,991 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:52:09,402 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/com/example/mylib/1.0/mylib-1.0.pom
+2014-12-10 04:52:09,882 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/eval/com/example/mylib/1.0/mylib-1.0.pom
+2014-12-10 04:52:09,896 [pool-4-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss/repository/com/example/mylib/1.0/mylib-1.0.pom
+2014-12-10 04:52:10,444 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/example/mylib/1.0/mylib-1.0.pom
+2014-12-10 04:52:10,447 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.example:mylib:jar:1.0 is missing, no dependency information available
+2014-12-10 04:52:10,455 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.example:mylib:jar:1.0 is missing, no dependency information available
+2014-12-10 04:52:11,010 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/com/example/mylib/1.0/mylib-1.0.jar
+2014-12-10 04:52:11,518 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/eval/com/example/mylib/1.0/mylib-1.0.jar
+2014-12-10 04:52:11,523 [pool-5-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss/repository/com/example/mylib/1.0/mylib-1.0.jar
+2014-12-10 04:52:11,909 [Worker-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/example/mylib/1.0/mylib-1.0.jar
+2014-12-10 04:52:12,140 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.example:mylib:jar:1.0 is missing, no dependency information available
+2014-12-10 04:52:12,402 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:12,404 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:52:12,405 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:12,407 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:52:12,407 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 04:52:12,408 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 04:52:12,413 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:32,135 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:52:32,570 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zul/custom/mylib/1.0/mylib-1.0.pom
+2014-12-10 04:52:33,130 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/eval/org/zkoss/zul/custom/mylib/1.0/mylib-1.0.pom
+2014-12-10 04:52:33,142 [pool-6-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss/repository/org/zkoss/zul/custom/mylib/1.0/mylib-1.0.pom
+2014-12-10 04:52:33,696 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/zkoss/zul/custom/mylib/1.0/mylib-1.0.pom
+2014-12-10 04:52:33,698 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.zul.custom:mylib:jar:1.0 is missing, no dependency information available
+2014-12-10 04:52:33,707 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.zul.custom:mylib:jar:1.0 is missing, no dependency information available
+2014-12-10 04:52:34,268 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zul/custom/mylib/1.0/mylib-1.0.jar
+2014-12-10 04:52:34,804 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/eval/org/zkoss/zul/custom/mylib/1.0/mylib-1.0.jar
+2014-12-10 04:52:34,814 [pool-7-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss/repository/org/zkoss/zul/custom/mylib/1.0/mylib-1.0.jar
+2014-12-10 04:52:35,304 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/zkoss/zul/custom/mylib/1.0/mylib-1.0.jar
+2014-12-10 04:52:35,516 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.zkoss.zul.custom:mylib:jar:1.0 is missing, no dependency information available
+2014-12-10 04:52:35,710 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:35,711 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:52:35,712 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:35,714 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:52:35,714 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 04:52:35,714 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 04:52:35,719 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:37,573 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 04:52:37,987 [Worker-19] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zul/custom/chosenbox/1.0/chosenbox-1.0.pom
+2014-12-10 04:52:38,488 [Worker-19] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/eval/org/zkoss/zul/custom/chosenbox/1.0/chosenbox-1.0.pom
+2014-12-10 04:52:38,498 [pool-8-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading file:C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss/repository/org/zkoss/zul/custom/chosenbox/1.0/chosenbox-1.0.pom
+2014-12-10 04:52:38,508 [pool-8-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss/repository/org/zkoss/zul/custom/chosenbox/1.0/chosenbox-1.0.pom
+2014-12-10 04:52:39,071 [Worker-19] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zul/custom/chosenbox/1.0/chosenbox-1.0.jar
+2014-12-10 04:52:39,610 [Worker-19] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/eval/org/zkoss/zul/custom/chosenbox/1.0/chosenbox-1.0.jar
+2014-12-10 04:52:39,625 [pool-9-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading file:C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss/repository/org/zkoss/zul/custom/chosenbox/1.0/chosenbox-1.0.jar
+2014-12-10 04:52:39,638 [pool-9-thread-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded file:C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss/repository/org/zkoss/zul/custom/chosenbox/1.0/chosenbox-1.0.jar
+2014-12-10 04:52:40,238 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:40,240 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:52:40,242 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:40,244 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:52:40,245 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 04:52:40,245 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 04:52:40,250 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:40,965 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:40,967 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:52:40,969 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:40,970 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:52:46,200 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss
+2014-12-10 04:52:46,200 [Worker-19] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2014-12-10 04:52:52,505 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:52,506 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:52:52,507 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:52:52,509 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:53:38,501 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:53:38,502 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:53:38,504 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:53:38,505 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:53:49,379 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for zkoss
+2014-12-10 04:53:49,654 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:53:49,655 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:53:49,657 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:53:49,659 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 04:54:23,703 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss
+2014-12-10 04:54:23,703 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2014-12-10 04:54:29,843 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:54:29,846 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 04:54:29,848 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 04:54:29,850 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 05:00:23,053 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.example:zkoss:0.0.1-SNAPSHOT @ C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\pom.xml.
+2014-12-10 05:00:23,610 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkbind/6.5.2/zkbind-6.5.2.pom
+2014-12-10 05:00:24,354 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkbind/6.5.2/zkbind-6.5.2.pom
+2014-12-10 05:00:24,646 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zul/6.5.2/zul-6.5.2.pom
+2014-12-10 05:00:25,149 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zul/6.5.2/zul-6.5.2.pom
+2014-12-10 05:00:25,437 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zk/6.5.2/zk-6.5.2.pom
+2014-12-10 05:00:25,942 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zk/6.5.2/zk-6.5.2.pom
+2014-12-10 05:00:26,241 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/common/zweb/6.5.2/zweb-6.5.2.pom
+2014-12-10 05:00:26,745 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zweb/6.5.2/zweb-6.5.2.pom
+2014-12-10 05:00:27,037 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/common/zcommon/6.5.2/zcommon-6.5.2.pom
+2014-12-10 05:00:27,539 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zcommon/6.5.2/zcommon-6.5.2.pom
+2014-12-10 05:00:27,845 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/common/zel/6.5.2/zel-6.5.2.pom
+2014-12-10 05:00:28,400 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zel/6.5.2/zel-6.5.2.pom
+2014-12-10 05:00:28,701 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkplus/6.5.2/zkplus-6.5.2.pom
+2014-12-10 05:00:29,204 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkplus/6.5.2/zkplus-6.5.2.pom
+2014-12-10 05:00:29,502 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zhtml/6.5.2/zhtml-6.5.2.pom
+2014-12-10 05:00:30,014 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zhtml/6.5.2/zhtml-6.5.2.pom
+2014-12-10 05:00:30,414 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkbind/6.5.2/zkbind-6.5.2.jar
+2014-12-10 05:00:33,862 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkbind/6.5.2/zkbind-6.5.2.jar
+2014-12-10 05:00:34,123 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zul/6.5.2/zul-6.5.2.jar
+2014-12-10 05:00:39,829 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zul/6.5.2/zul-6.5.2.jar
+2014-12-10 05:00:40,094 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zk/6.5.2/zk-6.5.2.jar
+2014-12-10 05:00:45,192 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zk/6.5.2/zk-6.5.2.jar
+2014-12-10 05:00:45,471 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/common/zweb/6.5.2/zweb-6.5.2.jar
+2014-12-10 05:00:47,298 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zweb/6.5.2/zweb-6.5.2.jar
+2014-12-10 05:00:47,571 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/common/zcommon/6.5.2/zcommon-6.5.2.jar
+2014-12-10 05:00:49,999 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zcommon/6.5.2/zcommon-6.5.2.jar
+2014-12-10 05:00:50,263 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/common/zel/6.5.2/zel-6.5.2.jar
+2014-12-10 05:00:51,415 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/common/zel/6.5.2/zel-6.5.2.jar
+2014-12-10 05:00:51,694 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkplus/6.5.2/zkplus-6.5.2.jar
+2014-12-10 05:00:52,756 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zkplus/6.5.2/zkplus-6.5.2.jar
+2014-12-10 05:00:53,028 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://mavensync.zkoss.org/maven2/org/zkoss/zk/zhtml/6.5.2/zhtml-6.5.2.jar
+2014-12-10 05:00:55,038 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://mavensync.zkoss.org/maven2/org/zkoss/zk/zhtml/6.5.2/zhtml-6.5.2.jar
+2014-12-10 05:00:56,535 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:00:56,537 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 05:00:56,546 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:00:56,555 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 05:00:56,556 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of zkoss
+2014-12-10 05:00:56,556 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for zkoss
+2014-12-10 05:00:56,582 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:00:57,918 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:00:57,919 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 05:00:57,921 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:00:57,922 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 05:01:11,665 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss
+2014-12-10 05:01:11,666 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2014-12-10 05:01:22,442 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:01:22,443 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 05:01:22,445 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:01:22,446 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-10 05:01:32,981 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss
+2014-12-10 05:01:32,981 [Worker-18] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2014-12-10 05:01:41,165 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:01:41,167 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-10 05:01:41,177 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-10 05:01:41,182 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources

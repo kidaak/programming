@@ -1,0 +1,16 @@
+package composer;
+
+import org.zkoss.zk.ui.Component;
+import org.zkoss.zk.ui.select.SelectorComposer;
+
+public class AComponentComposer extends SelectorComposer<Component> {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 4156282007038155457L;
+	
+	@Wire
+	private A a;
+
+}

@@ -1,0 +1,12 @@
+<?page title="PDF download" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="PDF download" border="normal">
+		<button label="Download">
+			<attribute name="onClick">
+	{
+		Filedownload.save(is, "application/pdf", "download.html");
+	}
+</attribute>
+		</button>
+	</window>
+</zk>

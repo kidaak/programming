@@ -2,6 +2,9 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1415398779136_1" label="ZK_Practice" name="ZK_Practice">
 <item elementID="=Upload_Effect" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ZKEE" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/zkoss" type="4"/>
+<item elementID="=zkoss" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Component_Development" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=ZK_Test" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=ChosenboxTest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
@@ -10,7 +13,7 @@
 <item elementID="=Beer" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1414899743878_0" label="Window Working Set" name="Aggregate for window 1414899743877"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1416258285011_5" label="Multiple Working Sets" name="Aggregate:Servlet_JSP:ZK_Practice:">
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1418160804575_5" label="Multiple Working Sets" name="Aggregate:Servlet_JSP:ZK_Practice:">
 <workingSet IMemento.internal.id="Servlet_JSP"/>
 <workingSet IMemento.internal.id="ZK_Practice"/>
 </workingSet>

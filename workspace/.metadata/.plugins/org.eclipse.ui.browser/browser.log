@@ -11,3 +11,47 @@ Nov 13, 2014 03:57:52.22 1415825872235	GMPInstallManager.simpleCheckAndInstall	I
 Nov 13, 2014 03:57:52.22 1415825872236	GMPInstallManager.simpleCheckAndInstall	INFO	No new addons to install, returning
 Nov 13, 2014 04:06:52.13 1415826412123	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
 Nov 13, 2014 04:56:25.50 [5836] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 310
+
+Dec 10, 2014 04:08:14.48 NEW SESSION
+Dec 10, 2014 04:08:14.48 1418159294484	GMPInstallManager.simpleCheckAndInstall	INFO	Last check was: 83361 seconds ago, minimum seconds: 86400
+Dec 10, 2014 04:08:14.52 1418159294484	GMPInstallManager.simpleCheckAndInstall	INFO	Will not check for updates.
+Dec 10, 2014 04:11:16.67 1418159476676	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Dec 10, 2014 04:11:19.16 1418159479167	addons.xpi	WARN	Exception running bootstrap method shutdown on firebug@software.joehewitt.com: TypeError: scope.gcli.removeCommand is not a function (resource://firebug/gcli.js:174:8) JS Stack trace: unregisterCommands@gcli.js:174:9 < FirebugGCLICommands.shutdown@gcli.js:50:9 < shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/hoangnv/AppData/Roaming/Mozilla/Firefox/Profiles/4offinli.default/extensions/firebug@bootstrap.js:104:5 < XPI_callBootstrapMethod@XPIProvider.jsm:4305:9 < AI_startInstall/<@XPIProvider.jsm:5617:1 < TaskImpl_run@Task.jsm:330:41 < Handler.prototype.process@Promise-backend.js:865:23 < this.PromiseWalker.walkerLoop@Promise-backend.js:744:7
+Dec 10, 2014 04:11:19.25 Handler function DebuggerClient.requester request callback threw an exception: TypeError: getBrowserDocument(...) is undefined
+Dec 10, 2014 04:11:19.25 Stack: Firefox.getElementById@chrome://firebug/content/chrome/firefox.js:37:16
+Dec 10, 2014 04:11:19.25 Firefox.getTabBrowser@chrome://firebug/content/chrome/firefox.js:50:26
+Dec 10, 2014 04:11:19.25 Firefox.getBrowserForWindow@chrome://firebug/content/chrome/firefox.js:98:26
+Dec 10, 2014 04:11:19.25 
+Dec 10, 2014 04:11:19.25 ###!!! [Child][DispatchAsyncMessage] Error: (msgtype=0xA20001,name=PTexture::Msg___delete__) Route error: message sent to unknown actor ID
+Dec 10, 2014 04:11:19.25 
+Dec 10, 2014 04:11:19.25 TabClient.prototype<.onTabDetached@chrome://firebug/content/remoting/tabClient.js:255:23
+Dec 10, 2014 04:11:19.25 
+Dec 10, 2014 04:11:19.25 DebuggerClient.requester/</<@resource://gre/modules/devtools/dbg-client.jsm:348:9
+Dec 10, 2014 04:11:19.25 ###!!! [Child][DispatchAsyncMessage] Error: (msgtype=0xA20001,name=PTexture::Msg___delete__) Route error: message sent to unknown actor ID
+Dec 10, 2014 04:11:19.25 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:83:14
+Dec 10, 2014 04:11:19.26 emit@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/commonjs/sdk/event/core.js:96:9
+Dec 10, 2014 04:11:19.26 Request.prototype.emit@resource://gre/modules/devtools/dbg-client.jsm:1092:29
+Dec 10, 2014 04:11:19.26 DebuggerClient.prototype.onPacket/<@resource://gre/modules/devtools/dbg-client.jsm:931:9
+Dec 10, 2014 04:11:19.26 
+Dec 10, 2014 04:11:19.26 resolve@resource://gre/modules/devtools/deprecated-sync-thenables.js:40:40
+Dec 10, 2014 04:11:19.26 then@resource://gre/modules/devtools/deprecated-sync-thenables.js:20:43
+Dec 10, 2014 04:11:19.26 then@resource://gre/modules/devtools/deprecated-sync-thenables.js:58:9
+Dec 10, 2014 04:11:19.26 DebuggerClient.prototype.onPacket@resource://gre/modules/devtools/dbg-client.jsm:869:1
+Dec 10, 2014 04:11:19.26 LocalDebuggerTransport.prototype.send/<@resource://gre/modules/devtools/dbg-client.jsm -> resource://gre/modules/devtools/transport/transport.js:545:11
+Dec 10, 2014 04:11:19.26 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:83:14
+Dec 10, 2014 04:11:19.26 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:83:14
+Dec 10, 2014 04:11:19.26 waitForSyncCallback@resource://services-common/async.js:102:7
+Dec 10, 2014 04:11:19.26 makeSpinningCallback/callback.wait@resource://services-common/async.js:145:32
+Dec 10, 2014 04:11:19.26 _handlerListener@resource://gre/modules/services-sync/addonsreconciler.js:632:9
+Dec 10, 2014 04:11:19.26 onInstalled@resource://gre/modules/services-sync/addonsreconciler.js:657:5
+Dec 10, 2014 04:11:19.26 AMI_callAddonListeners@resource://gre/modules/AddonManager.jsm:1527:11
+Dec 10, 2014 04:11:19.26 AMP_callAddonListeners@resource://gre/modules/AddonManager.jsm:2457:5
+Dec 10, 2014 04:11:19.26 AI_startInstall/<@resource://gre/modules/addons/XPIProvider.jsm:5667:1
+Dec 10, 2014 04:11:19.26 TaskImpl_run@resource://gre/modules/Task.jsm:330:41
+Dec 10, 2014 04:11:19.26 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:865:23
+Dec 10, 2014 04:11:19.26 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:744:7
+Dec 10, 2014 04:11:19.27 Line: 37, column: 15
+
+Dec 10, 2014 04:41:41.59 NEW SESSION
+Dec 10, 2014 04:41:41.59 1418161301591	GMPInstallManager.simpleCheckAndInstall	INFO	Last check was: 85369 seconds ago, minimum seconds: 86400
+Dec 10, 2014 04:41:41.59 1418161301591	GMPInstallManager.simpleCheckAndInstall	INFO	Will not check for updates.

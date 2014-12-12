@@ -20,8 +20,8 @@
 
 	<component>
 		<component-name>chosenbox</component-name>
-		<component-class>org.zkoss.custom.components.Chosenbox</component-class>
-		<widget-class>custom.components.Chosenbox</widget-class>
+		<component-class>org.zkoss.zul.custom.Chosenbox</component-class>
+		<widget-class>zkmax.inp.custom.Chosenbox</widget-class>
 		<mold>
 			<mold-name>default</mold-name>
 			<mold-uri>mold/chosenbox.js</mold-uri>
