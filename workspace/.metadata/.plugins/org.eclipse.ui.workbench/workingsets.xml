@@ -12,8 +12,14 @@
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1416105510419_3" label="Servlet_JSP" name="Servlet_JSP">
 <item elementID="=Beer" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1419083729212_4" label="HF_AJAX" name="HF_AJAX"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1414899743878_0" label="Window Working Set" name="Aggregate for window 1414899743877"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1418160804575_5" label="Multiple Working Sets" name="Aggregate:Servlet_JSP:ZK_Practice:">
+<workingSet IMemento.internal.id="Servlet_JSP"/>
+<workingSet IMemento.internal.id="ZK_Practice"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1419083732611_5" label="Multiple Working Sets" name="Aggregate:HF_AJAX:Servlet_JSP:ZK_Practice:">
+<workingSet IMemento.internal.id="HF_AJAX"/>
 <workingSet IMemento.internal.id="Servlet_JSP"/>
 <workingSet IMemento.internal.id="ZK_Practice"/>
 </workingSet>
