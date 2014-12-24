@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="workingset_selection_history">
+		<item value="HF_AJAX"/>
 		<item value="ZK_Practice"/>
 	</list>
 	<section name="WorkbenchPreferenceDialogSettings">
@@ -27,12 +28,9 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.wst.xml.ui.internal.wizards.NewXMLWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.wst.jsdt.ui.NewJSWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jpt.dbws"/>
-			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
-			<item value="org.eclipse.wst.XMLCategory"/>
-			<item value="org.eclipse.ui.Examples"/>
+			<item value="org.eclipse.wst.jsdt.ui.java"/>
 		</list>
 	</section>
 	<section name="InstallationDialogSettings">

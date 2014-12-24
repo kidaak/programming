@@ -1,6 +1,6 @@
 <?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit"?>
 <zk>
-	<zscript><![CDATA[
+    <zscript><![CDATA[
 	class Person {
 		private String firstName;
 		private String lastName;
@@ -52,42 +52,42 @@
 	AvoidingDuplicateRenderer adrTwo = new AvoidingDuplicateRenderer();
 	adrOne.setType("first");
 ]]></zscript>
-	<listbox id="oListBox" model="@{lm}" checkmark="true"
-		onCreate="self.getModel().setMultiple(true)" mold="paging"
-		pageSize="10" nonselectableTags="img"
-		apply="composer.ListboxComposer">
-		<listhead>
-			<listheader label="First Name" />
-			<listheader label="Last Name" />
-			<listheader label="Image" />
-		</listhead>
-		<listitem self="@{each=person}">
-			<listcell label="@{person.firstName}" />
-			<listcell label="@{person.lastName}" />
-			<listcell>
-				<label value="" />
-				<image src="img/mail.png" width="40px" height="40px">
-					<custom-attributes ndu="@{person.lastName}" b="b"/>
-					<attribute name="onClick">
-<!-- 						String index = self.getAttribute("ndu"); -->
-<!-- 						self.previousSibling.value = index; -->
-						alert(self.getAttribute("ndu"));
-					</attribute>
-				</image>
-			</listcell>
-		</listitem>
-	</listbox>
-	<hlayout>
-		<button label="test">
-			<attribute name="onClick">
-	oListBox.renderAll();
-	oListBox.selectAll();
-</attribute>
-		</button>
-		<button label="refreshModel">
-			<attribute name="onClick">
+    <listbox id="oListBox" model="@{lm}" checkmark="true"
+                 onCreate="self.getModel().setMultiple(true)" mold="paging"
+                 pageSize="10" nonselectableTags="img"
+                 apply="composer.ListboxComposer">
+        <listhead>
+            <listheader label="First Name" />
+            <listheader label="Last Name" />
+            <listheader label="Image" />
+        </listhead>
+        <listitem self="@{each=person}">
+            <listcell label="@{person.firstName}" />
+            <listcell label="@{person.lastName}" />
+            <listcell>
+                <label value="" />
+                <image src="img/mail.png" width="40px" height="40px">
+                    <custom-attributes ndu="@{person.lastName}" b="b"/>
+                    <attribute name="onClick">
+                        <!-- 						String index = self.getAttribute("ndu"); -->
+                        <!-- 						self.previousSibling.value = index; -->
+                        alert(self.getAttribute("ndu"));
+                    </attribute>
+                </image>
+            </listcell>
+        </listitem>
+    </listbox>
+    <hlayout>
+        <button label="test">
+            <attribute name="onClick">
+                oListBox.renderAll();
+                oListBox.selectAll();
+            </attribute>
+        </button>
+        <button label="refreshModel">
+            <attribute name="onClick">
 				
-			</attribute>
-		</button>
-	</hlayout>
+            </attribute>
+        </button>
+    </hlayout>
 </zk>

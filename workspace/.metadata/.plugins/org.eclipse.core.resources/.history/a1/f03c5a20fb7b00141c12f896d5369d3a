@@ -1,9 +1,0 @@
-<?page title="new page title" contentType="text/html;charset=UTF-8"?>
-<zk>
-	<zscript>
-	String link = "/file/test.pdf";
-</zscript>
-	<window title="new page title" border="normal">
-		<button href="/file/test.pdf" target="_blink">Download file</button>
-	</window>
-</zk>

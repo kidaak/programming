@@ -42,7 +42,6 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.zkoss.util.media.AMedia"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.StringEscapeUtils"/>
-<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.A"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Events"/>
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
@@ -57,7 +56,8 @@
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.select.annotation.Listen"/>
 <fullyQualifiedTypeName name="org.zkoss.zk.ui.event.Event"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.Treechildren"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="org.zkoss.zul.Treeitem"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="org.zkoss.zk.ui.Component"/>
 </qualifiedTypeNameHistroy>

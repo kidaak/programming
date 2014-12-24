@@ -55,3 +55,51 @@ Dec 10, 2014 04:11:19.27 Line: 37, column: 15
 Dec 10, 2014 04:41:41.59 NEW SESSION
 Dec 10, 2014 04:41:41.59 1418161301591	GMPInstallManager.simpleCheckAndInstall	INFO	Last check was: 85369 seconds ago, minimum seconds: 86400
 Dec 10, 2014 04:41:41.59 1418161301591	GMPInstallManager.simpleCheckAndInstall	INFO	Will not check for updates.
+
+Dec 20, 2014 21:13:50.66 NEW SESSION
+Dec 20, 2014 21:13:50.66 console.error: skype_ff_extension: 
+Dec 20, 2014 21:13:50.68   DEPRECATED: The widget module is deprecated.  Please consider using the sdk/ui module instead.
+Dec 20, 2014 21:13:50.68 Traceback (most recent call last):
+Dec 20, 2014 21:13:50.68   File "resource://gre/modules/commonjs/sdk/addon/runner.js", line 81, in startup/</<
+Dec 20, 2014 21:13:50.68     run(options);
+Dec 20, 2014 21:13:50.68   File "resource://gre/modules/commonjs/sdk/addon/runner.js", line 138, in run
+Dec 20, 2014 21:13:50.68     let program = main(options.loader, options.main);
+Dec 20, 2014 21:13:50.68   File "resource://gre/modules/commonjs/toolkit/loader.js", line 679, in main
+Dec 20, 2014 21:13:50.68     return loader.load(loader, module).exports;
+Dec 20, 2014 21:13:50.68   File "resource://gre/modules/commonjs/sdk/loader/cuddlefish.js", line 129, in CuddlefishLoader/options<.load
+Dec 20, 2014 21:13:50.68     result = load(loader, module);
+Dec 20, 2014 21:13:50.68   File "resource://gre/modules/commonjs/toolkit/loader.js", line 313, in load
+Dec 20, 2014 21:13:50.69     evaluate(sandbox, module.uri);
+Dec 20, 2014 21:13:50.69   File "resource://gre/modules/commonjs/toolkit/loader.js", line 262, in evaluate
+Dec 20, 2014 21:13:50.69     : loadSubScript(uri, sandbox, encoding);
+Dec 20, 2014 21:13:50.69   File "resource://skype_ff_extension-at-jetpack/skype_ff_extension/lib/main.js", line 14, in null
+Dec 20, 2014 21:13:50.69     var widgets = require("sdk/widget");
+Dec 20, 2014 21:13:50.69   File "resource://gre/modules/commonjs/toolkit/loader.js", line 586, in require
+Dec 20, 2014 21:13:50.69     freeze(load(loader, module));
+Dec 20, 2014 21:13:50.69   File "resource://gre/modules/commonjs/sdk/loader/cuddlefish.js", line 129, in CuddlefishLoader/options<.load
+Dec 20, 2014 21:13:50.69     result = load(loader, module);
+Dec 20, 2014 21:13:50.69   File "resource://gre/modules/commonjs/toolkit/loader.js", line 313, in load
+Dec 20, 2014 21:13:50.69     evaluate(sandbox, module.uri);
+Dec 20, 2014 21:13:50.69   File "resource://gre/modules/commonjs/toolkit/loader.js", line 262, in evaluate
+Dec 20, 2014 21:13:50.69     : loadSubScript(uri, sandbox, encoding);
+Dec 20, 2014 21:13:50.69   File "resource://gre/modules/commonjs/sdk/widget.js", line 59, in null
+Dec 20, 2014 21:13:50.69     require("./util/deprecate").deprecateUsage(
+Dec 20, 2014 21:13:50.69   File "resource://gre/modules/commonjs/sdk/util/deprecate.js", line 18, in deprecateUsage
+Dec 20, 2014 21:13:50.69     let stack = get().slice(2);
+Dec 20, 2014 21:14:50.39 1419084890396	GMPInstallManager.simpleCheckAndInstall	INFO	Last check was: 2436 seconds ago, minimum seconds: 86400
+Dec 20, 2014 21:14:50.39 1419084890396	GMPInstallManager.simpleCheckAndInstall	INFO	Will not check for updates.
+Dec 20, 2014 21:17:55.63 1419085075631	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Dec 20, 2014 21:17:55.92 1419085075924	addons.update-checker	WARN	Update manifest for {82AF8DCA-6DE9-405D-BD5E-43525BDAD38A} did not contain an updates property
+Dec 20, 2014 21:20:39.05 1419085239050	addons.xpi	WARN	Exception running bootstrap method shutdown on firebug@software.joehewitt.com: TypeError: scope.gcli.removeCommand is not a function (resource://firebug/gcli.js:174:8) JS Stack trace: unregisterCommands@gcli.js:174:9 < FirebugGCLICommands.shutdown@gcli.js:50:9 < shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/hoangnv/AppData/Roaming/Mozilla/Firefox/Profiles/4offinli.default/extensions/firebug@bootstrap.js:104:5 < XPI_callBootstrapMethod@XPIProvider.jsm:4305:9 < XPI_updateAddonDisabledState@XPIProvider.jsm:4419:1 < AddonWrapper_userDisabledSetter@XPIProvider.jsm:6744:9 < set_userDisabled@extensions.xml:1084:11 < oncommand@about:addons:1:1
+Dec 20, 2014 21:20:56.05 
+Dec 20, 2014 21:20:56.05 ###!!! [Child][DispatchAsyncMessage] Error: (msgtype=0xA20001,name=PTexture::Msg___delete__) Route error: message sent to unknown actor ID
+Dec 20, 2014 21:20:56.05 
+Dec 20, 2014 21:20:56.05 
+Dec 20, 2014 21:20:56.05 ###!!! [Child][DispatchAsyncMessage] Error: (msgtype=0xA20001,name=PTexture::Msg___delete__) Route error: message sent to unknown actor ID
+Dec 20, 2014 21:20:56.05 
+Dec 20, 2014 21:20:56.05 
+Dec 20, 2014 21:20:56.05 ###!!! [Child][DispatchAsyncMessage] Error: (msgtype=0xA20001,name=PTexture::Msg___delete__) Route error: message sent to unknown actor ID
+Dec 20, 2014 21:20:56.06 
+Dec 20, 2014 21:20:56.06 
+Dec 20, 2014 21:20:56.06 ###!!! [Child][DispatchAsyncMessage] Error: (msgtype=0xA20001,name=PTexture::Msg___delete__) Route error: message sent to unknown actor ID
+Dec 20, 2014 21:20:56.06 

@@ -39,7 +39,6 @@ public class TreeComposer extends SelectorComposer<Component> {
 	public void onClickTreeitem(Event event) {
 		Treeitem treeitem = (Treeitem) event.getTarget();
 		System.out.println("isOpen: " + treeitem.isOpen());
-//		selecteAllChildren(treeitem);
 	}
 
 	public void selecteAllChildren(Treeitem treeitem) {
@@ -76,4 +75,25 @@ public class TreeComposer extends SelectorComposer<Component> {
 			}
 		}
 	}
+
+	@Listen("onClick = #btnExpandAll")
+	public void expandTree() {
+		doCollapseExpandAll(tree.getSelectedItem(), true);
+	}
+
+	public void doCollapseExpandAll(Component comp, boolean aufklappen) {
+		if (comp instanceof Treeitem) {
+			Treeitem treeitem = (Treeitem) comp;
+			treeitem.setOpen(aufklappen);
+		}
+
+		Collection<?> children = comp.getChildren();
+		if (children != null) {
+			Iterator<?> iterator = children.iterator();
+			while (iterator.hasNext()) {
+				doCollapseExpandAll((Component) iterator.next(), aufklappen);
+			}
+		}
+	}
+
 }

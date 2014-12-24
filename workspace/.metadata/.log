@@ -123,3 +123,2059 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.equinox.p2.repository 2 0 2014-12-20 20:49:27.134
 !MESSAGE Server returned lastModified <= 0 for http://zk-cdt.eclipselabs.org.codespot.com/hg.updatesite/content.jar
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:21.493
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 56 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:22.093
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 56 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:24.372
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 56 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:24.852
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 56 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:27.920
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 56 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:28.293
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 56 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:30.968
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 56 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:38.592
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 56 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:12:38.880
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:62)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1262)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1070)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1108)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1529)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4722)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4610)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5023)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3759)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: org.eclipse.core.commands.ExecutionException: While executing the action, an exception occurred
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:127)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 50 more
+Caused by: org.eclipse.text.edits.MalformedTreeException: Overlapping text edits
+	at org.eclipse.text.edits.TextEdit$InsertionComparator.compare(TextEdit.java:121)
+	at java.util.Collections.indexedBinarySearch(Unknown Source)
+	at java.util.Collections.binarySearch(Unknown Source)
+	at org.eclipse.text.edits.TextEdit.computeInsertionIndex(TextEdit.java:796)
+	at org.eclipse.text.edits.TextEdit.internalAdd(TextEdit.java:781)
+	at org.eclipse.text.edits.TextEdit.addChild(TextEdit.java:335)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfNotAlreadyIndented(DefaultXMLPartitionFormatter.java:1260)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1345)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.indentIfPossible(DefaultXMLPartitionFormatter.java:1280)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatEndTag(DefaultXMLPartitionFormatter.java:417)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:615)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatStartTag(DefaultXMLPartitionFormatter.java:564)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatRegion(DefaultXMLPartitionFormatter.java:448)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.formatSiblings(DefaultXMLPartitionFormatter.java:491)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:204)
+	at org.eclipse.wst.xml.core.internal.formatter.DefaultXMLPartitionFormatter.format(DefaultXMLPartitionFormatter.java:160)
+	at org.eclipse.wst.xml.ui.internal.XMLFormattingStrategy.format(XMLFormattingStrategy.java:61)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.formatMaster(MultiPassContentFormatter.java:193)
+	at org.eclipse.wst.sse.ui.StructuredTextMultiPassContentFormatter.formatMaster(StructuredTextMultiPassContentFormatter.java:56)
+	at org.eclipse.jface.text.formatter.MultiPassContentFormatter.format(MultiPassContentFormatter.java:142)
+	at org.eclipse.wst.sse.ui.internal.StructuredTextViewer.doOperation(StructuredTextViewer.java:562)
+	at org.eclipse.ui.texteditor.TextOperationAction$1.run(TextOperationAction.java:128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.TextOperationAction.run(TextOperationAction.java:126)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:519)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	... 55 more
+
+!ENTRY org.eclipse.epp.mpc.ui 4 4 2014-12-20 21:15:42.619
+!MESSAGE Failed to download image for entry 'JRebel for Eclipse' (29591) from http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jrebel_logo%20CYMK.png?itok=vSWrynIY
+!STACK 0
+java.io.InterruptedIOException
+	at java.io.PipedInputStream.read(Unknown Source)
+	at java.io.PipedInputStream.read(Unknown Source)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$1.read(FileReader.java:273)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.putResource(ResourceProvider.java:71)
+	at org.eclipse.epp.internal.mpc.ui.catalog.AbstractResourceRunnable.run(AbstractResourceRunnable.java:72)
+	at org.eclipse.epp.internal.mpc.ui.catalog.AbstractResourceRunnable.call(AbstractResourceRunnable.java:57)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 4 2014-12-20 21:17:05.687
+!MESSAGE Failed to download image for entry 'IBM WebSphere Application Server V8.0x Developer Tools for Kepler' (1742924) from http://marketplace.eclipse.org/sites/default/files/styles/medium/public/liberty_1_2.png?itok=zekXB1NW
+!STACK 0
+java.io.InterruptedIOException
+	at java.io.PipedInputStream.read(Unknown Source)
+	at java.io.PipedInputStream.read(Unknown Source)
+	at org.eclipse.equinox.internal.p2.transport.ecf.FileReader$1.read(FileReader.java:273)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at org.eclipse.epp.internal.mpc.ui.catalog.ResourceProvider.putResource(ResourceProvider.java:71)
+	at org.eclipse.epp.internal.mpc.ui.catalog.AbstractResourceRunnable.run(AbstractResourceRunnable.java:72)
+	at org.eclipse.epp.internal.mpc.ui.catalog.AbstractResourceRunnable.call(AbstractResourceRunnable.java:57)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:25:59.070
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument not valid
+	at org.eclipse.swt.SWT.error(SWT.java:4422)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.custom.StyledText.getOffsetAtLocation(StyledText.java:4416)
+	at org.eclipse.epp.internal.mpc.ui.wizards.DiscoveryItem$LinkListener.mouseUp(DiscoveryItem.java:131)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:220)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:832)
+	at org.eclipse.jface.window.Window.open(Window.java:808)
+	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.execute(MarketplaceWizardCommand.java:193)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:247)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:229)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:149)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.handleWidgetSelection(HandledContributionItem.java:701)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.access$6(HandledContributionItem.java:685)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem$4.handleEvent(HandledContributionItem.java:613)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2014-12-20 21:26:54.317
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:139)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.epp.internal.mpc.ui.wizards.NewsViewer$ProgressRunnable$1.run(NewsViewer.java:268)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	... 23 more
+
+!ENTRY org.eclipse.core.jobs 2 2 2014-12-20 21:28:37.729
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.epp.internal.mpc.ui.wizards.CatalogSwitcher$3
+!SESSION 2014-12-21 09:19:28.635 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-12-21 09:19:31.633
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-21 09:19:59.535
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-21 09:19:59.537
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hoangnv'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-21 09:20:11.819
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-21 09:20:11.828
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f6ea81b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@47629063,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f03c448,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2be208db,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@35dbed4f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7d381eae,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3dc3c293,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9e4388d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@27779b40,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a7b4bb6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56272a62,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5aec151b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3cfc147c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.core.ui.command.addPlugin,Add Maven Plugin,
+		Add Maven Plugin,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1f088e2a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.core.runtime.xml,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@28d1b2f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.zkoss.eclipse.services.commands.check_new_version,Check Studio Version,
+		,
+		Category(org.zkoss.eclipse.setting.command.category,ZK Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4beab10,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b25f5df,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37265333,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+/:
+Binding(CTRL+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f03c448,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+/,
+	ParameterizedCommand(Command(org.zkoss.eclipse.editor.commands.toggle_zscript_comment,Toggle ZScript Comment,
+		,
+		Category(org.zkoss.eclipse.setting.command.category,ZK Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c84f223,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.zkoss.eclipse.editor.zul_text,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d132288,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4f93a8f6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@59dcb7f8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c3836b6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c66d83b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@36570936,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17b83c7e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@121c1a08,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 09:34:08.218
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@13bb5b63,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a00d591,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 4 0 2014-12-21 09:51:59.705
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jface.text.hyperlink.DefaultHyperlinkPresenter.highlightRegion(DefaultHyperlinkPresenter.java:246)
+	at org.eclipse.jface.text.hyperlink.DefaultHyperlinkPresenter.showHyperlinks(DefaultHyperlinkPresenter.java:145)
+	at org.eclipse.jface.text.hyperlink.MultipleHyperlinkPresenter.showHyperlinks(MultipleHyperlinkPresenter.java:835)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.showHyperlinks(HyperlinkManager.java:575)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:470)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2014-12-21 10:51:27.355 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-12-21 10:51:30.961
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-21 10:51:50.298
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-21 10:51:50.303
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hoangnv'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-21 10:51:57.016
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-21 10:51:57.022
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2014-12-21 14:05:13.185 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-12-21 14:05:16.402
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-21 14:05:31.246
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-21 14:05:31.249
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hoangnv'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-21 14:05:37.210
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-21 14:05:37.217
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4db11495,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5dc8448b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f83db89,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@108fd5d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51102651,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2df24f19,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10dba2e3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@662b199,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@550b19d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@30bfdcc5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@24a5df6a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@22e253c7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@74d74701,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.core.ui.command.addPlugin,Add Maven Plugin,
+		Add Maven Plugin,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@39562fc2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.core.runtime.xml,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53b83897,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.zkoss.eclipse.services.commands.check_new_version,Check Studio Version,
+		,
+		Category(org.zkoss.eclipse.setting.command.category,ZK Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@349e6ca8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3e4aabde,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@26bbbe9e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@70eb0c59,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78cb15b9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3f77cd24,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2530baf6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5408854f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5f32de90,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7ca9c253,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@175c26ff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:15.718
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5cef76a2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@577dac16,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2014-12-21 14:06:19.522
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 14:06:19.522
+!MESSAGE A conflict occurred for CTRL+/:
+Binding(CTRL+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f83db89,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+/,
+	ParameterizedCommand(Command(org.zkoss.eclipse.editor.commands.toggle_zscript_comment,Toggle ZScript Comment,
+		,
+		Category(org.zkoss.eclipse.setting.command.category,ZK Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@668c8c55,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.zkoss.eclipse.editor.zul_text,,,system)
+
+!ENTRY org.eclipse.ui 4 0 2014-12-21 16:39:23.991
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jst.jsp.ui.internal.hyperlink.XMLJavaHyperlinkDetector.detectHyperlinks(XMLJavaHyperlinkDetector.java:238)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:80)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:261)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:469)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4353)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4172)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2014-12-21 18:27:48.094 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2014-12-21 18:27:50.772
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-21 18:28:02.810
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2014-12-21 18:28:02.812
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\hoangnv'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-21 18:28:11.232
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2014-12-21 18:28:11.236
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7c05c489,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fc03cf6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.wst.jsdt.ui.category.source,Source,JavaScript Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@43487032,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c4e11d0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@50eac4a5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1a3611b1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the JavaScript file,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56e68adc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3ae91bcc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4153d05,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@689fcf08,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@45c1455,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2152797,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.editor,Open Declaration,
+		Open an editor on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6047fd63,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,Open Declaration,
+		Open an editor on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4d17097b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javascriptViewScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.open.file.from.source,Open Selection,
+		Open an editor on the selected link,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@298d4230,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.indent,Indent Line,
+		Indents the current line,
+		Category(org.eclipse.wst.jsdt.ui.category.source,Source,JavaScript Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20ff109,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c149539,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.493
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.m2e.core.ui.command.addPlugin,Add Maven Plugin,
+		Add Maven Plugin,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5d7ca8ce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.core.runtime.xml,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@28d52ecb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3531509c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.zkoss.eclipse.services.commands.check_new_version,Check Studio Version,
+		,
+		Category(org.zkoss.eclipse.setting.command.category,ZK Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6b0a6523,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.494
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.wst.jsdt.ui.category.source,Source,JavaScript Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@167046f2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@489c15e2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.494
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.wst.jsdt.ui.category.source,Source,JavaScript Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2ef2a62a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@9fd5dd0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.494
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.wst.jsdt.ui.category.source,Source,JavaScript Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2f506649,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@aaf4375,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.494
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@17cb2dfd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@495e1ad1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-21 18:48:45.494
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the JavaScript file,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@318be20,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@46baac0d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)

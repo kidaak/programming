@@ -1,8 +1,0 @@
-package composer;
-
-import org.zkoss.zk.ui.Component;
-import org.zkoss.zk.ui.select.SelectorComposer;
-
-public class AComponentComposer extends SelectorComposer<Component> {
-
-}

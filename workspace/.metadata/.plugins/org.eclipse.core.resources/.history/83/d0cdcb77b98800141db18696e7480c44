@@ -1,0 +1,24 @@
+<?page title="Tree" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<style>
+		.h-inline-block { display: inline-block; _display: inline; }
+	</style>
+	<window title="Tree" border="normal"
+		apply="composer.TreeComposer">
+		<zscript><![CDATA[
+	TreeModel btm = new model.BinaryTreeModel(new ArrayList(new data.BigList(
+			1000)));
+]]></zscript>
+		<vlayout>
+			<tree id="tree" model="${btm}" checkmark="true" vflex="1"
+				multiple="true">
+				<treecols>
+					<treecol label="My Contact List" />
+				</treecols>
+			</tree>
+			<div align="center">
+				<button label="Expand all"></button>
+			</div>
+		</vlayout>
+	</window>
+</zk>

@@ -400,3 +400,19 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment 
 2014-12-10 05:01:41,167 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
 2014-12-10 05:01:41,177 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2014-12-10 05:01:41,182 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-21 09:20:11,790 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-21 09:20:11,820 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-21 09:20:11,827 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-21 09:20:11,829 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-21 10:51:57,010 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-21 10:51:57,017 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-21 10:51:57,021 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-21 10:51:57,024 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-21 14:05:37,204 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-21 14:05:37,210 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-21 14:05:37,216 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-21 14:05:37,219 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources
+2014-12-21 18:28:11,228 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-21 18:28:11,233 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\main\resources
+2014-12-21 18:28:11,235 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2014-12-21 18:28:11,236 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\hoangnv\Documents\Github\programming\workspace\zkoss\src\test\resources

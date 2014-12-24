@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="htmlDecode" key="selection"/>
+		<item value="welcome" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="true" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="welcomePane"/>
 			<item value="htmlDecode"/>
 			<item value="fireSelectEvent"/>
 			<item value="_fireOnSearch"/>
@@ -15,7 +16,6 @@
 			<item value="getIndexFromValue"/>
 			<item value="Chosenbox"/>
 			<item value="custom.components.Chosenbox"/>
-			<item value="request"/>
 		</list>
 		<list key="replacehistory">
 			<item value="zkmax.inp.custom.Chosenbox"/>
