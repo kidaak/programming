@@ -21,3 +21,26 @@ function createRequest() {
     return request;
 }
 
+function addEventHandler(obj, eventName, handler) {
+    if (document.attachEvent) {
+        obj.attachEvent("on" + eventName, handler);
+    } else {
+        obj.addEventListener(eventName, handler, false);
+    }
+}
+
+function getActivatedObject(e) {
+    var obj;
+    if (!e) {
+        //early version of IE
+        obj = window.event.srcElement;
+    } else if (e.srcElement) {
+        //IE 7 or later
+        obj = e.srcElement;
+    } else {
+        //DOM Level 2 browser
+        obj = e.target;
+    }
+    return obj;
+}
+
