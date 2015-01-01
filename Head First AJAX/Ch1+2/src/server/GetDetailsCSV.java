@@ -7,11 +7,7 @@ package server;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
-
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,33 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author hoangnv
  */
-@WebServlet(name = "GetDetails", urlPatterns = {"/getDetails"})
-public class GetDetails extends HttpServlet {
-
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1327917737142365041L;
-    @SuppressWarnings("rawtypes")
-    private final Map details = new HashMap<>();
-
-    @SuppressWarnings("unchecked")
-    @Override
-    public void init() throws ServletException {
-        super.init();
-        details.put(
-                "itemShades",
-                "<p>Yoko Ono's sunglasses. While perhaps not "
-                + "valued much by Beatles fans, this pair is rumored to have been licked by John Lennon.</p>");
-        details.put(
-                "itemCowbell",
-                "<p>Remember the famous \\\"more cowbell\\\""
-                + " skit from Saturday Night Live? Well, this is the actual cowbell.</p>");
-        details.put(
-                "itemHat",
-                "<p>Michael Jackson's hat, as worn in the \\\"Billie Jean\\\""
-                + " video. Not really rock memorabilia, but it smells better than Slash's tophat.</p>");
-    }
+public class GetDetailsCSV extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -57,16 +27,24 @@ public class GetDetails extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            out.println(details.get(request.getParameter("ImageId")));
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet GetDetailsCSV</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet GetDetailsCSV at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 
-	// <editor-fold defaultstate="collapsed"
-    // desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -76,8 +54,8 @@ public class GetDetails extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doGet(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         processRequest(request, response);
     }
 
@@ -90,8 +68,8 @@ public class GetDetails extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request,
-            HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         processRequest(request, response);
     }
 
