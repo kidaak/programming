@@ -8,15 +8,11 @@
         <welcome-file>default.html</welcome-file>
         <welcome-file>default.htm</welcome-file>
         <welcome-file>default.jsp</welcome-file>
-        <welcome-file>inventory.html</welcome-file>
+        <welcome-file>registration.html</welcome-file>
     </welcome-file-list>
     <servlet>
         <servlet-name>checkPass</servlet-name>
         <servlet-class>server.checkPass</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>GetDetailsCSV</servlet-name>
-        <servlet-class>server.GetDetailsCSV</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Register</servlet-name>
@@ -26,17 +22,9 @@
         <servlet-name>checkPass</servlet-name>
         <url-pattern>/checkPass</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>GetDetailsCSV</servlet-name>
-        <url-pattern>/getDetailsCSV</url-pattern>
-    </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
-    <servlet>
-        <servlet-name>GetDetails</servlet-name>
-        <servlet-class>server.GetDetails</servlet-class>
-    </servlet>
     <servlet>
         <servlet-name>checkName</servlet-name>
         <servlet-class>server.CheckName</servlet-class>
@@ -48,9 +36,5 @@
     <servlet-mapping>
         <servlet-name>checkName</servlet-name>
         <url-pattern>/checkName</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>GetDetails</servlet-name>
-        <url-pattern>/getDetails</url-pattern>
     </servlet-mapping>
 </web-app>

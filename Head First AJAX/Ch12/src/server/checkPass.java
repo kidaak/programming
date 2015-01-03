@@ -32,11 +32,12 @@ public class checkPass extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             String password = request.getParameter("password");
-            if (password.matches("^.*(?=.{6,})(?=.*[0-9])(?=.*[a-zA-Z]).*$")) {
+            if (password != null && password.matches("^.*(?=.{6,})(?=.*[0-9])(?=.*[a-zA-Z]).*$")) {
                 out.print("okay");
             } else {
                 out.print("denied");
             }
+        } catch (Exception e) {
         }
     }
 

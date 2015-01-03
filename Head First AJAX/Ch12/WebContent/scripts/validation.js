@@ -21,10 +21,13 @@ function checkUsername() {
         document.getElementById("username").className = "thinking";
         var theName = document.getElementById("username").value;
         var username = escape(theName);
-        var url = "checkName?username=" + username;
+        var url = "checkName";
+        var requestData = "username=" + username;
         userNameRequest.onreadystatechange = showUsernameStatus;
-        userNameRequest.open("GET", url, true);
-        userNameRequest.send(null);
+        userNameRequest.open("POST", url, true);
+        userNameRequest.setRequestHeader("Content-Type",
+                "application/x-www-form-urlencoded");
+        userNameRequest.send(requestData);
     }
 }
 
@@ -44,11 +47,14 @@ function checkPassword() {
     if (passwordRequest === null) {
         alert('Unable to create request');
     } else {
-        password = escape(password1.value);
-        var url = "checkPass?password=" + password;
+        var password = escape(password1.value);
+        var url = "checkPass";
+        var requestData = "password=" + password;
         passwordRequest.onreadystatechange = showPasswordStatus;
-        passwordRequest.open("GET", url, true);
-        passwordRequest.send(null);
+        passwordRequest.open("POST", url, true);
+        passwordRequest.setRequestHeader("Content-Type",
+                "application/x-www-form-urlencoded");
+        passwordRequest.send(requestData);
     }
 }
 
@@ -94,23 +100,27 @@ function checkFormStatus() {
 }
 
 function registerUser() {
+    t = setInterval("scrollImages()", 50);
     document.getElementById("register").value = "Processing...";
     registerRequest = createRequest();
     if (registerRequest === null) {
         alert("Unable to create request.");
     } else {
-        var url = "register?username=" + escape(document.getElementById("username").value)
-                + "&password=" + escape(document.getElementById("password1").value)
-                + "&firstname=" + escape(document.getElementById("firstname").value)
-                + "&lastname=" + escape(document.getElementById("lastname").value)
-                + "&email=" + escape(document.getElementById("email").value)
-                + "&genre=" + escape(document.getElementById("genre").value)
-                + "&favorite=" + escape(document.getElementById("favorite").value)
-                + "&tastes=" + escape(document.getElementById("tastes").value);
+        var url = "register-feedback.php";
+        var requestData = "username=" +
+                escape(document.getElementById("username").value) + "&password=" +
+                escape(document.getElementById("password1").value) + "&firstname=" +
+                escape(document.getElementById("firstname").value) + "&lastname=" +
+                escape(document.getElementById("lastname").value) + "&email=" +
+                escape(document.getElementById("email").value) + "&genre=" +
+                escape(document.getElementById("genre").value) + "&favorite=" +
+                escape(document.getElementById("favorite").value) + "&tastes=" +
+                escape(document.getElementById("tastes").value);
         registerRequest.onreadystatechange = registrationProcessed;
-        registerRequest.open("GET", url, true);
-        registerRequest.send(null);
-        setInterval(scrollImages, 50);
+        registerRequest.open("POST", url, true);
+        registerRequest.setRequestHeader("Content-Type",
+                "application/x-www-form-urlencoded");
+        registerRequest.send(requestData);
     }
 }
 

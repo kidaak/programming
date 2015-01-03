@@ -21,10 +21,10 @@ import javax.servlet.http.HttpServletResponse;
 public class CheckName extends HttpServlet {
 
     /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1549383352182291725L;
-	private final List<String> names = new ArrayList<>();
+     *
+     */
+    private static final long serialVersionUID = 1549383352182291725L;
+    private final List<String> names = new ArrayList<>();
 
     @Override
     public void init() throws ServletException {
@@ -45,7 +45,8 @@ public class CheckName extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         PrintWriter out = response.getWriter();
-        if (names.contains(request.getParameter("username"))) {
+        String username = request.getParameter("username");
+        if (names.contains(username)) {
             out.print("denied");
         } else {
             out.print("okay");
