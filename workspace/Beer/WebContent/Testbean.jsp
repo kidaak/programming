@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <jsp:useBean id="person" type="com.example.model.Person" class="com.example.model.Employee">
+        <jsp:useBean id="person" type="com.example.model.PersonA" class="com.example.model.Employee">
             <jsp:setProperty name="person" property="*"/>
         </jsp:useBean>
         Name is: <jsp:getProperty name="person" property="name"/>

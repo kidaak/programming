@@ -12,20 +12,20 @@ import com.example.model.Dog;
 
 public class ListenerTester extends HttpServlet {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -355945968663718847L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = -355945968663718847L;
 
-	@Override
-	public void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
-		resp.setContentType("text/html");
-		PrintWriter out = resp.getWriter();
-		out.println("test context attributes set by listener<br>");
-		out.println("<br>");
-		Dog dog = (Dog) getServletContext().getAttribute("dog");
-		out.println("Dog's breed is: " + dog.getBreed());
-	}
+    @Override
+    public void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        resp.setContentType("text/html");
+        PrintWriter out = resp.getWriter();
+        out.println("test context attributes set by listener<br>");
+        out.println("<br>");
+        Dog dog = (Dog) getServletContext().getAttribute("dog");
+        out.println("Dog's breed is: " + dog.getBreed());
+    }
 
 }

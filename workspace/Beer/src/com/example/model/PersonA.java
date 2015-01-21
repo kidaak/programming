@@ -9,9 +9,8 @@ package com.example.model;
  *
  * @author hoangnv
  */
-public class Person {
+public class PersonA {
 
-    private Dog dog;
     private String name;
 
     public String getName() {
@@ -20,13 +19,5 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Dog getDog() {
-        return dog;
-    }
-
-    public void setDog(Dog dog) {
-        this.dog = dog;
     }
 }

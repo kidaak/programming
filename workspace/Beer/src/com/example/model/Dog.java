@@ -3,26 +3,47 @@ package com.example.model;
 import javax.servlet.http.HttpSessionBindingEvent;
 import javax.servlet.http.HttpSessionBindingListener;
 
-public class Dog implements HttpSessionBindingListener{
-	private String breed;
-	
-	public Dog(String breed) {
-		this.breed = breed;
-	}
+public class Dog implements HttpSessionBindingListener {
 
-	public String getBreed() {
-		return breed;
-	}
+    private String name;
+    private Toy[] toys;
+    private String breed;
 
-	@Override
-	public void valueBound(HttpSessionBindingEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+    public Dog() {
 
-	@Override
-	public void valueUnbound(HttpSessionBindingEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
+    }
+
+    public Dog(String breed) {
+        this.breed = breed;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Toy[] getToys() {
+        return toys;
+    }
+
+    public void setToys(Toy[] toys) {
+        this.toys = toys;
+    }
+
+    @Override
+    public void valueBound(HttpSessionBindingEvent arg0) {
+
+    }
+
+    @Override
+    public void valueUnbound(HttpSessionBindingEvent arg0) {
+
+    }
 }
