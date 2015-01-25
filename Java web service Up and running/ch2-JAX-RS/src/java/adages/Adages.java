@@ -26,7 +26,6 @@ import javax.xml.namespace.QName;
 public class Adages {
 
     // Add aphorisms to taste...
-
     private final String[] aphorisms
             = {"What can be shown cannot be said.",
                 "If a lion could talk, we could not understand him.",
