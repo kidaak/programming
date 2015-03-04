@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ajax polling example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript">
+            var url = 'http://localhost:8080/resourcesP/json';
+            function displayPreds(preds) {
+                $('#container').empty();//clear the old list, if any
+                $.each(preds, function (index, value) {
+                    $('#container').append('<li>' + preds[index].who + ': '
+                            + preds[index].what + '</li>');
+                });
+            }
+            function fetch() {
+                $.ajax({
+                    url: url,
+                    method: 'GET',
+                    dataType: 'json',
+                    contentType: 'application/json; charset=utf-8',
+                    cache: false,
+                    success: function (res) {
+                        displayPreds(res.preds);
+                    },
+                    error: function (res) {
+                        console.log(res);
+                    },
+                    complete: function () {
+                        setTimeout(function () {
+                            fetch();
+                        }, 5000);
+                    }
+                });
+            }
+            $(document).ready(fetch);//invoked after DOM is built and loaded
+        </script>
+    </head>
+    <body>
+        <ol id="container"></ol>
+    </body>
+</html>

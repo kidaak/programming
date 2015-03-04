@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IE 8 &amp; IE 7</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<body>
+	<p>Because IE 8 is still very popular, you need to keep a couple of things in mind. IE 8
+		is sort of like a chameleon: It can take on the appearance of a different version. If
+		you’re not careful, it may not display your web pages the way you want it to. For
+		example, and most importantly, you must include a proper doctype. As mentioned
+		in the previous section, without a doctype, browsers switch into quirks mode. Well,
+		when IE 8 goes into quirks mode, it tries to replicate the look of IE 5 (!?).
+		But wait—there’s more! IE 8 can also pretend to be IE 7. When someone viewing your
+		site in IE 8 clicks a “compatibility view” button, IE 8 goes into IE 7 mode, displaying
+		pages without IE 8’s full CSS 2.1 goodness. The same thing happens if Microsoft
+		puts your website onto its Compatibility View List—a list of sites that Microsoft
+		has determined look better in IE 7 than in IE 8. If you’re designing a site using the
+		guidelines in this book, you won’t want IE 8 to act like IE 7…ever.
+		Fortunately, there’s a way to tell IE 8 to stop all this nonsense and just be IE 8. Adding
+		a single META tag to a web page instructs IE 8 to ignore Compatibility View and the
+		Compatibility View List and always display the page by using its most standardscompliant
+		mode:</p>
+		<code>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;</code>
+		<p>Put this instruction in the page’s &lt;head&gt; section (below the &lt;title&gt; tag is a good
+			place). This tag works for current versions of IE, too: The "IE=edge" part of the tag
+			will instruct versions of Internet Explorer later than IE 8 to also display web pages
+			in their standard mode. Unfortunately, you must do this on every page of your site.</p>
+		</body>
+		</html>

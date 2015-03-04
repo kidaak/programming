@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java webservice: Up and running second edition</title>
+	<meta charset="UTF-8"> 
+</head>
+<body>
+	<h1><a href="#chapter4">Chapter 4: SOAP-Based Web Services</a></h1>
+
+	<div id="chapter4">
+		<p>Sử dụng <em>wsimport</em> để tạo Client và truy cập Webservice</p>
+		- Sử dụng lệnh sau: <br>
+		<code>wsimport -d directory -p package -keep URL</code><br>
+		Example: <br>
+		<code>wsimport -d D:\ -p client -keep http://localhost:8080/random/rs?wsdl</code>
+
+		<h2>The WSDL Service Contract in Detail</h2>
+		<p>The document or root element is named definitions. This is appropriate because
+			the WSDL defines the web service thoroughly enough that utilities such as wsimport
+			can use the WSDL to generate code, typically but not exclusively client-side
+			support code.</p>
+			<p>
+				The first child element of definitions, named types, is technically optional but
+				almost always present in a modern WSDL. This element contains (or links to) an
+				XML Schema or the equivalent—a grammar that specifies the data types for the
+				messages involved in the service. In a modern SOAP-based web service, the arguments
+				passed to web service operations are typed—but the SOAP messages themselves
+				are also typed. For this reason, the receiver of a SOAP message can check,
+				typically at the library level, whether the received message satisfies the constraints
+				that the message’s type impose.
+			</p>
+			<p>
+				Next come one or more message elements, which list the messages whose data types
+				are given in the types section immediately above. Every message has a corresponding
+				complexType entry in the schema from the types section, assuming that
+				the types section is nonempty.
+			</p>
+			<p>
+				The portType section comes next. There is always exactly one portType element.
+				The portType is essentially the service interface: a specification of the service’s operations
+				and the message patterns that the operations exemplify. For example, in
+				the request/response pattern, the client begins the conversation with a request
+				message and the service counters with a response message. In the solicit/response
+				pattern, by contrast, the service starts the conversation with a solicitation message
+				and the client counters with a response. There is also the one-way pattern (client
+				to server only) and the notification pattern (server to client only). Richer conversational
+				patterns can be built out of these simpler ones. The message items in the
+				preceding section are the components of an operation, and the portType section
+				defines an operation by placing message items in a specific order
+			</p>
+			<p>
+				Next come one or more binding sections, which provide implementation detail
+				such as the transport used in the service (for instance, HTTP rather than SMTP),
+				the service style, and the SOAP version (that is, 1.1 or 1.2). By default, Java generates
+				a single binding section but DotNet generates two: one for SOAP 1.1 and another
+				for SOAP 1.2.
+			</p>
+			<p>
+				The last section, named service, brings all of the previous details together to define
+				key attributes such as the service endpoint—that is, the URL at which the service
+				can be accessed. Nested in the service element are one or more port subelements,
+				where a port is a portType plus a binding:
+				port = portType + binding
+				Since there is only one portType in a WSDL, the number of port subelements equals
+				the number of binding elements.
+			</p>
+
+			<h3>
+				The types Section:<br>
+			</h3>
+			<h3>
+				The message Section:
+			</h3>
+		</div>
+	</body>
+	</html>
