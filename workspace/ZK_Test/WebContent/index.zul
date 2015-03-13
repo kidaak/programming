@@ -31,4 +31,6 @@
     <a href="a.zul">Link with a</a>
     <h:br></h:br>
     <a href="servlet_form.html">Servlet form</a>
+    <h:br></h:br>
+    <a href="test_error.zul">Error page</a>
 </window>

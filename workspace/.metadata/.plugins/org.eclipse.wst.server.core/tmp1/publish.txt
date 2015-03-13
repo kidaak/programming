@@ -1,6 +1,0 @@
-#Tomcat publish data
-#Sun Dec 21 20:58:17 ICT 2014
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\hoangnv\\Documents\\Github\\programming\\workspace\\ZKEE\\WebContent\\WEB-INF\\lib\\zk.jar=WEB-INF/lib/zk.jar
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\hoangnv\\Documents\\Github\\programming\\workspace\\ChosenboxTest\\WebContent\\WEB-INF\\lib\\zk.jar=WEB-INF/lib/zk.jar
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\hoangnv\\Documents\\Github\\programming\\workspace\\ZK_Test\\WebContent\\WEB-INF\\lib\\zk.jar=WEB-INF/lib/zk.jar
-org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\hoangnv\\.m2\\repository\\org\\zkoss\\zk\\zk\\6.5.2\\zk-6.5.2.jar=WEB-INF/lib/zk-6.5.2.jar

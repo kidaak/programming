@@ -23,6 +23,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.StreamingOutput;
 import javax.xml.parsers.DocumentBuilder;
@@ -38,30 +39,28 @@ import org.xml.sax.SAXException;
  *
  * @author hoangnv
  */
-@Path("/customers")
 public class CustomerResource {
-    
-    private final Map<Integer, Customer> customerDB = new ConcurrentHashMap();
+
+    private final Map<Integer, Customer> customerDB;
     private final AtomicInteger idCounter = new AtomicInteger();
-    
+
+    public CustomerResource() {
+        customerDB = new ConcurrentHashMap();
+        customerDB.put(1, new Customer(1, "Bill", "Gates"));
+    }
+
     @POST
-    @Consumes("application/xml")
+    @Consumes(MediaType.APPLICATION_XML)
     public Response createCustomer(InputStream is) {
         Customer customer = readCustomer(is);
         customer.setId(idCounter.incrementAndGet());
         customerDB.put(customer.getId(), customer);
         return Response.created(URI.create("/customers" + customer.getId())).build();
     }
-    
-    @GET
-    @Produces("text/html")
-    public String hello(){
-        return "Hello!";
-    }
-    
+
     @GET
     @Path("{id}")
-    @Produces("application/xml")
+    @Produces(MediaType.APPLICATION_XML)
     public StreamingOutput getCustomer(@PathParam("id") int id) {
         final Customer customer = customerDB.get(id);
         if (customer == null) {
@@ -74,10 +73,10 @@ public class CustomerResource {
             }
         };
     }
-    
+
     @PUT
     @Path("{id}")
-    @Consumes("application/xml")
+    @Consumes(MediaType.APPLICATION_XML)
     public void updateCustomer(@PathParam("id") int id, InputStream is) {
         Customer update = readCustomer(is);
         Customer current = customerDB.get(id);
@@ -92,7 +91,7 @@ public class CustomerResource {
         current.setZip(update.getZip());
         current.setCountry(update.getCountry());
     }
-    
+
     protected void outputCustomer(OutputStream os, Customer cust) {
         PrintStream writer = new PrintStream(os);
         writer.println("<customer id=\"" + cust.getId() + "\">");;
@@ -105,7 +104,7 @@ public class CustomerResource {
         writer.println("<country>" + cust.getLastName() + "</country>");
         writer.println("</customer>");
     }
-    
+
     protected Customer readCustomer(InputStream is) {
         try {
             DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
@@ -117,9 +116,9 @@ public class CustomerResource {
                 cust.setId(Integer.valueOf(root.getAttribute("id")));
             }
             NodeList nodes = root.getChildNodes();
-            for(int i = 0; i < nodes.getLength(); i++){
-                Element element = (Element)nodes.item(i);
-                switch(element.getTagName()){
+            for (int i = 0; i < nodes.getLength(); i++) {
+                Element element = (Element) nodes.item(i);
+                switch (element.getTagName()) {
                     case Constants.FIRST_NAME_TAG:
                         cust.setFirstName(element.getTextContent());
                         break;
@@ -145,7 +144,7 @@ public class CustomerResource {
             }
             return cust;
         } catch (SAXException | IOException | ParserConfigurationException ex) {
-            throw  new WebApplicationException(ex, Response.Status.BAD_REQUEST);
+            throw new WebApplicationException(ex, Response.Status.BAD_REQUEST);
         }
     }
 }

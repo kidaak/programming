@@ -1,7 +1,0 @@
-<?page title="new page title" contentType="text/html;charset=UTF-8"?>
-<zk>
-	<window id="wd" title="new page title" border="normal"
-		apply="composer.KeyEvents" onCtrlKey="$composer.showKeyEvent(event.getKeyCode())" ctrlKeys="@c^a#f10^#f3^#f4#f7#f8#f6">
-		<button id="button" width="200px" height="200px"></button>
-	</window>
-</zk>
