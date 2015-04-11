@@ -25,7 +25,7 @@
  *
  */
 
-package org.apache.http.examples.client;
+package examples.org.apache.http.examples.client;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;

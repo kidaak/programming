@@ -1,0 +1,19 @@
+<?page title="Window Mode" contentType="text/html;charset=UTF-8"?>
+<zk>
+<!-- 	<window title="Window embedded" mode="embedded" width="200px" -->
+<!-- 		height="200px" position="center"> -->
+<!-- 		Window embedded -->
+<!-- 	</window> -->
+	<groupbox>
+		<caption label="Danh sách xử lí"></caption>
+	</groupbox>
+	<button label="Chọn">
+	<attribute name="onClick">
+		wd.setVisible(true);
+	</attribute>
+	</button>
+	<window title="Window modal" mode="modal" width="200px" id="wd"
+		height="200px" position="center" visible="false">
+		Window model
+	</window>
+</zk>

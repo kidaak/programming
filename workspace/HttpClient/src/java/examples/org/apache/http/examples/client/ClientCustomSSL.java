@@ -24,7 +24,7 @@
  * <http://www.apache.org/>.
  *
  */
-package org.apache.http.examples.client;
+package examples.org.apache.http.examples.client;
 
 import java.io.File;
 import java.io.FileInputStream;

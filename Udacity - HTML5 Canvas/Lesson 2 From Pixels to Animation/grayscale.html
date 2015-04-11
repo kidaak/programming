@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grayscale</title>
+</head>
+<body>
+<img id="scream" src="img_the_scream.jpg">
+	<canvas id="c" width="100%" height="100%"></canvas>
+	<script type="text/javascript">
+			var c = document.querySelector("#c");
+		var ctx = c.getContext("2d");
+		var image =document.getElementById("scream");
+		ctx.drawImage(image, 0, 0);
+	</script>
+</body>
+</html>

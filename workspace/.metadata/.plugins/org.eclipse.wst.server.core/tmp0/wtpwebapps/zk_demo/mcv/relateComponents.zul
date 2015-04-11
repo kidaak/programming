@@ -1,0 +1,12 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="new page title" border="normal"
+		apply="composer.RelateComponentsComposer">
+		<image id="image" src="/img/click.png">
+			<attribute name="onClick">
+				self.nextSibling.setLabel(($composer.getCurrentTime()));
+			</attribute>
+		</image>
+		<button id="button" width="200px" height="200px"></button>
+	</window>
+</zk>

@@ -25,7 +25,7 @@
  *
  */
 
-package org.apache.http.examples.client;
+package examples.org.apache.http.examples.client;
 
 import java.io.IOException;
 import java.io.InputStream;
