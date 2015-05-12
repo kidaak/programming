@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+  <script src="./js/jquery-2.1.4.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <style>
+  body {
+    padding-top: 70px;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Home -->
+      <div class="navbar-header">
+        <a href="./navbardemo.html" class="navbar-brand">Home</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navigation">
+          <span class="sr-only">Navigation toggle</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="hamburger-navigation">
+      <!-- Text -->
+      <div class="navbar-text">
+        Sample Text
+      </div>
+      <!-- Link -->
+      <div class="navbar-text navbar-right">
+        <a class="navbar-link" href="https://www.facebook.com/hoangnv810">
+          Follow me!
+        </a>
+      </div>
+      <!-- Positioning content
+      add class navbar-left or navbar-right
+    -->
+    <ul class="nav navbar-nav" role="menu">
+      <li>
+        <a href="#" class="active">Current Page</a>
+        <span class="sr-only">current</span>
+      </li>
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" role="button" data-toggle="dropdown">
+          Dropdown
+          <span class="caret"/>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Option one</a></li>
+          <li><a href="#">Option two</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+</body>
+</html>
