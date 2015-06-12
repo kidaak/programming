@@ -1,0 +1,15 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Locale" border="normal"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('viewmodel.international.LocaleVM')">
+		<label value="${labels.button.locale }"></label>
+		<separator></separator>
+		<button label="Change locale with reloading"
+			onClick="@command('changeLocaleWithReloading')">
+		</button>
+		<button label="Change locale without reloading"
+			onClick="@command('changeLocaleWithoutReloading')">
+		</button>
+	</window>
+</zk>

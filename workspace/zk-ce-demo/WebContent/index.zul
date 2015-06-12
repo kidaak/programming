@@ -1,0 +1,21 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<?script type="text/javascript" src="/macros/zksandbox.js.dsp"?>
+<zk xmlns:n="native" xmlns:w="client">
+	<window title="new page title" border="normal">
+		<n:h1>International</n:h1>
+		<a href="/Pages/international/dateTimeFormat.zul">
+			Date Time Format
+		</a>
+		<n:hr />
+
+		<n:h1>Integration</n:h1>
+		<n:h2>Presentation Layer</n:h2>
+		<n:h3>JSP</n:h3>
+		<a href="/Pages/integration/presentation/integration.jsp">
+			JSP
+		</a>
+		<n:h1>Performance</n:h1>
+		<n:h2>Use Compiled Java Codes</n:h2>
+		<a href="/Pages/performance/zscript.zul">zscript</a>
+	</window>
+</zk>

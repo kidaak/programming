@@ -1,7 +1,0 @@
-<?page title="Test error" contentType="text/html;charset=UTF-8"?>
-<zk>
-	<window title="Test error" border="normal">
-		<button label="Cause Error"
-			onClick='throw new NullPointerException("Unknown Value")' />
-	</window>
-</zk>

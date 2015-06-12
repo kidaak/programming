@@ -1,0 +1,18 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Date time format" border="normal"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('viewmodel.international.DateTimeFormatVM')">
+		<datebox value="@load(vm.date)" format="short" width="250px"></datebox>
+		<separator></separator>
+		<datebox value="@load(vm.date)" format="medium" width="250px"></datebox>
+		<separator></separator>
+		<datebox value="@load(vm.date)" format="long" width="250px"></datebox>
+		<separator></separator>
+		<datebox value="@load(vm.date)" format="full" width="250px"></datebox>
+		<separator></separator>
+		<timebox value="@load(vm.date)" locale="us"></timebox>
+		<separator></separator>
+		<timebox value="@load(vm.date)" locale="vi"></timebox>
+	</window>
+</zk>

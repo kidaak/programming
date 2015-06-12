@@ -1,0 +1,8 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="window1st" title="new page title" border="normal"
+		apply="viewmodel.javase.AnonymousVM">
+		<button id="button" label="show another window"></button>
+		<button id="button2" label="show user's name"></button>
+	</window>
+</zk>

@@ -1,0 +1,21 @@
+<?page title="new page title" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Customer Converter" border="normal"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('viewmodel.converter.CustomConverterVM')">
+		<listbox model="@bind(vm.model)">
+			<listhead>
+				<listheader label="Order" hflex="min"></listheader>
+				<listheader label="Value"></listheader>
+			</listhead>
+			<template name="model" var="item">
+				<listitem>
+					<listcell label="@load(itemStatus.index + 1)"></listcell>
+					<listcell onClick="@command('plusOne', number=item)"
+						label="@bind(item.number) @converter(vm.converter)">
+					</listcell>
+				</listitem>
+			</template>
+		</listbox>
+	</window>
+</zk>
