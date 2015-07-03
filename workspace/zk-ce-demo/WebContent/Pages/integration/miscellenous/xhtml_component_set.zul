@@ -1,0 +1,44 @@
+<zk xmlns:x="xhtml" xmlns:zk="zk">
+	<html>
+		
+		<![CDATA[ Sample <b><font color="#008BB6">Shopping
+		Cart</font></b> Table in Plain HTML ]]>
+		
+	</html>
+	<x:table border="2">
+		<x:tr>
+			<x:td>Drinks</x:td>
+			<x:td>
+				<listbox id="list" mold="select">
+					<listitem selected="true" label="----" />
+					<listitem label="Coke" />
+					<listitem label="Sprite" />
+					<listitem label="Fanta" />
+				</listbox>
+				<!-- Invoke server side event listener -->
+				<x:input type="button" value="Add Item"
+					zk:onClick="addItem()" />
+			</x:td>
+			<x:td>
+				<x:ul id="ul">
+					<x:li>Nestle Coffee</x:li>
+					<x:li>Evian Water</x:li>
+				</x:ul>
+			</x:td>
+		</x:tr>
+	</x:table>
+	<zscript><![CDATA[
+	import org.zkoss.zhtml.Li;
+	import org.zkoss.zhtml.Text;
+	void addItem() {
+		if ("----".equals(list.getSelectedItem().getLabel())) {
+			alert("Please select one item.");
+			return;
+		}
+		Li li = new Li();
+		li.setParent(ul);
+		new Text(list.getSelectedItem() == null ? "Null" : list
+				.getSelectedItem().getLabel()).setParent(li);
+	}
+]]></zscript>
+</zk>

@@ -1,0 +1,5 @@
+package javase;
+
+public class EnumMap {
+	java.util.EnumMap<Enum<K>, V>
+}

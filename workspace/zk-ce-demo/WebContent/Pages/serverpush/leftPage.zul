@@ -1,0 +1,14 @@
+<?page title="" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="A" border="normal"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('viewmodel.serverpush.LeftPageVM')">
+		<hlayout>
+			<textbox id="textbox"></textbox>
+			<button label="Send"
+				onClick="@command('sendMessage', message=textbox.text)">
+			</button>
+		</hlayout>
+		<listbox model="@load(vm.messages)" rows="10"></listbox>
+	</window>
+</zk>

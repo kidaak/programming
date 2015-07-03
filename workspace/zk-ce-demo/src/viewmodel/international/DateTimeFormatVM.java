@@ -2,8 +2,6 @@ package viewmodel.international;
 
 import java.util.Date;
 
-import org.zkoss.zul.Window;
-
 public class DateTimeFormatVM {
 	private Date date = new Date();
 
@@ -14,5 +12,5 @@ public class DateTimeFormatVM {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-
 }
+

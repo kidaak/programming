@@ -3,13 +3,42 @@
 	<window title="Locale" border="normal"
 		apply="org.zkoss.bind.BindComposer"
 		viewModel="@id('vm') @init('viewmodel.international.LocaleVM')">
-		<label value="${labels.button.locale }"></label>
+		Session's locale:
+		<label
+			value="@load(vm.session.attributes['org.zkoss.web.preferred.locale'])">
+		</label>
 		<separator></separator>
-		<button label="Change locale with reloading"
-			onClick="@command('changeLocaleWithReloading')">
-		</button>
-		<button label="Change locale without reloading"
-			onClick="@command('changeLocaleWithoutReloading')">
-		</button>
+		WebApp's locale:
+		<label
+			value="@load(vm.webApp.attributes['org.zkoss.web.preferred.locale'])">
+		</label>
+		<separator></separator>
+		Library's locale:
+		<label
+			value="@load(vm.library.attributes['org.zkoss.web.preferred.locale'])">
+		</label>
+		<separator></separator>
+		Servlet Request's locale:
+		<label value="@load(vm.request.locale)"></label>
+		<separator></separator>
+		<hlayout>
+			<label value="Change locale with reloading"></label>
+			<button label="vi"
+				onClick="@command('changeLocaleWithReloading', locale='vi')">
+			</button>
+			<button label="de"
+				onClick="@command('changeLocaleWithReloading', locale='de')">
+			</button>
+		</hlayout>
+		<separator></separator>
+		<hlayout>
+			<label value="Change locale without reloading"></label>
+			<button label="vi"
+				onClick="@command('changeLocaleWithoutReloading', locale='vi')">
+			</button>
+			<button label="de"
+				onClick="@command('changeLocaleWithoutReloading', locale='de')">
+			</button>
+		</hlayout>
 	</window>
 </zk>

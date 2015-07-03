@@ -1,0 +1,28 @@
+<?page title="Locale Dependent Resource" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<zscript>
+	import org.zkoss.web.Attributes;
+	public void changeLocale(Session session, String localeName) {
+		if (localeName.length() > 2) {
+			session.setAttribute(Attributes.PREFERRED_LOCALE, new Locale(localeName.substring(0,2),localeName.substring(3)));
+		} else {
+			session.setAttribute(Attributes.PREFERRED_LOCALE, new Locale(
+					localeName));
+		}
+		Executions.sendRedirect(null);
+	}
+</zscript>
+	<window title="Locale Dependent Resource" border="normal">
+		<image src="/Share/img/flag*.png"></image>
+		<separator></separator>
+		<button label="vi"
+			onClick="changeLocale(session, self.getLabel())">
+		</button>
+		<button label="en"
+			onClick="changeLocale(session, self.getLabel())">
+		</button>
+		<button label="de_DE"
+			onClick="changeLocale(session, self.getLabel())">
+		</button>
+	</window>
+</zk>

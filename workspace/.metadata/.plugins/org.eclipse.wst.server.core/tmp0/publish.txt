@@ -1,4 +1,2 @@
 #Tomcat publish data
-#Sun Mar 29 12:00:29 ICT 2015
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\hoangnv\\Documents\\Github\\programming\\workspace\\Component_Development\\WebContent\\WEB-INF\\lib\\zk.jar=WEB-INF/lib/zk.jar
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\hoangnv\\Documents\\Github\\programming\\workspace\\zk_demo\\WebContent\\WEB-INF\\lib\\zk.jar=WEB-INF/lib/zk.jar
+#Sat Jun 27 22:45:12 ICT 2015

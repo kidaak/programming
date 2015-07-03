@@ -1,0 +1,8 @@
+package org.bkstorm.jersey.resource;
+
+import javax.ws.rs.Path;
+
+@Path("/oauth")
+public class LoginService {
+
+}

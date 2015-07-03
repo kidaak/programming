@@ -1,0 +1,7 @@
+package org.bkstorm.jersey;
+
+import javax.ws.rs.core.Application;
+
+public class MyApplication extends Application {
+
+}

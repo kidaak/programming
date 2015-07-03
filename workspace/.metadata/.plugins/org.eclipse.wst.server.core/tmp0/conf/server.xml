@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\hoangnv\Documents\Github\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context antiJARLocking="true" docBase="C:\Users\hoangnv\Documents\Github\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Component_Development" path="/Component_Development" reloadable="true" source="org.eclipse.jst.jee.server:Component_Development"/><Context antiJARLocking="true" docBase="C:\Users\hoangnv\Documents\Github\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\zk_demo" path="/zk_demo" reloadable="true" source="org.eclipse.jst.jee.server:zk_demo"/></Host>
+      <Context docBase="C:\Users\Nguyen\Documents\GitHub\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Nguyen\Documents\GitHub\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\zk-ce-demo" path="/zk-ce-demo" reloadable="true" source="org.eclipse.jst.jee.server:zk-ce-demo"/><Context antiJARLocking="true" docBase="C:\Users\Nguyen\Documents\GitHub\programming\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\jersey" path="/jersey" reloadable="true" source="org.eclipse.jst.jee.server:jersey"/></Host>
     </Engine>
   </Service>
 </Server>

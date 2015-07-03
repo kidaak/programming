@@ -1,0 +1,26 @@
+<?page title="Labels" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<zscript>
+	import org.zkoss.web.Attributes;
+	String vi = "vi";
+	String en = "en";
+	public void changeLocale(Session session, String localeName) {
+		session.setAttribute(Attributes.PREFERRED_LOCALE,
+				new Locale(localeName));
+		Executions.sendRedirect(null);
+	}
+</zscript>
+	<window title="Labels" border="normal">
+		App:
+		<label value="${labels.app.$}"></label>
+		<separator></separator>
+		User:
+		<label value="${labels.app.user}"></label>
+		<separator></separator>
+		Locale:
+		<label value="${labels.app.locale}"></label>
+		<separator></separator>
+		<button label="vi" onClick="changeLocale(session, vi)"></button>
+		<button label="en" onClick="changeLocale(session, en)"></button>
+	</window>
+</zk>

@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/zk-label_en.properties=UTF-8
+encoding//WebContent/WEB-INF/zk-label_vi.properties=UTF-8
+encoding//src/message.properties=UTF-8
+encoding/<project>=UTF-8
+separateDerivedEncodings=true
