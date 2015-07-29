@@ -1,7 +1,0 @@
-<classpath>
-  <container id="zk-ce-demo!org.eclipse.jst.j2ee.internal.web.container">
-    <entry id="C:/Users/Nguyen/GitHub/programming/workspace/zk-ce-demo/WebContent/WEB-INF/lib/zweb.jar">
-      <source-attachment-path>C:/Users/Nguyen/.m2/repository/org/zkoss/common/zweb/7.0.3/zweb-7.0.3-sources.jar</source-attachment-path>
-    </entry>
-  </container>
-</classpath>

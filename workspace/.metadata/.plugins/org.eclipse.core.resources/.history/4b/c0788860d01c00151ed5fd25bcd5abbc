@@ -1,5 +1,0 @@
-package org.bkstorm.jersey.resource;
-
-public class LoginService {
-
-}

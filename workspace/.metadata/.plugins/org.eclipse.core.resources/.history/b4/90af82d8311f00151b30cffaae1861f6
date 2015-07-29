@@ -1,5 +1,0 @@
-package javase;
-
-public class EnumMapTest {
-	java.util.EnumMap<Enum<K>, V>
-}
