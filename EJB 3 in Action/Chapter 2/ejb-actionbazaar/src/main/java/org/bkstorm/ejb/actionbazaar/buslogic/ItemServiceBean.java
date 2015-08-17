@@ -7,7 +7,10 @@ package org.bkstorm.ejb.actionbazaar.buslogic;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
+
 import org.bkstorm.ejb.actionbazaar.persistence.Item;
 
 /**
@@ -16,25 +19,29 @@ import org.bkstorm.ejb.actionbazaar.persistence.Item;
 @Stateless
 public class ItemServiceBean implements ItemService {
 
-    /**
-     * Persistence Context
-     */
-    @PersistenceContext
-    private EntityManager entityManager;
+	/**
+	 * Persistence Context
+	 */
+	@PersistenceContext(unitName = "users")
+	private EntityManager entityManager;
 
-    @Override
-    public Item getItem(long itemId) {
-        return entityManager.find(Item.class, itemId);
-    }
+	@Override
+	public Item getItem(long itemId) {
+		return entityManager.find(Item.class, itemId);
+	}
 
-    /**
-     * Creates an item in the database
-     *
-     * @param item
-     */
-    @Override
-    public void createItem(Item item) {
-        entityManager.persist(item);
-    }
+	/**
+	 * Creates an item in the database
+	 *
+	 * @param item
+	 */
+	@Override
+	public void createItem(Item item) {
+		entityManager.persist(item);
+
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("users");
+		EntityManager em = entityManagerFactory.createEntityManager();
+		em.persist(item);
+	}
 
 }

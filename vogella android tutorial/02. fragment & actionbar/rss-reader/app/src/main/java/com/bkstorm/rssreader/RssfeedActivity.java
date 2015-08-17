@@ -26,7 +26,6 @@ public class RssfeedActivity extends Activity implements MyListFragment.OnItemSe
                     DetailActivity.class);
             intent.putExtra(DetailActivity.EXTRA_URL, link);
             startActivity(intent);
-
         }
     }
 }

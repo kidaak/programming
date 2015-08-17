@@ -111,3 +111,10 @@
 /EJB 3 in Action/Chapter 1/ejb-hello-world-client/build/
 /EJB 3 in Action/Chapter 1/ejb-hello-world/dist/
 /EJB 3 in Action/Chapter 1/ejb-hello-world-client/dist/
+/Pro JPA 2/Chapter 3 Enterprise Applications/stateless-session-bean/stateless-session-bean/stateless-session-bean-ejb/target/
+/Pro JPA 2/Chapter 3 Enterprise Applications/stateless-session-bean/stateless-session-bean/stateless-session-bean-web/target/
+/Pro JPA 2/Chapter 3 Enterprise Applications/stateless-session-bean/stateless-session-bean/stateless-session-bean-ear/target/
+/Pro JPA 2/Chapter 3 Enterprise Applications/statefull-session-bean/target/
+/Pro JPA 2/Chapter 3 Enterprise Applications/dependency-lookup/dependency-lookup/dependency-lookup-ejb/target/
+/Pro JPA 2/Chapter 3 Enterprise Applications/dependency-lookup/dependency-lookup/dependency-lookup-web/target/
+/Pro JPA 2/Chapter 3 Enterprise Applications/dependency-lookup/dependency-lookup/dependency-lookup-ear/target/

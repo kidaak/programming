@@ -33,223 +33,242 @@ import javax.persistence.Temporal;
 @Table(name = "ITEMS")
 public class Item implements Serializable {
 
-    /**
-     * Unique identifier for the item
-     */
-    @Id
-    @GeneratedValue
-    @Column(name = "ITEM_ID")
-    private Long itemId;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 684496450613263021L;
 
-    /**
-     * Name of the item
-     */
-    private String itemName;
+	/**
+	 * Unique identifier for the item
+	 */
+	@Id
+	@GeneratedValue
+	@Column(name = "ITEM_ID")
+	private Long itemId;
 
-    /**
-     * End date of the bid
-     */
-    @Temporal(javax.persistence.TemporalType.DATE)
-    private Date bidEndDate;
+	/**
+	 * Name of the item
+	 */
+	private String itemName;
 
-    /**
-     * Bid start date
-     */
-    @Temporal(javax.persistence.TemporalType.DATE)
-    private Date bidStartDate;
+	/**
+	 * End date of the bid
+	 */
+	@Temporal(javax.persistence.TemporalType.DATE)
+	private Date bidEndDate;
 
-    /**
-     * Created date
-     */
-    @Temporal(javax.persistence.TemporalType.DATE)
-    private Date createdDate;
+	/**
+	 * Bid start date
+	 */
+	@Temporal(javax.persistence.TemporalType.DATE)
+	private Date bidStartDate;
 
-    /**
-     * Initial price
-     */
-    private Double initialPrice;
+	/**
+	 * Created date
+	 */
+	@Temporal(javax.persistence.TemporalType.DATE)
+	private Date createdDate;
 
-    /**
-     * List of bids
-     */
-    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL)
-    private List<Bid> bids;
+	/**
+	 * Initial price
+	 */
+	private Double initialPrice;
 
-    /**
-     * Creates an Item
-     */
-    public Item() {
-        // empty constructor
-    }
+	/**
+	 * List of bids
+	 */
+	@OneToMany(mappedBy = "item", cascade = CascadeType.ALL)
+	private List<Bid> bids;
 
-    /**
-     * Creates a new item
-     *
-     * @param itemId - item id
-     */
-    public Item(Long itemId) {
-        this.itemId = itemId;
-    }
+	/**
+	 * Creates an Item
+	 */
+	public Item() {
+		// empty constructor
+	}
 
-    /**
-     * Creates a new item.
-     *
-     * @param itemName - item name
-     * @param bidStartDate - bid start date
-     * @param createdDate - created date
-     * @param initialPrice - initial price
-     */
-    public Item(String itemName, Date bidStartDate, Date createdDate, double initialPrice) {
-        this.itemName = itemName;
-        this.bidStartDate = bidStartDate;
-        this.initialPrice = initialPrice;
-    }
+	/**
+	 * Creates a new item
+	 *
+	 * @param itemId
+	 *            - item id
+	 */
+	public Item(Long itemId) {
+		this.itemId = itemId;
+	}
 
-    /**
-     * Returns an item name
-     *
-     * @return item name
-     */
-    public String getItemName() {
-        return itemName;
-    }
+	/**
+	 * Creates a new item.
+	 *
+	 * @param itemName
+	 *            - item name
+	 * @param bidStartDate
+	 *            - bid start date
+	 * @param createdDate
+	 *            - created date
+	 * @param initialPrice
+	 *            - initial price
+	 */
+	public Item(String itemName, Date bidStartDate, Date createdDate, double initialPrice) {
+		this.itemName = itemName;
+		this.bidStartDate = bidStartDate;
+		this.initialPrice = initialPrice;
+	}
 
-    /**
-     * Creates an item name
-     *
-     * @param itemName - item name
-     */
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
-    }
+	/**
+	 * Returns an item name
+	 *
+	 * @return item name
+	 */
+	public String getItemName() {
+		return itemName;
+	}
 
-    /**
-     * Returns the bid end date
-     *
-     * @return bid end date
-     */
-    public Date getBidEndDate() {
-        return bidEndDate;
-    }
+	/**
+	 * Creates an item name
+	 *
+	 * @param itemName
+	 *            - item name
+	 */
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
 
-    /**
-     * Sets the bid end date
-     *
-     * @param bidEndDate - bid end date
-     */
-    public void setBidEndDate(Date bidEndDate) {
-        this.bidEndDate = bidEndDate;
-    }
+	/**
+	 * Returns the bid end date
+	 *
+	 * @return bid end date
+	 */
+	public Date getBidEndDate() {
+		return bidEndDate;
+	}
 
-    /**
-     * Returns a bid start date
-     *
-     * @return bid start date
-     */
-    public Date getBidStartDate() {
-        return bidStartDate;
-    }
+	/**
+	 * Sets the bid end date
+	 *
+	 * @param bidEndDate
+	 *            - bid end date
+	 */
+	public void setBidEndDate(Date bidEndDate) {
+		this.bidEndDate = bidEndDate;
+	}
 
-    /**
-     * Sets the bid start date
-     *
-     * @param bidStartDate - bid start date
-     */
-    public void setBidStartDate(Date bidStartDate) {
-        this.bidStartDate = bidStartDate;
-    }
+	/**
+	 * Returns a bid start date
+	 *
+	 * @return bid start date
+	 */
+	public Date getBidStartDate() {
+		return bidStartDate;
+	}
 
-    /**
-     * Returns the created date
-     *
-     * @return created date
-     */
-    public Date getCreatedDate() {
-        return createdDate;
-    }
+	/**
+	 * Sets the bid start date
+	 *
+	 * @param bidStartDate
+	 *            - bid start date
+	 */
+	public void setBidStartDate(Date bidStartDate) {
+		this.bidStartDate = bidStartDate;
+	}
 
-    /**
-     * Sets the created date
-     *
-     * @param createdDate - created date
-     */
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
-    }
+	/**
+	 * Returns the created date
+	 *
+	 * @return created date
+	 */
+	public Date getCreatedDate() {
+		return createdDate;
+	}
 
-    /**
-     * Sets the initial price
-     *
-     * @return initial price
-     */
-    public Double getInitialPrice() {
-        return initialPrice;
-    }
+	/**
+	 * Sets the created date
+	 *
+	 * @param createdDate
+	 *            - created date
+	 */
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
 
-    /**
-     * Sets the initial price
-     *
-     * @param initialPrice - initial price
-     */
-    public void setInitialPrice(Double initialPrice) {
-        this.initialPrice = initialPrice;
-    }
+	/**
+	 * Sets the initial price
+	 *
+	 * @return initial price
+	 */
+	public Double getInitialPrice() {
+		return initialPrice;
+	}
 
-    /**
-     * Returns the item id
-     *
-     * @return item id
-     */
-    public Long getItemId() {
-        return itemId;
-    }
+	/**
+	 * Sets the initial price
+	 *
+	 * @param initialPrice
+	 *            - initial price
+	 */
+	public void setInitialPrice(Double initialPrice) {
+		this.initialPrice = initialPrice;
+	}
 
-    /**
-     * Sets the item id
-     *
-     * @param itemId - item id
-     */
-    public void setItemId(Long itemId) {
-        this.itemId = itemId;
-    }
+	/**
+	 * Returns the item id
+	 *
+	 * @return item id
+	 */
+	public Long getItemId() {
+		return itemId;
+	}
 
-    /**
-     * Returns the bids
-     *
-     * @return bids
-     */
-    public List<Bid> getBids() {
-        return bids;
-    }
+	/**
+	 * Sets the item id
+	 *
+	 * @param itemId
+	 *            - item id
+	 */
+	public void setItemId(Long itemId) {
+		this.itemId = itemId;
+	}
 
-    /**
-     * Sets the bids
-     *
-     * @param bids - bids
-     */
-    public void setBids(List<Bid> bids) {
-        this.bids = bids;
-    }
+	/**
+	 * Returns the bids
+	 *
+	 * @return bids
+	 */
+	public List<Bid> getBids() {
+		return bids;
+	}
 
-    /**
-     * Returns the bid
-     *
-     * @param bid - bid
-     * @return Bid
-     */
-    public Bid addBid(Bid bid) {
-        getBids().add(bid);
-        return bid;
-    }
+	/**
+	 * Sets the bids
+	 *
+	 * @param bids
+	 *            - bids
+	 */
+	public void setBids(List<Bid> bids) {
+		this.bids = bids;
+	}
 
-    /**
-     * Removes the bid
-     *
-     * @param bid - bid
-     * @return Bid
-     */
-    public Bid removeBid(Bid bid) {
-        getBids().remove(bid);
-        return bid;
-    }
+	/**
+	 * Returns the bid
+	 *
+	 * @param bid
+	 *            - bid
+	 * @return Bid
+	 */
+	public Bid addBid(Bid bid) {
+		getBids().add(bid);
+		return bid;
+	}
+
+	/**
+	 * Removes the bid
+	 *
+	 * @param bid
+	 *            - bid
+	 * @return Bid
+	 */
+	public Bid removeBid(Bid bid) {
+		getBids().remove(bid);
+		return bid;
+	}
 }

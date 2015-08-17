@@ -17,22 +17,15 @@
 package org.bkstorm.ejb.actionbazaar.buslogic;
 
 import javax.ejb.EJB;
-import org.bkstorm.ejb.actionbazaar.buslogic.ItemService;
-import org.bkstorm.ejb.actionbazaar.buslogic.ItemServiceBean;
-import org.bkstorm.ejb.actionbazaar.buslogic.OrderProcessor;
-import org.bkstorm.ejb.actionbazaar.buslogic.OrderProcessorBean;
-import org.bkstorm.ejb.actionbazaar.buslogic.UserService;
-import org.bkstorm.ejb.actionbazaar.buslogic.UserServiceBean;
+
 import org.bkstorm.ejb.actionbazaar.persistence.Bid;
 import org.bkstorm.ejb.actionbazaar.persistence.Bidder;
 import org.bkstorm.ejb.actionbazaar.persistence.Item;
-import org.jboss.arquillian.api.Deployment;
-import org.jboss.arquillian.api.Run;
-import org.jboss.arquillian.api.RunModeType;
+import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.Archive;
-import org.jboss.shrinkwrap.api.ArchivePaths;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
+import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Assert;
 import org.junit.Test;
@@ -42,35 +35,35 @@ import org.junit.runner.RunWith;
  * This verifies that users can be persisted and retrieved.
  */
 @RunWith(Arquillian.class)
-@Run(RunModeType.IN_CONTAINER)
 public class UserServiceTest {
 
-    /**
-     * Injects the user service bean
-     */
-    @EJB
-    private UserService userService;
+	/**
+	 * Injects the user service bean
+	 */
+	@EJB
+	private UserService userService;
 
-    /**
-     * Creates a deployment item.
-     * @return ShrinkWrap
-     */
-    @Deployment
-    public static Archive<?> createDeployment() {
-        return ShrinkWrap.create(JavaArchive.class, "foo.jar").addClasses(OrderProcessor.class,
-                OrderProcessorBean.class,UserService.class,UserServiceBean.class,
-                ItemService.class,
-                ItemServiceBean.class, Bid.class, Bidder.class, Item.class).addManifestResource("test-persistence.xml", ArchivePaths.create("persistence.xml"));
-    }
+	/**
+	 * Creates a deployment item.
+	 * 
+	 * @return ShrinkWrap
+	 */
+	@Deployment
+	public static Archive<?> createDeployment() {
+		return ShrinkWrap.create(JavaArchive.class)
+				.addClasses(OrderProcessor.class, OrderProcessorBean.class, UserService.class, UserServiceBean.class,
+						ItemService.class, ItemServiceBean.class, Bid.class, Bidder.class, Item.class)
+				.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+	}
 
-    /**
-     * Test persistence of a user
-     */
-    @Test
-    public void testItemPersistence() {
-        Bidder bidder = new Bidder("John","Wesley Powell",1869l);
-        userService.createUser(bidder);
-        Assert.assertNotNull(bidder.getBidderId());
-        Assert.assertNotNull(userService.getUser(bidder.getBidderId()));
-    }
+	/**
+	 * Test persistence of a user
+	 */
+	@Test
+	public void testItemPersistence() {
+		Bidder bidder = new Bidder("John", "Wesley Powell", 1869l);
+		userService.createUser(bidder);
+		Assert.assertNotNull(bidder.getBidderId());
+		Assert.assertNotNull(userService.getUser(bidder.getBidderId()));
+	}
 }
