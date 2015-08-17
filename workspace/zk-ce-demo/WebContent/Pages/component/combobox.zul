@@ -1,0 +1,10 @@
+<?page title="Combobox" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window title="Combobox" border="normal"
+		apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm') @init('viewmodel.component.ComboboxVM')">
+		<combobox model="@load(vm.models)" autodrop="true"
+			onSelect="@command('select')">
+		</combobox>
+	</window>
+</zk>
