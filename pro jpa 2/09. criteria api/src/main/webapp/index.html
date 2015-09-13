@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+    </head>
+    <body>
+        <form action="/criteria/searchService" method="post">
+            <select name="action">
+                <optgroup label="Search Types">
+                    <option value="FindEmployees">FindEmployees</option>
+                </optgroup>
+            </select><br /> <label for="name">Name:</label> <input id="name" name="name"><br/>
+            <label for="dept">Department:</label><input name="dept" id="dept"> <br/><label
+                for="city">City:</label><input name="city" id="city"><br/>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </body>
+</html>

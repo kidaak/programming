@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-	<select>
-		<optgroup label="Action">
-			<option></option>
-		</optgroup>
-	</select>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+    </head>
+    <body>
+        <form action="/autoIdGeneration/EmployeeServlet" method="post">
+            <select name="action" id="action">
+                <optgroup label="Action">
+                    <option value="Create" label="Create"></option>
+                    <option value="FindAll" label="FindAll"></option>
+                </optgroup>
+            </select> <input id="name" name="value" /> <input id="salary" name="salary" />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
 </html>
