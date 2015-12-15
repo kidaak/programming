@@ -11,21 +11,25 @@ package com.bkstorm.javase;
  */
 public class Person {
 
-    String name;
+	String name;
 
-    public Person(String personName) {
-        name = personName;
-    }
+	public Person() {
 
-    public String greet(String yourName) {
-        return String.format("Hi %s, my name is %s", yourName, name);
-    }
+	}
 
-    public String getName() {
-        return name;
-    }
+	public Person(String personName) {
+		name = personName;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public String greet(String yourName) {
+		return String.format("Hi %s, my name is %s", yourName, name);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }

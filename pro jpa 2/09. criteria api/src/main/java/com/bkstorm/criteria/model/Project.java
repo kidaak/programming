@@ -11,47 +11,48 @@ import javax.persistence.ManyToMany;
 
 @Entity
 public class Project {
-	@Id
-	protected int id;
-	protected String name;
-	@ManyToMany
-	@JoinTable(name = "employee_has_project", joinColumns = @JoinColumn(name = "project_id") , inverseJoinColumns = @JoinColumn(name = "employee_id") )
-	protected Collection<Employee> employees = new ArrayList<Employee>();
 
-	public Project() {
-	}
+    @Id
+    protected int id;
+    protected String name;
+    @ManyToMany
+    @JoinTable(name = "employee_has_project", joinColumns = @JoinColumn(name = "project_id"), inverseJoinColumns = @JoinColumn(name = "employee_id"))
+    protected Collection<Employee> employees = new ArrayList<Employee>();
 
-	public int getId() {
-		return id;
-	}
+    public Project() {
+    }
 
-	public void setId(int projectNo) {
-		this.id = projectNo;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setId(int projectNo) {
+        this.id = projectNo;
+    }
 
-	public void setName(String projectName) {
-		this.name = projectName;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public Collection<Employee> getEmployees() {
-		return employees;
-	}
+    public void setName(String projectName) {
+        this.name = projectName;
+    }
 
-	public void addEmployee(Employee employee) {
-		if (!getEmployees().contains(employee)) {
-			getEmployees().add(employee);
-		}
-		if (!employee.getProjects().contains(this)) {
-			employee.getProjects().add(this);
-		}
-	}
+    public Collection<Employee> getEmployees() {
+        return employees;
+    }
 
-	public String toString() {
-		return getClass().getName().substring(getClass().getName().lastIndexOf('.') + 1) + " no: " + getId()
-				+ ", name: " + getName();
-	}
+    public void addEmployee(Employee employee) {
+        if (!getEmployees().contains(employee)) {
+            getEmployees().add(employee);
+        }
+        if (!employee.getProjects().contains(this)) {
+            employee.getProjects().add(this);
+        }
+    }
+
+    public String toString() {
+        return getClass().getName().substring(getClass().getName().lastIndexOf('.') + 1) + " no: " + getId()
+                + ", name: " + getName();
+    }
 }

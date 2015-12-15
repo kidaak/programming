@@ -1,0 +1,9 @@
+<window title="" border="normal" width="100%"
+	apply="com.bkstorm.zk.ChosenboxComposer">
+	<chosenbox id="cbx" creatable="true" width="100%"
+		createMessage="Thêm mới">
+	</chosenbox>
+	<chosenbox id="cbx2" creatable="true" width="100%"
+		createMessage="Thêm mới">
+	</chosenbox>
+</window>

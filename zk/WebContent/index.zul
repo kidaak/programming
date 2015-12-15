@@ -1,0 +1,173 @@
+<?page title="Auto Generated index.zul"?>
+<window xmlns:n="native" title="Hello World!!" border="normal">
+	<style src="notification.css"></style>
+	<n:div style="width: 600px;">
+		<n:div class="UFIList">
+			<n:div
+				class="UFIRow UFIComponent UFIAddComment UFIComment display">
+				<n:div
+					class="UFIMentionsInputWrap UFIStickersEnabledInput clearfix">
+					<n:div class="_ohe lfloat">
+						<n:div
+							class="UFIReplyActorPhotoWrapper img _8o _8r UFIImageBlockImage">
+							<n:img class="img UFIActorImage _54ru img"
+								src="hoangnv.jpg" alt="Nguyen Hoang">
+							</n:img>
+						</n:div>
+					</n:div>
+					<n:div></n:div>
+					<n:div class="UFIImageBlockContent _42ef _8u">
+						<n:div class="UFICommentContainer">
+							<n:div class="UFIInputContainer">
+								<n:div>
+									<n:div class="UFIAddCommentInput _1osb _5yk1">
+										<n:div id="commentTextbox"></n:div>
+									</n:div>
+								</n:div>
+								<n:div
+									class="UFICommentAttachmentButtons clearfix">
+									<n:div aria-label="Attach a Photo"
+										data-tooltip-alignh="center" data-hover="tooltip"
+										class="UFIPhotoAttachLinkWrapper _m">
+										<n:i
+											class="UFICommentPhotoIcon">
+											<n:input
+												aria-label="Attach a Photo" title="Attach a Photo"
+												name="file" class="_n" accept="image/*" type="file" />
+										</n:i>
+									</n:div>
+									<n:a href="#"
+										data-tooltip-alignh="center" data-hover="tooltip"
+										class="UFICommentStickerButton" aria-label="Post a sticker">
+										<n:div
+											class="UFICommentStickerIcon" tabindex="0">
+										</n:div>
+									</n:a>
+								</n:div>
+							</n:div>
+						</n:div>
+					</n:div>
+				</n:div>
+			</n:div>
+
+			<n:div class="UFIRow UFIComment display UFIComponent">
+				<n:div class="lfloat">
+					<n:a class="UFIImageBlockImage" href="">
+						<n:img class="img UFIActorImage"
+							src="avatar.jpg" />
+					</n:a>
+				</n:div>
+				<n:div class="UFICommentContentBlock">
+					<n:div class="UFICommentContent">
+						<n:span>
+							<n:a class=" UFICommentActorName" href="">
+								<n:span>Vic Cetina</n:span>
+							</n:a>
+						</n:span>
+						<n:span class="UFICommentBody">
+							Starbucks sells this... it's called Green
+							Tea latte, I like to get it with Soy Milk
+							and a pump of Vanilla flavoring... they use
+							Matcha....Also Teavana sell canisters of
+							this... or Asian markets as well....
+						</n:span>
+						<n:div class="UFICommentActions">
+							<n:a href="">10 người nhận</n:a>
+							<n:span></n:span>
+							<n:span class="timestamp">
+								<n:abbr>A month ago</n:abbr>
+							</n:span>
+						</n:div>
+					</n:div>
+				</n:div>
+			</n:div>
+
+			<n:div class="UFIReplyList">
+				<n:div
+					class="UFIFirstComment UFIFirstComponent UFIRow UFIComment display UFIComponent">
+					<n:div class="lfloat">
+						<n:a class="UFIImageBlockImage" href="">
+							<n:img class="img UFIActorImage"
+								src="sub-avatar.jpg" />
+						</n:a>
+					</n:div>
+					<n:div class="UFICommentContentBlock">
+						<n:div class="UFICommentContent">
+							<n:span>
+								<n:a class=" UFICommentActorName"
+									href="">
+									<n:span>Niko Polis</n:span>
+								</n:a>
+							</n:span>
+							<n:span class="UFICommentBody">
+								starbucks own teavana
+							</n:span>
+							<n:div class="UFICommentActions">
+								<n:span class="timestamp">
+									<n:abbr>a day ago</n:abbr>
+								</n:span>
+							</n:div>
+						</n:div>
+					</n:div>
+				</n:div>
+
+				<n:div class="UFIRow UFIComment display UFIComponent">
+					<n:div class="lfloat">
+						<n:a class="UFIImageBlockImage" href="">
+							<n:img class="img UFIActorImage"
+								src="sub-avatar2.jpg" />
+						</n:a>
+					</n:div>
+					<n:div class="UFICommentContentBlock">
+						<n:div class="UFICommentContent">
+							<n:span>
+								<n:a class=" UFICommentActorName"
+									href="">
+									<n:span>Vic Cetina</n:span>
+								</n:a>
+							</n:span>
+							<n:span class="UFICommentBody">
+								Niko Polis Yes.... They do NOW.... But
+								I've been getting that drink for years
+								even before the recent purchase of
+								Teavana.
+							</n:span>
+							<n:div class="UFICommentActions">
+								<n:span class="timestamp">
+									<n:abbr>5 hours ago</n:abbr>
+								</n:span>
+							</n:div>
+						</n:div>
+					</n:div>
+				</n:div>
+
+				<n:div
+					class="UFIRow UFIReplySocialSentenceRow UFIFirstComponent UFILastComponent">
+					<n:a class="UFIShareLink" href="">
+						<n:div class="UFIImageBlockImage lfloat">
+							<n:i class="UFIPagerIcon"></n:i>
+						</n:div>
+						<n:div class="UFIImageBlockContent">
+							<n:span
+								class="UFIReplySocialSentenceLinkText UFIReplySocialSentenceVerified">
+								View more replies
+							</n:span>
+						</n:div>
+					</n:a>
+				</n:div>
+			</n:div>
+
+			<n:div
+				class="UFIRow UFIPagerRow UFIComponent UFILastCommentComponent">
+				<n:div class="rfloat">
+					<n:span class="UFIPagerCount">12 of 320</n:span>
+				</n:div>
+				<n:div>
+					<n:a href="" class="UFIPagerLink">
+						<n:span>View more comments</n:span>
+					</n:a>
+				</n:div>
+			</n:div>
+		</n:div>
+	</n:div>
+</window>

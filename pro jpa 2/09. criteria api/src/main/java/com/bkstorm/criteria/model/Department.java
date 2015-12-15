@@ -1,5 +1,6 @@
 package com.bkstorm.criteria.model;
 
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -8,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 @Entity
-public class Department {
+public class Department implements Serializable {
     @Id
     private int id;
     private String name;

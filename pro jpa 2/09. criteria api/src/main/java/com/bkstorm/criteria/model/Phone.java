@@ -1,54 +1,56 @@
 package com.bkstorm.criteria.model;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Entity
-public class Phone {
-	@Id
-	private long id;
-	private String number;
-	private String type;
-	@OneToOne
-	Employee employee;
+public class Phone implements Serializable {
 
-	public Phone() {
-	}
+    @Id
+    private long id;
+    private String number;
+    private String type;
+    @OneToOne
+    Employee employee;
 
-	public long getId() {
-		return id;
-	}
+    public Phone() {
+    }
 
-	public void setId(long id) {
-		this.id = id;
-	}
+    public long getId() {
+        return id;
+    }
 
-	public String getNumber() {
-		return number;
-	}
+    public void setId(long id) {
+        this.id = id;
+    }
 
-	public void setNumber(String phoneNo) {
-		this.number = phoneNo;
-	}
+    public String getNumber() {
+        return number;
+    }
 
-	public String getType() {
-		return type;
-	}
+    public void setNumber(String phoneNo) {
+        this.number = phoneNo;
+    }
 
-	public void setType(String phoneType) {
-		this.type = phoneType;
-	}
+    public String getType() {
+        return type;
+    }
 
-	public Employee getEmployee() {
-		return employee;
-	}
+    public void setType(String phoneType) {
+        this.type = phoneType;
+    }
 
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
-	}
+    public Employee getEmployee() {
+        return employee;
+    }
 
-	public String toString() {
-		return "Phone id: " + getId() + ", no: " + getNumber() + ", type: " + getType();
-	}
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+    public String toString() {
+        return "Phone id: " + getId() + ", no: " + getNumber() + ", type: " + getType();
+    }
 }

@@ -1,63 +1,65 @@
 package com.bkstorm.criteria.model;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class Address {
-	@Id
-	private int id;
-	private String street;
-	private String city;
-	private String state;
-	private String zip;
+public class Address implements Serializable {
 
-	public Address() {
-	}
+    @Id
+    private int id;
+    private String street;
+    private String city;
+    private String state;
+    private String zip;
 
-	public int getId() {
-		return id;
-	}
+    public Address() {
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public String getStreet() {
-		return street;
-	}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-	public void setStreet(String address) {
-		this.street = address;
-	}
+    public String getStreet() {
+        return street;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public void setStreet(String address) {
+        this.street = address;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public String getState() {
-		return state;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
+    public String getState() {
+        return state;
+    }
 
-	public String getZip() {
-		return zip;
-	}
+    public void setState(String state) {
+        this.state = state;
+    }
 
-	public void setZip(String zip) {
-		this.zip = zip;
-	}
+    public String getZip() {
+        return zip;
+    }
 
-	public String toString() {
-		return "Address id: " + getId() + ", street: " + getStreet() + ", city: " + getCity() + ", state: " + getState()
-				+ ", zip: " + getZip();
-	}
+    public void setZip(String zip) {
+        this.zip = zip;
+    }
+
+    public String toString() {
+        return "Address id: " + getId() + ", street: " + getStreet() + ", city: " + getCity() + ", state: " + getState()
+                + ", zip: " + getZip();
+    }
 
 }
